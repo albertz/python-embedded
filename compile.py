@@ -68,6 +68,7 @@ modFiles = \
 			"errnomodule.c",
 			"_weakref.c",
 			"_sre.c",
+			"_codecsmodule.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
@@ -84,11 +85,8 @@ parserFiles = \
 	set(glob(PythonDir + "/Parser/*pgen*.c"))
 
 compileOpts = [
-	"-Ipydir",
+	"-Ipylib",
 	"-I" + PythonDir + "/Include",
-#	"-DPREFIX=\\\".\\\"",
-#	"-DEXEC_PREFIX=\\\".\\\""
-#	"-D"
 ]
 
 def compile():

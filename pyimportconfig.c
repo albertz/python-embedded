@@ -15,6 +15,7 @@ extern void initgc(void);
 extern void initposix(void);
 extern void init_weakref(void);
 extern void init_sre(void);
+extern void init_codecs(void);
 
 struct _inittab _PyImport_Inittab[] = {
 	
@@ -29,6 +30,7 @@ struct _inittab _PyImport_Inittab[] = {
 	{"posix", initposix},
     {"_weakref", init_weakref},
     {"_sre", init_sre},
+    {"_codecs", init_codecs},
 /*
     {"_ast", init_ast},
 	{"binascii", initbinascii},
@@ -48,7 +50,6 @@ struct _inittab _PyImport_Inittab[] = {
     {"cPickle", initcPickle},
     {"_subprocess", init_subprocess},
 	
-    {"_codecs", init_codecs},
     {"_hotshot", init_hotshot},
     {"_random", init_random},
     {"_bisect", init_bisect},
