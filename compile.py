@@ -34,7 +34,8 @@ baseFiles = \
 	set(glob(PythonDir + "/Python/dynload_*.c"))
 baseFiles |= \
 	set(glob(PythonDir + "/Python/dynload_stub.c")) | \
-	set(glob("pyimportconfig.c"))
+	set(glob("pyimportconfig.c")) | \
+	set(glob("pygetpath.c"))
 
 # via blacklist
 modFiles = \
@@ -54,7 +55,6 @@ modFiles = \
 		[
 			"main.c",
 			"python.c",
-			"getpath.c",
 			"getbuildinfo.c",
 			"posixmodule.c",
 			"arraymodule.c",
@@ -66,6 +66,8 @@ modFiles = \
 			"_math.c",
 			"mathmodule.c",
 			"errnomodule.c",
+			"_weakref.c",
+			"_sre.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
@@ -82,9 +84,10 @@ parserFiles = \
 	set(glob(PythonDir + "/Parser/*pgen*.c"))
 
 compileOpts = [
-	"-I.",
+	"-Ipydir",
 	"-I" + PythonDir + "/Include",
-	"-DPREFIX=\\\"/Users/az/Programmierung/python-embedded/\\\"",
+#	"-DPREFIX=\\\".\\\"",
+#	"-DEXEC_PREFIX=\\\".\\\""
 #	"-D"
 ]
 

@@ -13,6 +13,8 @@ extern void initmath(void);
 extern void initerrno(void);
 extern void initgc(void);
 extern void initposix(void);
+extern void init_weakref(void);
+extern void init_sre(void);
 
 struct _inittab _PyImport_Inittab[] = {
 	
@@ -25,6 +27,8 @@ struct _inittab _PyImport_Inittab[] = {
     {"errno", initerrno},
     {"gc", initgc},
 	{"posix", initposix},
+    {"_weakref", init_weakref},
+    {"_sre", init_sre},
 /*
     {"_ast", init_ast},
 	{"binascii", initbinascii},
@@ -45,7 +49,6 @@ struct _inittab _PyImport_Inittab[] = {
     {"_subprocess", init_subprocess},
 	
     {"_codecs", init_codecs},
-    {"_weakref", init_weakref},
     {"_hotshot", init_hotshot},
     {"_random", init_random},
     {"_bisect", init_bisect},
@@ -53,7 +56,6 @@ struct _inittab _PyImport_Inittab[] = {
     {"_lsprof", init_lsprof},
     {"_symtable", init_symtable},
     {"mmap", initmmap},
-    {"_sre", init_sre},
     {"parser", initparser},
     {"_winreg", init_winreg},
     {"_struct", init_struct},
