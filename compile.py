@@ -56,12 +56,16 @@ modFiles = \
 			"python.c",
 			"getpath.c",
 			"getbuildinfo.c",
+			"posixmodule.c",
 			"arraymodule.c",
 			"gcmodule.c",
 			"_csv.c",
 			"_collectionsmodule.c",
 			"itertoolsmodule.c",
-			"operator.c"
+			"operator.c",
+			"_math.c",
+			"mathmodule.c",
+			"errnomodule.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
@@ -80,6 +84,8 @@ parserFiles = \
 compileOpts = [
 	"-I.",
 	"-I" + PythonDir + "/Include",
+	"-DPREFIX=\\\"/Users/az/Programmierung/python-embedded/\\\"",
+#	"-D"
 ]
 
 def compile():

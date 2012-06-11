@@ -427,7 +427,7 @@
 /* #undef HAVE_LIBRESOLV */
 
 /* Define to 1 if you have the <libutil.h> header file. */
-#define HAVE_LIBUTIL_H 1
+//#define HAVE_LIBUTIL_H 1
 
 /* Define if you have the 'link' function. */
 #define HAVE_LINK 1

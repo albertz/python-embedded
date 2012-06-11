@@ -5,20 +5,32 @@ extern void PyMarshal_Init(void);
 extern void initarray(void);
 extern void initimp(void);
 extern void init_io(void);
+extern void init_csv(void);
+extern void inititertools(void);
+extern void init_collections(void);
+extern void initoperator(void);
+extern void initmath(void);
+extern void initerrno(void);
+extern void initgc(void);
+extern void initposix(void);
 
 struct _inittab _PyImport_Inittab[] = {
 	
     {"array", initarray},
+    {"_csv", init_csv},
+    {"itertools", inititertools},
+    {"_collections", init_collections},
+    {"operator", initoperator},
+    {"math", initmath},
+    {"errno", initerrno},
+    {"gc", initgc},
+	{"posix", initposix},
 /*
     {"_ast", init_ast},
 	{"binascii", initbinascii},
     {"cmath", initcmath},
-    {"errno", initerrno},
     {"future_builtins", initfuture_builtins},
-    {"gc", initgc},
-    {"math", initmath},
     {"_md5", init_md5},
-    {"operator", initoperator},
     {"signal", initsignal},
     {"_sha", init_sha},
     {"_sha256", init_sha256},
@@ -39,11 +51,8 @@ struct _inittab _PyImport_Inittab[] = {
     {"_bisect", init_bisect},
     {"_heapq", init_heapq},
     {"_lsprof", init_lsprof},
-    {"itertools", inititertools},
-    {"_collections", init_collections},
     {"_symtable", init_symtable},
     {"mmap", initmmap},
-    {"_csv", init_csv},
     {"_sre", init_sre},
     {"parser", initparser},
     {"_winreg", init_winreg},
