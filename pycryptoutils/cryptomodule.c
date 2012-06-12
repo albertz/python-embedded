@@ -9,6 +9,7 @@
 #include "eval.h"
 #include "osdefs.h"
 #include "import.h"
+#include "modsupport.h"
 
 
 static PyCodeObject *
@@ -97,10 +98,48 @@ cleanup:
     return m;
 }
 
+
+extern PyMODINIT_FUNC init_counter(void);
+
+static void importFromStaticallyLinked(char* modName, PyMODINIT_FUNC (*initfunc)(void)) {
+	{
+		char* oldcontext = _Py_PackageContext;
+		_Py_PackageContext = modName;	
+		initfunc();
+		_Py_PackageContext = oldcontext;
+	}
+	
+	PyObject* modules = PyImport_GetModuleDict();
+	PyObject* m = PyDict_GetItemString(modules, modName);
+	//PyObject* md = PyModule_GetDict(m);
+	
+	char* subModName = strdup(modName);
+	char* shortModName = subModName;
+	char* p = strrchr(subModName, '.');
+	if(p) {
+		*p = 0;
+		shortModName = p + 1;
+	}
+	
+	PyObject* subm = PyDict_GetItemString(modules, subModName);
+	PyObject* submd = PyModule_GetDict(subm);
+	PyDict_SetItemString(submd, shortModName, m);
+	
+	free(subModName);
+}
+
 PyMODINIT_FUNC
 init_PyCrypto(void)
 {
-	PyObject* m = load_package("Crypto", "Crypto");
+	char cryptoPath[MAXPATHLEN+1];
+	strcpy(cryptoPath, Py_GetProgramFullPath());
+	strcat(cryptoPath, "/pylib/otherlibs/Crypto");	
+	PyObject* m = load_package("Crypto", cryptoPath);
+
+	PyImport_ImportModule("Crypto.Util");
+	
+	importFromStaticallyLinked("Crypto.Util._counter", init_counter);
+	
 /*	PyObject* m = Py_InitModule("Crypto", NULL);
 	if(!m) return;
 	PyObject* d = PyModule_GetDict(m);
@@ -112,4 +151,5 @@ init_PyCrypto(void)
 	if(!m) return;
 	PyObject* d = PyModule_GetDict(m); */
 //	PyImport_ImportModule
+
 }
