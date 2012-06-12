@@ -103,9 +103,13 @@ pycryptoFiles = \
 	set(glob("pycrypto/src/cast*.c")) - \
 	set(glob("pycrypto/src/_fastmath.c")) # for now. it needs libgmp
 
-pycryptoFiles = \
-	["pycrypto/src/_counter.c",
-	 "pycryptoutils/cryptomodule.c"]
+pycryptoFiles = map(lambda f: "pycrypto/src/" + f,
+	[
+		"_counter.c",
+		"AES.c",
+		"strxor.c",
+	]) + \
+	["pycryptoutils/cryptomodule.c"]
 
 compileOpts = [
 	"-Ipylib",

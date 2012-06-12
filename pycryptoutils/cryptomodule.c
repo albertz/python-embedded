@@ -100,8 +100,18 @@ cleanup:
 
 
 extern PyMODINIT_FUNC init_counter(void);
+extern PyMODINIT_FUNC init_AES(void);
+extern PyMODINIT_FUNC initstrxor(void);
 
 static void importFromStaticallyLinked(char* modName, PyMODINIT_FUNC (*initfunc)(void)) {
+	char* subModName = strdup(modName);
+	char* shortModName = subModName;
+	char* p = strrchr(subModName, '.');
+	if(p) {
+		*p = 0;
+		shortModName = p + 1;
+	}
+
 	{
 		char* oldcontext = _Py_PackageContext;
 		_Py_PackageContext = modName;	
@@ -111,17 +121,19 @@ static void importFromStaticallyLinked(char* modName, PyMODINIT_FUNC (*initfunc)
 	
 	PyObject* modules = PyImport_GetModuleDict();
 	PyObject* m = PyDict_GetItemString(modules, modName);
-	//PyObject* md = PyModule_GetDict(m);
-	
-	char* subModName = strdup(modName);
-	char* shortModName = subModName;
-	char* p = strrchr(subModName, '.');
-	if(p) {
-		*p = 0;
-		shortModName = p + 1;
+	if(!m) {
+		Py_FatalError("error loading PyCrypto module (m not found)");
+		free(subModName);
+		return;
 	}
-	
+			
 	PyObject* subm = PyDict_GetItemString(modules, subModName);
+	if(!subm) {
+		Py_FatalError("error loading PyCrypto module (subm not found)");
+		free(subModName);
+		return;
+	}
+
 	PyObject* submd = PyModule_GetDict(subm);
 	PyDict_SetItemString(submd, shortModName, m);
 	
@@ -137,19 +149,9 @@ init_PyCrypto(void)
 	PyObject* m = load_package("Crypto", cryptoPath);
 
 	PyImport_ImportModule("Crypto.Util");
-	
 	importFromStaticallyLinked("Crypto.Util._counter", init_counter);
-	
-/*	PyObject* m = Py_InitModule("Crypto", NULL);
-	if(!m) return;
-	PyObject* d = PyModule_GetDict(m);
-	
-	PyDict_SetItemString
-	PyImport_ImportModule()
-	
-	PyObject* m = Py_InitModule("_counter", NULL);
-	if(!m) return;
-	PyObject* d = PyModule_GetDict(m); */
-//	PyImport_ImportModule
+	importFromStaticallyLinked("Crypto.Util.strxor", initstrxor);
 
+	PyImport_ImportModule("Crypto.Cipher");	
+	importFromStaticallyLinked("Crypto.Cipher._AES", init_AES);
 }
