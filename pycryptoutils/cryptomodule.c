@@ -1,3 +1,11 @@
+// This wraps the PyCrypto module importing.
+// It preloads all important native sub modules.
+
+// For built-in sub modules in general, see:
+// http://bugs.python.org/issue1644818
+// For some discussion about this, see:
+// http://mail.python.org/pipermail/python-dev/2012-June/120117.html
+
 #include "Python.h"
 #include "Python-ast.h"
 #include "pyarena.h"
@@ -11,6 +19,7 @@
 #include "import.h"
 #include "modsupport.h"
 
+// some code taken from Python/import.c
 
 static PyCodeObject *
 parse_source_module(const char *pathname, FILE *fp)
