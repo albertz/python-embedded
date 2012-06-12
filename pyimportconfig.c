@@ -23,6 +23,18 @@ extern void init_sha(void);
 extern void init_sha256(void);
 extern void init_sha512(void);
 extern void init_md5(void);
+extern void init_json(void);
+extern void initzlib(void);
+extern void init_struct(void);
+extern void init_functools(void);
+#ifdef WITH_THREAD
+extern void initthread(void);
+#endif
+extern void initbinascii(void);
+
+#ifdef WITH_PYCRYPTO
+extern void init_PyCrypto(void);
+#endif
 
 struct _inittab _PyImport_Inittab[] = {
 	
@@ -45,17 +57,21 @@ struct _inittab _PyImport_Inittab[] = {
     {"_sha256", init_sha256},
     {"_sha512", init_sha512},
     {"_md5", init_md5},
+    {"_json", init_json},
+    {"_struct", init_struct},
+    {"_functools", init_functools},
+#ifdef WITH_THREAD
+    {"thread", initthread},
+#endif
+	{"binascii", initbinascii},
 
 /*
+	{"zlib", initzlib},
     {"_ast", init_ast},
-	{"binascii", initbinascii},
     {"cmath", initcmath},
     {"future_builtins", initfuture_builtins},
     {"signal", initsignal},
     {"strop", initstrop},
-#ifdef WITH_THREAD
-    {"thread", initthread},
-#endif
     {"cPickle", initcPickle},
     {"_subprocess", init_subprocess},
 	
@@ -68,13 +84,9 @@ struct _inittab _PyImport_Inittab[] = {
     {"mmap", initmmap},
     {"parser", initparser},
     {"_winreg", init_winreg},
-    {"_struct", init_struct},
-    {"_functools", init_functools},
-    {"_json", init_json},
 	
     {"xxsubtype", initxxsubtype},
     {"zipimport", initzipimport},
-    {"zlib", initzlib},
 	
     {"_multibytecodec", init_multibytecodec},
     {"_codecs_cn", init_codecs_cn},
@@ -99,6 +111,10 @@ struct _inittab _PyImport_Inittab[] = {
     {"_warnings", _PyWarnings_Init},
 	
     {"_io", init_io},
+
+#ifdef WITH_PYCRYPTO
+	{"Crypto", init_PyCrypto},
+#endif
 	
     /* Sentinel */
     {0, 0}

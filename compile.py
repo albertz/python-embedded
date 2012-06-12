@@ -77,6 +77,11 @@ modFiles = \
 			"sha512module.c",
 			"md5.c",
 			"md5module.c",
+			"_json.c",
+			"_struct.c",
+			"_functoolsmodule.c",
+			"threadmodule.c",
+			"binascii.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
@@ -98,9 +103,14 @@ pycryptoFiles = \
 	set(glob("pycrypto/src/cast*.c")) - \
 	set(glob("pycrypto/src/_fastmath.c")) # for now. it needs libgmp
 
+pycryptoFiles = \
+	["pycrypto/src/_counter.c",
+	 "pycryptoutils/cryptomodule.c"]
+
 compileOpts = [
 	"-Ipylib",
 	"-I" + PythonDir + "/Include",
+	"-DWITH_PYCRYPTO",
 ]
 
 compilePycryptoOpts = [
@@ -130,8 +140,8 @@ def compile():
 	ofiles = []
 	for f in list(baseFiles) + list(modFiles) + list(objFiels) + list(parserFiles):
 		ofiles += [compilePyFile(f, compileOpts)]
-	#for f in list(pycryptoFiles):
-	#	ofiles += [compilePycryptoFile(f)]
+	for f in list(pycryptoFiles):
+		ofiles += [compilePycryptoFile(f)]
 		
 	os.system("gcc " + " ".join(map(lambda f: "build/" + f, ofiles)) + " -o python")
 	

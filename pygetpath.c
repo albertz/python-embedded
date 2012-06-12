@@ -1,29 +1,63 @@
+
+#include "Python.h"
+#include "osdefs.h"
+#include <sys/types.h>
+#include <string.h>
+
+extern char *Py_GetProgramName(void);
+
+static int pathCalculated = 0; 
+static char progPath[MAXPATHLEN+1];
+static char modulePathes[4*MAXPATHLEN+1];
+static char execPrefixPath[2*MAXPATHLEN+1];
+
+static void calcPathes() {
+	if(pathCalculated) return;
+
+	char* p = stpcpy(progPath, Py_GetProgramName());
+	while(--p > progPath) {
+		if(*p == '/') {
+			*p = 0;
+			break;
+		}
+	}
+	
+	strcpy(modulePathes, progPath);
+	strcat(modulePathes, "/pylib/lib:");
+	strcat(modulePathes, progPath);
+	strcat(modulePathes, "/pylib/otherlibs");
+	strcpy(execPrefixPath, progPath);
+	strcat(execPrefixPath, "/pylib/exec");
+	
+	pathCalculated = 1;
+}
+
 /* External interface */
 
 char *
 Py_GetPath(void)
 {
-//    return module_search_path;
-	return "pylib/lib";
+	calcPathes();
+	return modulePathes;
 }
 
 char *
 Py_GetPrefix(void)
 {
-	return "BLA1";
-//    return prefix;
+	calcPathes();
+	return "pygetpath.c-PYPREFIX-NOT-SET";
 }
 
 char *
 Py_GetExecPrefix(void)
 {
-//    return exec_prefix;
-	return "pylib/exec";
+	calcPathes();
+	return execPrefixPath;
 }
 
 char *
 Py_GetProgramFullPath(void)
 {
-//    return progpath;
-	return ".";
+	calcPathes();
+	return progPath;
 }
