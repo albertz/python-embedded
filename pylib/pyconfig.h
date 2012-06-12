@@ -1275,8 +1275,9 @@
 
 #endif /*Py_PYCONFIG_H*/
 
-
-#define HAVE_STDDEF_H
+#ifndef HAVE_STDDEF_H
+#define HAVE_STDDEF_H 1
+#endif
 
 /*
 

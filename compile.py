@@ -69,6 +69,14 @@ modFiles = \
 			"_weakref.c",
 			"_sre.c",
 			"_codecsmodule.c",
+			"cStringIO.c",
+			"timemodule.c",
+			"datetimemodule.c",
+			"shamodule.c",
+			"sha256module.c",
+			"sha512module.c",
+			"md5.c",
+			"md5module.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
@@ -84,23 +92,47 @@ parserFiles = \
 	set(glob(PythonDir + "/Parser/*.c")) - \
 	set(glob(PythonDir + "/Parser/*pgen*.c"))
 
+pycryptoFiles = \
+	set(glob("pycrypto/src/*.c")) - \
+	set(glob("pycrypto/src/*template.c")) - \
+	set(glob("pycrypto/src/cast*.c")) - \
+	set(glob("pycrypto/src/_fastmath.c")) # for now. it needs libgmp
+
 compileOpts = [
 	"-Ipylib",
 	"-I" + PythonDir + "/Include",
 ]
 
+compilePycryptoOpts = [
+	"-Ipylib",
+	"-I" + PythonDir + "/Include",
+	"-Ipycryptoconfig",
+	"-Ipycrypto/src/libtom",
+	"-std=c99",
+]
+
+def compilePyFile(f, compileOpts):
+	ofile = os.path.splitext(os.path.basename(f))[0] + ".o"
+	try:
+		if os.stat(f).st_mtime < os.stat("build/" + ofile).st_mtime:
+			return ofile
+	except: pass
+	cmd = "gcc " + " ".join(compileOpts) + " -c " + f + " -o build/" + ofile
+	print cmd
+	if os.system(cmd) != 0:
+		sys.exit(1)
+	return ofile
+
+def compilePycryptoFile(fn):
+	return compilePyFile(fn, compilePycryptoOpts)
+	
 def compile():
 	ofiles = []
 	for f in list(baseFiles) + list(modFiles) + list(objFiels) + list(parserFiles):
-		ofile = os.path.splitext(os.path.basename(f))[0] + ".o"
-		ofiles += [ofile]
-		try:
-			if os.stat(f).st_mtime < os.stat("build/" + ofile).st_mtime:
-				continue
-		except: pass
-		if os.system("gcc " + " ".join(compileOpts) + " -c " + f + " -o build/" + ofile) != 0:
-			sys.exit(1)
-	
+		ofiles += [compilePyFile(f, compileOpts)]
+	#for f in list(pycryptoFiles):
+	#	ofiles += [compilePycryptoFile(f)]
+		
 	os.system("gcc " + " ".join(map(lambda f: "build/" + f, ofiles)) + " -o python")
 	
 if __name__ == '__main__':

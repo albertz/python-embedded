@@ -16,6 +16,13 @@ extern void initposix(void);
 extern void init_weakref(void);
 extern void init_sre(void);
 extern void init_codecs(void);
+extern void initcStringIO(void);
+extern void inittime(void);
+extern void initdatetime(void);
+extern void init_sha(void);
+extern void init_sha256(void);
+extern void init_sha512(void);
+extern void init_md5(void);
 
 struct _inittab _PyImport_Inittab[] = {
 	
@@ -31,22 +38,24 @@ struct _inittab _PyImport_Inittab[] = {
     {"_weakref", init_weakref},
     {"_sre", init_sre},
     {"_codecs", init_codecs},
+    {"cStringIO", initcStringIO},
+    {"time", inittime},
+    {"datetime", initdatetime},
+    {"_sha", init_sha},
+    {"_sha256", init_sha256},
+    {"_sha512", init_sha512},
+    {"_md5", init_md5},
+
 /*
     {"_ast", init_ast},
 	{"binascii", initbinascii},
     {"cmath", initcmath},
     {"future_builtins", initfuture_builtins},
-    {"_md5", init_md5},
     {"signal", initsignal},
-    {"_sha", init_sha},
-    {"_sha256", init_sha256},
-    {"_sha512", init_sha512},
     {"strop", initstrop},
-    {"time", inittime},
 #ifdef WITH_THREAD
     {"thread", initthread},
 #endif
-    {"cStringIO", initcStringIO},
     {"cPickle", initcPickle},
     {"_subprocess", init_subprocess},
 	
@@ -60,7 +69,6 @@ struct _inittab _PyImport_Inittab[] = {
     {"parser", initparser},
     {"_winreg", init_winreg},
     {"_struct", init_struct},
-    {"datetime", initdatetime},
     {"_functools", init_functools},
     {"_json", init_json},
 	
