@@ -82,6 +82,7 @@ modFiles = \
 			"_functoolsmodule.c",
 			"threadmodule.c",
 			"binascii.c",
+			"_randommodule.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 

@@ -31,6 +31,7 @@ extern void init_functools(void);
 extern void initthread(void);
 #endif
 extern void initbinascii(void);
+extern void init_random(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -64,6 +65,7 @@ struct _inittab _PyImport_Inittab[] = {
     {"thread", initthread},
 #endif
 	{"binascii", initbinascii},
+	{"_random", init_random},
 
 /*
 	{"zlib", initzlib},
@@ -76,7 +78,6 @@ struct _inittab _PyImport_Inittab[] = {
     {"_subprocess", init_subprocess},
 	
     {"_hotshot", init_hotshot},
-    {"_random", init_random},
     {"_bisect", init_bisect},
     {"_heapq", init_heapq},
     {"_lsprof", init_lsprof},
