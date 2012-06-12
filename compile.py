@@ -50,6 +50,8 @@ modFiles = \
 	# ...
 	
 # via whitelist
+# Add the init reference also to pyimportconfig.c.
+# For hacking builtin submodules, see pycryptoutils/cryptomodule.c.
 modFiles = \
 	set(map(lambda f: PythonDir + "/Modules/" + f,
 		[
