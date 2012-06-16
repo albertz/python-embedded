@@ -26,7 +26,6 @@ if True: # iOS
 		]
 	LDFLAGS += [
 		"-isysroot", SDKROOT,
-		"-Lextralibs/"
 		]
 
 PythonDir = "Python-2.7.3"
