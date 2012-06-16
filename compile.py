@@ -1,13 +1,41 @@
 #!/usr/bin/python
+import os, sys
+os.chdir(os.path.dirname(__file__) or os.getcwd())
+import better_exchook
+better_exchook.install()
+
+CC = "gcc"
+CXX = "g++"
+IOS_VERSION="5.0"
+
+DEVROOT = "/Developer/Platforms/iPhoneOS.platform/Developer"
+SDKROOT = DEVROOT + "/SDKs/iPhoneOS%s.sdk" % IOS_VERSION
+
+assert os.path.exists(DEVROOT)
+assert os.path.exists(SDKROOT)
+
+CXXFLAGS = [
+	"-I%s/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/" % SDKROOT,
+	"-I%s/usr/include/" % SDKROOT
+	]
+CFLAGS = CXXFLAGS + [
+	"-pipe"
+	"-no-cpp-precomp"
+	"-isysroot", SDKROOT
+	]
+LDFLAGS = [
+	"-isysroot", SDKROOT,
+	"-Lextralibs/"
+	]
+
+PythonDir = "Python-2.7.3"
 
 from glob import glob as pyglob
-import os, sys
 from pprint import pprint
-os.chdir(os.path.dirname(__file__) or os.getcwd())
 try: os.mkdir("build")
 except: pass
 
-PythonDir = "Python-2.7.3"
+assert os.path.exists(PythonDir)
 
 def glob(pattern):
 	def glob_(baseDir, patternList):
@@ -120,9 +148,7 @@ compileOpts = [
 	"-DWITH_PYCRYPTO",
 ]
 
-compilePycryptoOpts = [
-	"-Ipylib",
-	"-I" + PythonDir + "/Include",
+compilePycryptoOpts = compileOpts + [
 	"-Ipycryptoconfig",
 	"-Ipycrypto/src/libtom",
 	"-std=c99",
