@@ -1119,7 +1119,9 @@
 
 /* Define if you want to produce an OpenStep/Rhapsody framework (shared
  library plus accessory files). */
-#define WITH_NEXT_FRAMEWORK 1
+// This is also MacOSX. However, it assumes e.g. existance of _NSGetEnviron
+// and other things and thus isn't really suitable for iOS.
+//#define WITH_NEXT_FRAMEWORK 1
 
 /* Define if you want to compile in Python-specific mallocs */
 #define WITH_PYMALLOC 1
