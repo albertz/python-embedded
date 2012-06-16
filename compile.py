@@ -59,7 +59,8 @@ def glob(pattern):
 
 baseFiles = \
 	set(glob(PythonDir + "/Python/*.c")) - \
-	set(glob(PythonDir + "/Python/dynload_*.c"))
+	set(glob(PythonDir + "/Python/dynload_*.c")) - \
+	set(glob(PythonDir + "/Python/mactoolboxglue.c"))
 baseFiles |= \
 	set(glob(PythonDir + "/Python/dynload_stub.c")) | \
 	set(glob("pyimportconfig.c")) | \
