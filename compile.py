@@ -5,37 +5,37 @@ import better_exchook
 better_exchook.install()
 
 CC = "gcc"
-CXX = "g++"
-IOS_VERSION="5.0"
+CFLAGS = []
+LDFLAGS = []
 
-DEVROOT = "/Developer/Platforms/iPhoneOS.platform/Developer"
-SDKROOT = DEVROOT + "/SDKs/iPhoneOS%s.sdk" % IOS_VERSION
+if True: # iOS
+	IOS_VERSION="5.0"
+	DEVROOT = "/Developer/Platforms/iPhoneOS.platform/Developer"
+	SDKROOT = DEVROOT + "/SDKs/iPhoneOS%s.sdk" % IOS_VERSION
+	assert os.path.exists(DEVROOT)
+	assert os.path.exists(SDKROOT)
 
-assert os.path.exists(DEVROOT)
-assert os.path.exists(SDKROOT)
+	CC = DEVROOT + "/usr/bin/arm-apple-darwin10-llvm-gcc-4.2"
 
-CXXFLAGS = [
-	"-I%s/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/" % SDKROOT,
-	"-I%s/usr/include/" % SDKROOT
-	]
-CFLAGS = CXXFLAGS + [
-	"-pipe"
-	"-no-cpp-precomp"
-	"-isysroot", SDKROOT
-	]
-LDFLAGS = [
-	"-isysroot", SDKROOT,
-	"-Lextralibs/"
-	]
+	CFLAGS += [
+		"-I%s/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/" % SDKROOT,
+		"-I%s/usr/include/" % SDKROOT,
+		"-pipe",
+		"-no-cpp-precomp",
+		"-isysroot", SDKROOT
+		]
+	LDFLAGS += [
+		"-isysroot", SDKROOT,
+		"-Lextralibs/"
+		]
 
 PythonDir = "Python-2.7.3"
+assert os.path.exists(PythonDir)
 
 from glob import glob as pyglob
 from pprint import pprint
 try: os.mkdir("build")
 except: pass
-
-assert os.path.exists(PythonDir)
 
 def glob(pattern):
 	def glob_(baseDir, patternList):
@@ -142,7 +142,7 @@ pycryptoFiles = map(lambda f: "pycrypto/src/" + f,
 	]) + \
 	["pycryptoutils/cryptomodule.c"]
 
-compileOpts = [
+compileOpts = CFLAGS + [
 	"-Ipylib",
 	"-I" + PythonDir + "/Include",
 	"-DWITH_PYCRYPTO",
@@ -160,7 +160,7 @@ def compilePyFile(f, compileOpts):
 		if os.stat(f).st_mtime < os.stat("build/" + ofile).st_mtime:
 			return ofile
 	except: pass
-	cmd = "gcc " + " ".join(compileOpts) + " -c " + f + " -o build/" + ofile
+	cmd = CC + " " + " ".join(compileOpts) + " -c " + f + " -o build/" + ofile
 	print cmd
 	if os.system(cmd) != 0:
 		sys.exit(1)
@@ -176,7 +176,7 @@ def compile():
 	for f in list(pycryptoFiles):
 		ofiles += [compilePycryptoFile(f)]
 		
-	os.system("gcc " + " ".join(map(lambda f: "build/" + f, ofiles)) + " -o python")
+	os.system(CC + " " + " ".join(LDFLAGS) + " ".join(map(lambda f: "build/" + f, ofiles)) + " -o python")
 	
 if __name__ == '__main__':
 	compile()
