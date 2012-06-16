@@ -150,7 +150,7 @@ compileOpts = CFLAGS + [
 ]
 
 compilePycryptoOpts = compileOpts + [
-	"-Ipycryptoconfig",
+	"-Ipycryptoutils",
 	"-Ipycrypto/src/libtom",
 	"-std=c99",
 ]
