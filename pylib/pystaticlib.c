@@ -1,2 +1,0 @@
-void start() {}
-char** environ;
