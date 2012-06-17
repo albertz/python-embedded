@@ -238,9 +238,6 @@
 /* Define to 1 if you have the `fseeko' function. */
 #define HAVE_FSEEKO 1
 
-/* Define to 1 if you have the `fstatvfs' function. */
-#define HAVE_FSTATVFS 1
-
 /* Define if you have the 'fsync' function. */
 #define HAVE_FSYNC 1
 
@@ -401,9 +398,6 @@
 
 /* Define to 1 if you have the `lchmod' function. */
 #define HAVE_LCHMOD 1
-
-/* Define to 1 if you have the `lchown' function. */
-#define HAVE_LCHOWN 1
 
 /* Define to 1 if you have the `lgamma' function. */
 #define HAVE_LGAMMA 1
@@ -653,9 +647,6 @@
 
 /* Define if your compiler provides ssize_t */
 #define HAVE_SSIZE_T 1
-
-/* Define to 1 if you have the `statvfs' function. */
-#define HAVE_STATVFS 1
 
 /* Define if you have struct stat.st_mtim.tv_nsec */
 /* #undef HAVE_STAT_TV_NSEC */
@@ -1281,7 +1272,18 @@
 #define HAVE_STDDEF_H 1
 #endif
 
-/*
+// In posixmodule.c for Apple, these use weak linking. This is
+// not supported if we build a static library, so just disable them for now.
 
+/* Define to 1 if you have the `fstatvfs' function. */
+//#define HAVE_FSTATVFS 1
+
+/* Define to 1 if you have the `statvfs' function. */
+//#define HAVE_STATVFS 1
+
+/* Define to 1 if you have the `lchown' function. */
+//#define HAVE_LCHOWN 1
+
+/*
 #define SIZEOF_SHORT sizeof(short)
 */
