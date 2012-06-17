@@ -5,8 +5,11 @@ import better_exchook
 better_exchook.install()
 
 CC = "gcc"
+LD = "ld"
 CFLAGS = []
 LDFLAGS = []
+
+buildExec = False
 
 if True: # iOS
 	IOS_VERSION="5.0"
@@ -16,17 +19,30 @@ if True: # iOS
 	assert os.path.exists(SDKROOT)
 
 	CC = DEVROOT + "/usr/bin/arm-apple-darwin10-llvm-gcc-4.2"
-
+	LD = DEVROOT + "/usr/bin/ld"
+	assert os.path.exists(CC)
+	assert os.path.exists(LD)
+	
 	CFLAGS += [
 		"-I%s/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/" % SDKROOT,
 		"-I%s/usr/include/" % SDKROOT,
-		"-pipe",
-		"-no-cpp-precomp",
-		"-isysroot", SDKROOT
-		]
-	LDFLAGS += [
+		#"-pipe",
+		#"-no-cpp-precomp",
 		"-isysroot", SDKROOT,
 		]
+	LDFLAGS += [
+		"-arch", "armv6",
+		"-ios_version_min", "4.3",
+		#"-isysroot", SDKROOT,
+		"-L%s/usr/lib" % SDKROOT,
+		"-L%s/usr/lib/system" % SDKROOT,
+		"-lc",
+		#SDKROOT + "/usr/lib/crt1.o",
+		"-lgcc_s.1",
+		]
+	
+	CFLAGS += ["-static"]
+	LDFLAGS += ["-static"]
 
 PythonDir = "Python-2.7.3"
 assert os.path.exists(PythonDir)
@@ -117,9 +133,8 @@ modFiles = \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
 # remove main.c/python.c if we dont want an executable
-#- \
-	#[PythonDir + "/Modules/main.c"]
-#pprint(modFiles)
+if not buildExec:
+	modFiles -= set([PythonDir + "/Modules/python.c"])
 
 objFiels = \
 	set(glob(PythonDir + "/Objects/*.c"))
@@ -154,15 +169,19 @@ compilePycryptoOpts = compileOpts + [
 	"-std=c99",
 ]
 
+def execCmd(cmd):
+	cmdFlat = " ".join(cmd)
+	print cmdFlat
+	return os.system(cmdFlat)
+	
 def compilePyFile(f, compileOpts):
 	ofile = os.path.splitext(os.path.basename(f))[0] + ".o"
 	try:
 		if os.stat(f).st_mtime < os.stat("build/" + ofile).st_mtime:
 			return ofile
 	except: pass
-	cmd = CC + " " + " ".join(compileOpts) + " -c " + f + " -o build/" + ofile
-	print cmd
-	if os.system(cmd) != 0:
+	cmd = [CC] + compileOpts + ["-c", f, "-o", "build/" + ofile]
+	if execCmd(cmd) != 0:
 		sys.exit(1)
 	return ofile
 
@@ -175,9 +194,13 @@ def compile():
 		ofiles += [compilePyFile(f, compileOpts)]
 	for f in list(pycryptoFiles):
 		ofiles += [compilePycryptoFile(f)]
-		
-	os.system(CC + " " + " ".join(LDFLAGS) + " ".join(map(lambda f: "build/" + f, ofiles)) + " -o python")
 	
+	if buildExec:
+		execCmd([CC] + LDFLAGS + map(lambda f: "build/" + f, ofiles) + ["-o", "python"])
+	else:
+		#execCmd([LD] + LDFLAGS + map(lambda f: "build/" + f, ofiles) +
+		#	["-o", "libpython.a"])
+		execCmd(["ar", "rcs", "libpython.a"] + map(lambda f: "build/" + f, ofiles))
 if __name__ == '__main__':
 	compile()
 
