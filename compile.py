@@ -56,9 +56,6 @@ if True: # iOS
 		"-lgcc_s.1",
 		]
 	
-	CFLAGS += ["-static"]
-	LDFLAGS += ["-static"]
-
 PythonDir = "Python-2.7.3"
 assert os.path.exists(PythonDir)
 
