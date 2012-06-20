@@ -15,10 +15,12 @@ if True: # iOS
 	IOS_VERSION="5.0"
 	DEVROOT = "/Developer/Platforms/iPhoneOS.platform/Developer"
 	SDKROOT = DEVROOT + "/SDKs/iPhoneOS%s.sdk" % IOS_VERSION
+	# /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
 	assert os.path.exists(DEVROOT)
 	assert os.path.exists(SDKROOT)
 
-	CC = DEVROOT + "/usr/bin/arm-apple-darwin10-llvm-gcc-4.2"
+	#CC = DEVROOT + "/usr/bin/arm-apple-darwin10-llvm-gcc-4.2"
+	CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
 	LD = DEVROOT + "/usr/bin/ld"
 	assert os.path.exists(CC)
 	assert os.path.exists(LD)
@@ -29,6 +31,10 @@ if True: # iOS
 		#"-pipe",
 		#"-no-cpp-precomp",
 		"-isysroot", SDKROOT,
+		"-static",
+		"-arch", "armv6",
+		"-arch", "armv7",
+		"-miphoneos-version-min=4.3",
 		]
 	LDFLAGS += [
 		"-arch", "armv6",
@@ -200,7 +206,9 @@ def compile():
 	else:
 		#execCmd([LD] + LDFLAGS + map(lambda f: "build/" + f, ofiles) +
 		#	["-o", "libpython.a"])
-		execCmd(["ar", "rcs", "libpython.a"] + map(lambda f: "build/" + f, ofiles))
+		#execCmd(["ar", "rcs", "libpython.a"] + map(lambda f: "build/" + f, ofiles))
+		execCmd(["libtool", "-static", "-o", "libpython.a"] + map(lambda f: "build/" + f, ofiles))
+		
 if __name__ == '__main__':
 	compile()
 
