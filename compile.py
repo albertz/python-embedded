@@ -12,10 +12,9 @@ LDFLAGS = []
 buildExec = False
 
 if True: # iOS
-	IOS_VERSION="5.0"
 	DEVROOT = "/Developer/Platforms/iPhoneOS.platform/Developer"
-	SDKROOT = DEVROOT + "/SDKs/iPhoneOS%s.sdk" % IOS_VERSION
-	# /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
+	#SDKROOT = DEVROOT + "/SDKs/iPhoneOS5.0.sdk"
+	SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk"
 	assert os.path.exists(DEVROOT)
 	assert os.path.exists(SDKROOT)
 
@@ -28,13 +27,20 @@ if True: # iOS
 	CFLAGS += [
 		"-I%s/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/" % SDKROOT,
 		"-I%s/usr/include/" % SDKROOT,
-		#"-pipe",
+		"-pipe",
 		#"-no-cpp-precomp",
 		"-isysroot", SDKROOT,
-		"-static",
+		#"-static",
 		"-arch", "armv6",
 		"-arch", "armv7",
 		"-miphoneos-version-min=4.3",
+		"-mthumb",
+		"-g",
+		"-Winvalid-offsetof",
+		"-fmessage-length=0",
+		"-Wno-trigraphs",
+		"-fpascal-strings",
+		"-O0",
 		]
 	LDFLAGS += [
 		"-arch", "armv6",
