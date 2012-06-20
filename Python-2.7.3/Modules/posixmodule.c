@@ -17,9 +17,15 @@
     * OSX 10.4 and later, see the comment in the #ifdef __APPLE__ block
     * at the end of this file for more information.
     */
+#ifdef HAVE_LCHOWN
 #  pragma weak lchown
+#endif
+#ifdef HAVE_STATVFS
 #  pragma weak statvfs
+#endif
+#ifdef HAVE_FSTATVFS
 #  pragma weak fstatvfs
+#endif
 
 #endif /* __APPLE__ */
 
