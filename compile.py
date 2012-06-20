@@ -19,8 +19,11 @@ if True: # iOS
 	assert os.path.exists(DEVROOT)
 	assert os.path.exists(SDKROOT)
 
+	# Clang within the Xcode toolchain is buggy?
+	# See https://github.com/albertz/playground/blob/master/test-int-cmp.c .
 	#CC = DEVROOT + "/usr/bin/arm-apple-darwin10-llvm-gcc-4.2"
-	CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+	#CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+	CC = "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/cc"
 	LD = DEVROOT + "/usr/bin/ld"
 	LIBTOOL = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool"
 	assert os.path.exists(CC)
@@ -28,21 +31,21 @@ if True: # iOS
 	assert os.path.exists(LIBTOOL)
 	
 	CFLAGS += [
-		"-I%s/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/" % SDKROOT,
+		"-isysroot", SDKROOT,
+		#"-I%s/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/" % SDKROOT,
 		"-I%s/usr/include/" % SDKROOT,
+		#"-I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/3.1/include",
 		"-pipe",
 		#"-no-cpp-precomp",
-		"-isysroot", SDKROOT,
-		#"-static",
 		"-arch", "armv6",
 		"-arch", "armv7",
 		"-miphoneos-version-min=4.3",
 		"-mthumb",
 		"-g",
-		"-Winvalid-offsetof",
-		"-fmessage-length=0",
-		"-Wno-trigraphs",
-		"-fpascal-strings",
+		#"-Winvalid-offsetof",
+		#"-fmessage-length=0",
+		#"-Wno-trigraphs",
+		#"-fpascal-strings",
 		"-O0",
 		]
 	LDFLAGS += [
