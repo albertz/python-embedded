@@ -6,6 +6,7 @@ better_exchook.install()
 
 CC = "gcc"
 LD = "ld"
+LIBTOOL = "libtool"
 CFLAGS = []
 LDFLAGS = []
 
@@ -21,8 +22,10 @@ if True: # iOS
 	#CC = DEVROOT + "/usr/bin/arm-apple-darwin10-llvm-gcc-4.2"
 	CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
 	LD = DEVROOT + "/usr/bin/ld"
+	LIBTOOL = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool"
 	assert os.path.exists(CC)
 	assert os.path.exists(LD)
+	assert os.path.exists(LIBTOOL)
 	
 	CFLAGS += [
 		"-I%s/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/" % SDKROOT,
@@ -213,7 +216,11 @@ def compile():
 		#execCmd([LD] + LDFLAGS + map(lambda f: "build/" + f, ofiles) +
 		#	["-o", "libpython.a"])
 		#execCmd(["ar", "rcs", "libpython.a"] + map(lambda f: "build/" + f, ofiles))
-		execCmd(["libtool", "-static", "-o", "libpython.a"] + map(lambda f: "build/" + f, ofiles))
+		execCmd(
+			[LIBTOOL, "-static", "-syslibroot", SDKROOT,
+			 #"-arch_only", "armv7",
+			 "-o", "libpython.a"] +
+			map(lambda f: "build/" + f, ofiles))
 		
 if __name__ == '__main__':
 	compile()
