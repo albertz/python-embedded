@@ -1115,7 +1115,9 @@
 //#define WITH_NEXT_FRAMEWORK 1
 
 /* Define if you want to compile in Python-specific mallocs */
-#define WITH_PYMALLOC 1
+// Pool size too big by default for iOS? Anyway, maybe not the best
+// thing for embedded systems where memory is low.
+//#define WITH_PYMALLOC 1
 
 /* Define if you want to compile in rudimentary thread support */
 #define WITH_THREAD 1
