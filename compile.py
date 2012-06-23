@@ -47,6 +47,7 @@ if True: # iOS
 		#"-Wno-trigraphs",
 		#"-fpascal-strings",
 		"-O0",
+		"-IiOS-static-libs/iPhoneOS-V7-4.3/include/",
 		]
 	LDFLAGS += [
 		"-arch", "armv6",
@@ -145,6 +146,7 @@ modFiles = \
 			"binascii.c",
 			"_randommodule.c",
 			"socketmodule.c",
+			"_ssl.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
@@ -221,7 +223,13 @@ def compile():
 			[LIBTOOL, "-static", "-syslibroot", SDKROOT,
 			 #"-arch_only", "armv7",
 			 "-o", "libpython.a"] +
-			map(lambda f: "build/" + f, ofiles))
+			map(lambda f: "build/" + f, ofiles) +
+			map(lambda f: "iOS-static-libs/iPhoneOS-V7-4.3/lib/" + f, [
+				"libssl.a",
+				"libcrypto.a",
+				"libgcrypt.a",
+				"libsasl2.a",
+				]))
 		
 if __name__ == '__main__':
 	compile()

@@ -33,6 +33,7 @@ extern void initthread(void);
 extern void initbinascii(void);
 extern void init_random(void);
 extern void init_socket(void);
+extern void init_ssl(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -68,7 +69,8 @@ struct _inittab _PyImport_Inittab[] = {
 	{"binascii", initbinascii},
 	{"_random", init_random},
 	{"_socket", init_socket},
-
+	{"_ssl", init_ssl},
+	
 /*
 	{"zlib", initzlib},
     {"_ast", init_ast},
