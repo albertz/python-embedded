@@ -131,6 +131,7 @@ static void importFromStaticallyLinked(char* modName, PyMODINIT_FUNC (*initfunc)
 	PyObject* modules = PyImport_GetModuleDict();
 	PyObject* m = PyDict_GetItemString(modules, modName);
 	if(!m) {
+		printf("modName: %s\n", modName);
 		Py_FatalError("error loading PyCrypto module (m not found)");
 		free(subModName);
 		return;
@@ -138,6 +139,7 @@ static void importFromStaticallyLinked(char* modName, PyMODINIT_FUNC (*initfunc)
 			
 	PyObject* subm = PyDict_GetItemString(modules, subModName);
 	if(!subm) {
+		printf("subModName: %s\n", subModName);
 		Py_FatalError("error loading PyCrypto module (subm not found)");
 		free(subModName);
 		return;
@@ -157,10 +159,12 @@ init_PyCrypto(void)
 	strcat(cryptoPath, "/pylib/otherlibs/Crypto");	
 	PyObject* m = load_package("Crypto", cryptoPath);
 
-	PyImport_ImportModule("Crypto.Util");
+	if(!PyImport_ImportModule("Crypto.Util"))
+		Py_FatalError("failed to load Crypto.Util");
 	importFromStaticallyLinked("Crypto.Util._counter", init_counter);
 	importFromStaticallyLinked("Crypto.Util.strxor", initstrxor);
 
-	PyImport_ImportModule("Crypto.Cipher");	
+	if(!PyImport_ImportModule("Crypto.Cipher"))
+		Py_FatalError("failed to load Crypto.Cipher");
 	importFromStaticallyLinked("Crypto.Cipher._AES", init_AES);
 }
