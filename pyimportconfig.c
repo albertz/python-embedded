@@ -36,6 +36,7 @@ extern void init_socket(void);
 extern void init_ssl(void);
 extern void initzlib(void);
 extern void initselect(void);
+extern void initsignal(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -74,12 +75,12 @@ struct _inittab _PyImport_Inittab[] = {
 	{"_ssl", init_ssl},
 	{"zlib", initzlib},
 	{"select", initselect},
+    {"signal", initsignal},
 	
 /*
     {"_ast", init_ast},
     {"cmath", initcmath},
     {"future_builtins", initfuture_builtins},
-    {"signal", initsignal},
     {"strop", initstrop},
     {"cPickle", initcPickle},
     {"_subprocess", init_subprocess},

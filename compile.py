@@ -149,6 +149,7 @@ modFiles = \
 			"_ssl.c",
 			"zlibmodule.c",
 			"selectmodule.c",
+			"signalmodule.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
