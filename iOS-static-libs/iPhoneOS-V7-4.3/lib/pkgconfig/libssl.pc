@@ -1,0 +1,11 @@
+prefix=/Users/pol/Source/Google-Code-iOS-Static-Libraries/iPhoneOS-V7-4.3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries
+Version: 1.0.0c
+Requires: 
+Libs: -L${libdir} -lssl -lcrypto -lz
+Cflags: -I${includedir} 

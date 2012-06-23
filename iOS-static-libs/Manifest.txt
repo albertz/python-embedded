@@ -1,0 +1,10 @@
+SDK 4.3
+OpenSSL 1.0.0c
+Cyrus SASL 2.1.23
+libEtPan 1.0
+zlib 1.2.5
+GnuPG 1.4.11
+libgpg-error 1.10
+libgcrypt 1.4.6
+libssh2 1.2.7
+cURL 7.21.3
