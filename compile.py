@@ -147,6 +147,7 @@ modFiles = \
 			"_randommodule.c",
 			"socketmodule.c",
 			"_ssl.c",
+			"zlibmodule.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
@@ -229,6 +230,7 @@ def compile():
 				"libcrypto.a",
 				"libgcrypt.a",
 				"libsasl2.a",
+				"libz.a",
 				]))
 		
 if __name__ == '__main__':
