@@ -144,6 +144,7 @@ modFiles = \
 			"threadmodule.c",
 			"binascii.c",
 			"_randommodule.c",
+			"socketmodule.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 

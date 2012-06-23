@@ -32,6 +32,7 @@ extern void initthread(void);
 #endif
 extern void initbinascii(void);
 extern void init_random(void);
+extern void init_socket(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -66,6 +67,7 @@ struct _inittab _PyImport_Inittab[] = {
 #endif
 	{"binascii", initbinascii},
 	{"_random", init_random},
+	{"_socket", init_socket},
 
 /*
 	{"zlib", initzlib},
