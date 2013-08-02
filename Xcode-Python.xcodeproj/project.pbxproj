@@ -7,300 +7,300 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00524B35821D28A7C59C8763 /* dictobject.c */ = {isa = PBXBuildFile; fileRef = 840E42759ECD2792F37930C7 /* dictobject.c */; };
-		02C4485EB10C1DF07ABCC1E5 /* mathmodule.c */ = {isa = PBXBuildFile; fileRef = 90D34D45A421B282A4E1F903 /* mathmodule.c */; };
-		078942DCACA81A6E4BE619D4 /* datetimemodule.c */ = {isa = PBXBuildFile; fileRef = 5F2643D8AE0B54CDD907CC1B /* datetimemodule.c */; };
-		09584F248A354948C379F830 /* exceptions.c */ = {isa = PBXBuildFile; fileRef = 096E4728A232ED9938929A7C /* exceptions.c */; };
-		0B8F42A9809D3569A4E28A0B /* memoryobject.c */ = {isa = PBXBuildFile; fileRef = 539D45A0BF3776219A25A769 /* memoryobject.c */; };
-		0DF84CF68C9EE6A63BE222E0 /* random.c */ = {isa = PBXBuildFile; fileRef = D8264029B0608C038AB254EE /* random.c */; };
-		0E614E94A03C629A941207F8 /* errnomodule.c */ = {isa = PBXBuildFile; fileRef = C8F741DD9A6A3F56A983429E /* errnomodule.c */; };
-		0F36442E8475E377824BE9D5 /* dynload_stub.c */ = {isa = PBXBuildFile; fileRef = 5EC04E2C8A002993D940A2A3 /* dynload_stub.c */; };
-		11CD484FB3D611F7785CC636 /* bytesio.c */ = {isa = PBXBuildFile; fileRef = D8C34F1BA1918AC225C3F83D /* bytesio.c */; };
-		131F4D87BF5918821FBFD8F2 /* getcwd.c */ = {isa = PBXBuildFile; fileRef = 65954E5D83FB274C64CF95A1 /* getcwd.c */; };
-		14464ED1BF078D85B05BF868 /* pyctype.c */ = {isa = PBXBuildFile; fileRef = 6A16456AA3DE2D22BE993839 /* pyctype.c */; };
-		173F40DEABBBA922FAA42688 /* myreadline.c */ = {isa = PBXBuildFile; fileRef = E7BB48E8861D328F174F4509 /* myreadline.c */; };
-		17A74AC6AB9DAE1E3B234A82 /* getversion.c */ = {isa = PBXBuildFile; fileRef = BC2C4993B4B80C271DC4554E /* getversion.c */; };
-		199141D38325B1D8F2A8048B /* genobject.c */ = {isa = PBXBuildFile; fileRef = 410C4C869E1F466A6459051F /* genobject.c */; };
-		199343C7930328CE2F653C44 /* thread.c */ = {isa = PBXBuildFile; fileRef = 1BAF404FA7CAA5B52D2F1B2A /* thread.c */; };
-		1A5045FDBA20594D7CA48AAC /* future.c */ = {isa = PBXBuildFile; fileRef = F92E46D899B7843FC386963D /* future.c */; };
-		1C5B460A9F76CF5EA0F68528 /* traceback.c */ = {isa = PBXBuildFile; fileRef = A7104457BF03D19B30B5FAF2 /* traceback.c */; };
-		1F2443E88AD8219642873871 /* floatobject.c */ = {isa = PBXBuildFile; fileRef = 5DC3489B8F24431DCE71F742 /* floatobject.c */; };
-		1F2E43E4BAA4D27EA28B157D /* importdl.c */ = {isa = PBXBuildFile; fileRef = 91434699B88AB48917076935 /* importdl.c */; };
-		27144B3095B7B49CFAE23F31 /* getbuildinfo.c */ = {isa = PBXBuildFile; fileRef = 26854D439A99C0FEBDC11999 /* getbuildinfo.c */; };
-		28E74AEB8AE426C033633D84 /* fileobject.c */ = {isa = PBXBuildFile; fileRef = 04994898A44976ABD044B807 /* fileobject.c */; };
-		2B784D509F61C9A7AA13802E /* firstsets.c */ = {isa = PBXBuildFile; fileRef = 442B46E191A682E1B57417BF /* firstsets.c */; };
-		2D7849539E8210B4C62E0515 /* capsule.c */ = {isa = PBXBuildFile; fileRef = CD2B42C1A3A25A2E8FB49F30 /* capsule.c */; };
-		2D894712992BAF0D7932F4FE /* unicodectype.c */ = {isa = PBXBuildFile; fileRef = B348411EAFD633CABBB8B6D5 /* unicodectype.c */; };
-		2E364FAC92FB135A7EEDF792 /* bitset.c */ = {isa = PBXBuildFile; fileRef = AE89497586B34D6673A09115 /* bitset.c */; };
-		2F914FF8B07396BAAED01486 /* asdl.c */ = {isa = PBXBuildFile; fileRef = 2DEE48659ACAC451F62790F3 /* asdl.c */; };
-		321B4672895F20C26E40B9E4 /* getcopyright.c */ = {isa = PBXBuildFile; fileRef = 4F084C338948013C5A425A2D /* getcopyright.c */; };
-		345F4E66AE9BEE94C5D3B758 /* Python-ast.c */ = {isa = PBXBuildFile; fileRef = 4699481A859B6BCE59595178 /* Python-ast.c */; };
-		346E4529AB61D62B633C2092 /* ceval.c */ = {isa = PBXBuildFile; fileRef = BC324A22874D38E6A45A7445 /* ceval.c */; };
-		34C540959AE6432C592A7239 /* arraymodule.c */ = {isa = PBXBuildFile; fileRef = 5E1D499AAA50F512933CC4AB /* arraymodule.c */; };
-		364647A685F93E32786E889D /* formatter_string.c */ = {isa = PBXBuildFile; fileRef = 50434A909F4170A92F868C4C /* formatter_string.c */; };
-		3704474BB29C01A339A4E5FF /* sha512module.c */ = {isa = PBXBuildFile; fileRef = 01764F22981B3120D81AE956 /* sha512module.c */; };
-		37984FB8AFAA529A7F4D2224 /* pyarena.c */ = {isa = PBXBuildFile; fileRef = A45646D3B01CCEBBBEC494A8 /* pyarena.c */; };
-		397D4CA2A77DC9BC708AE6BA /* _csv.c */ = {isa = PBXBuildFile; fileRef = A39540E19457DA4E9D2AF953 /* _csv.c */; };
-		39D244E29236682DFC5BBFA5 /* pygetpath.c */ = {isa = PBXBuildFile; fileRef = 785C4D9A8FD6A73FC0CC5D72 /* pygetpath.c */; };
-		3E764FDA936B4EB219D3A3A8 /* bltinmodule.c */ = {isa = PBXBuildFile; fileRef = 6B544ACABE86DD4D9A667816 /* bltinmodule.c */; };
-		40BF4DF9BC59B2E901C7B666 /* pystrtod.c */ = {isa = PBXBuildFile; fileRef = A1AD4DCC8E98A1BCE20E3C3D /* pystrtod.c */; };
-		4124426BA67B99ED3A201259 /* pyimportconfig.c */ = {isa = PBXBuildFile; fileRef = 384B4E3AADDCFD6F24C2ECAB /* pyimportconfig.c */; };
-		41CE4716B6D30F91B96FEE49 /* _math.c */ = {isa = PBXBuildFile; fileRef = 601A43CC839DBB1D8871A1CA /* _math.c */; };
-		435245A487D27BEFD4BE2DB2 /* mystrtoul.c */ = {isa = PBXBuildFile; fileRef = 99E24EADB016D1C33FBE59BB /* mystrtoul.c */; };
-		45C742D887306EE1CA5FFE32 /* grammar1.c */ = {isa = PBXBuildFile; fileRef = DD824C48BCA0DB51B383B0C1 /* grammar1.c */; };
-		45D54203ACC4A658E043D2AD /* sha256module.c */ = {isa = PBXBuildFile; fileRef = E9924EABB0E1D28F6C3C6723 /* sha256module.c */; };
-		47BA4176BAA3D84E01AD457B /* zlibmodule.c */ = {isa = PBXBuildFile; fileRef = 78574FB692BCB75E7AD751FE /* zlibmodule.c */; };
-		49E94071B046B7D5FD9376D1 /* parsetok.c */ = {isa = PBXBuildFile; fileRef = 7C6F4A5EAC50FF9ECD52BD38 /* parsetok.c */; };
-		4A744C09B329F06CD5A787B2 /* classobject.c */ = {isa = PBXBuildFile; fileRef = 8A214222BCB1D7A86033C1AE /* classobject.c */; };
-		4AE746A7880E82012E93B1AE /* funcobject.c */ = {isa = PBXBuildFile; fileRef = FE6348C78A4653E348B1B112 /* funcobject.c */; };
-		4F1646C28AB072FD5B8A3441 /* listnode.c */ = {isa = PBXBuildFile; fileRef = 81954A35B0A59B2D130DB5FD /* listnode.c */; };
-		51344622816EAB648652399E /* structseq.c */ = {isa = PBXBuildFile; fileRef = 3F744A79A85C970ADB930C59 /* structseq.c */; };
-		53B04E5AB2D5E6E2CA3F0639 /* sliceobject.c */ = {isa = PBXBuildFile; fileRef = FAA8479D9D440061DF0F9087 /* sliceobject.c */; };
-		53F34A81A8EB84EC8FC091A2 /* import.c */ = {isa = PBXBuildFile; fileRef = CDB7475784A75DAE5F34955B /* import.c */; };
-		549E4CCD96CA4D179097AF86 /* pystrcmp.c */ = {isa = PBXBuildFile; fileRef = C0074E0DB60433407FEF61C2 /* pystrcmp.c */; };
-		5598404B8D8B1F5AEA0DDB21 /* acceler.c */ = {isa = PBXBuildFile; fileRef = 51D540F8A4DA349697E39342 /* acceler.c */; };
-		59A7422893B0A1CE72F37125 /* operator.c */ = {isa = PBXBuildFile; fileRef = 6BD643AFBA43BF4E875AA53F /* operator.c */; };
-		5A894535A889D82585509741 /* boolobject.c */ = {isa = PBXBuildFile; fileRef = 86EB4095930A5FDA63EA9183 /* boolobject.c */; };
-		5B024203B599AB2B776D158C /* ast.c */ = {isa = PBXBuildFile; fileRef = FF9B414FAF54F09EA37C51BA /* ast.c */; };
-		5B294843B48001A98D5DDC4E /* codecs.c */ = {isa = PBXBuildFile; fileRef = B0C247FEA4C4C06C567235C1 /* codecs.c */; };
-		5DB7440C8B7584AAF0BE101F /* textio.c */ = {isa = PBXBuildFile; fileRef = 9D814C9FA2C40262E4291F57 /* textio.c */; };
-		5DEC4284B8AACCC9137B45D2 /* setobject.c */ = {isa = PBXBuildFile; fileRef = 8FDF453F89DF021489022073 /* setobject.c */; };
-		5EFF45B190B4043069BD1DE3 /* _collectionsmodule.c */ = {isa = PBXBuildFile; fileRef = 4E2B4EC0A175F6E661014E0C /* _collectionsmodule.c */; };
-		6240498C841A1F52E8564C0F /* pymath.c */ = {isa = PBXBuildFile; fileRef = 9570478AB51501B4EDE0CBB8 /* pymath.c */; };
-		6299474E877701399F94A57A /* pyfpe.c */ = {isa = PBXBuildFile; fileRef = B123401796D743EA6704971D /* pyfpe.c */; };
-		6C434673A7EFB176B3E6CFE3 /* bytes_methods.c */ = {isa = PBXBuildFile; fileRef = C00846129420CA5AFB0301E8 /* bytes_methods.c */; };
-		6F2D4384833E7E79EC076D54 /* md5.c */ = {isa = PBXBuildFile; fileRef = 87DE4353AC74A0F498DF8D21 /* md5.c */; };
-		70AD44B8B3E107DD8C9D5A56 /* _struct.c */ = {isa = PBXBuildFile; fileRef = 08344BBB892A6546E9576AD3 /* _struct.c */; };
-		70CB4B09B0110681E3188269 /* tupleobject.c */ = {isa = PBXBuildFile; fileRef = A6C140ADBF054477A3C6E264 /* tupleobject.c */; };
-		74234558BBD21D086321956F /* metagrammar.c */ = {isa = PBXBuildFile; fileRef = D0C54095994E26FB6AD12644 /* metagrammar.c */; };
-		74514A54AB893F3E10563798 /* timemodule.c */ = {isa = PBXBuildFile; fileRef = 3CE7480F9E48A7EE4DD28A9E /* timemodule.c */; };
-		756D4FD6A6992598DD7864F4 /* signalmodule.c */ = {isa = PBXBuildFile; fileRef = 460948F6A79C8CE96824EB3A /* signalmodule.c */; };
-		77EC4517B2408A4CA421FD9F /* errors.c */ = {isa = PBXBuildFile; fileRef = 391C4AD788D6210DEDC310AD /* errors.c */; };
-		77FB4A5E93E378E135CF89F0 /* stringobject.c */ = {isa = PBXBuildFile; fileRef = 116B4939B8DDFBD8C76AA904 /* stringobject.c */; };
-		78DB493FA8882AE968FCCD95 /* itertoolsmodule.c */ = {isa = PBXBuildFile; fileRef = D4FA48D784658A51BDBE11BE /* itertoolsmodule.c */; };
-		7F20491D94BB846333A071AA /* strdup.c */ = {isa = PBXBuildFile; fileRef = 9BBD456F9A77DD22461218C1 /* strdup.c */; };
-		7F404B98AD0F2AF39B673394 /* atof.c */ = {isa = PBXBuildFile; fileRef = CE394F2D965AD95C08657950 /* atof.c */; };
-		81EE4B57B9E6FABBFBDD6A92 /* _randommodule.c */ = {isa = PBXBuildFile; fileRef = DC1949358E7D6EC9E78B5825 /* _randommodule.c */; };
-		83B2446AB2C5D9CBFE0AE4DB /* socketmodule.c */ = {isa = PBXBuildFile; fileRef = B20B40AFBA05E4EC712343CD /* socketmodule.c */; };
-		84CD4FEE9ED18BC3DE6B8D4B /* fileio.c */ = {isa = PBXBuildFile; fileRef = BF1D4394A2282172745FA24B /* fileio.c */; };
-		86014219AB6432BFA28515B3 /* fcntlmodule.c */ = {isa = PBXBuildFile; fileRef = E24645379C4939CA7FA7F8A2 /* fcntlmodule.c */; };
-		87694541993473771D786636 /* bufferedio.c */ = {isa = PBXBuildFile; fileRef = ECC24FAC875F7BC4565F3606 /* bufferedio.c */; };
-		8B5F495A8037BA12F2EF654A /* selectmodule.c */ = {isa = PBXBuildFile; fileRef = 514B4993801F3EF4DAD3179E /* selectmodule.c */; };
-		8BF140CCBD07D740A87BB200 /* _json.c */ = {isa = PBXBuildFile; fileRef = AE2C446DBE9999031F8A0475 /* _json.c */; };
-		8FA94A1EA8A488C060730B04 /* symtable.c */ = {isa = PBXBuildFile; fileRef = C62D4B3B87604691A3E6957C /* symtable.c */; };
-		90904EF5AF845B111A6BD6C7 /* _iomodule.c */ = {isa = PBXBuildFile; fileRef = 08BD447FAFC8CAD5E5E0E291 /* _iomodule.c */; };
-		94964482B01F31DB47D5AF63 /* object.c */ = {isa = PBXBuildFile; fileRef = CCB641DCB95A75FAABCBD17B /* object.c */; };
-		94C141EB84F9461478A881C7 /* sysmodule.c */ = {isa = PBXBuildFile; fileRef = 3E734D1D9CFC3B33F17FD361 /* sysmodule.c */; };
-		9A474ADCAB07CDB75F61A4C1 /* bytearrayobject.c */ = {isa = PBXBuildFile; fileRef = DADF4889AA1C2AA22D6F6EF1 /* bytearrayobject.c */; };
-		9AAD44AABD3A87E36EE5629B /* _warnings.c */ = {isa = PBXBuildFile; fileRef = C50A41A49E699CDB7B86201B /* _warnings.c */; };
-		9AED4B57BEF1ADB658F903C6 /* longobject.c */ = {isa = PBXBuildFile; fileRef = 24164C2085423BA4A76E183D /* longobject.c */; };
-		9B6E4A319F7E973911DF5B60 /* pystate.c */ = {isa = PBXBuildFile; fileRef = BF484DA69BF93447BC2763EA /* pystate.c */; };
-		9CE54FF6BDE1C73DE5C8C417 /* compile.c */ = {isa = PBXBuildFile; fileRef = 70CB4B6FB3294AFF81ABDC39 /* compile.c */; };
-		9E934AD79C736928FCC12381 /* grammar.c */ = {isa = PBXBuildFile; fileRef = D6604BAEB6AC8B58E29C6D9F /* grammar.c */; };
-		9F9548829D94FEF7DC27156A /* _functoolsmodule.c */ = {isa = PBXBuildFile; fileRef = 7C6A49AA818846E9947FFF8C /* _functoolsmodule.c */; };
-		9FBE4FF891A5EAA23997BCB7 /* _sre.c */ = {isa = PBXBuildFile; fileRef = 52674FB1A988F7B4B0D8C6FE /* _sre.c */; };
-		A3FE4431ABC38764BD46125C /* modsupport.c */ = {isa = PBXBuildFile; fileRef = EF1F4CBCAE093099F381EAD4 /* modsupport.c */; };
-		A5504A2EB48F1AF620D5B073 /* getplatform.c */ = {isa = PBXBuildFile; fileRef = 1C8F4186B6D977A8D3BAD86C /* getplatform.c */; };
-		A62C4E6799097F773ACA9204 /* main.c */ = {isa = PBXBuildFile; fileRef = 0C1D4D7FA88B4586C0D3E157 /* main.c */; };
-		A89449E6BECAA619535A6B65 /* rangeobject.c */ = {isa = PBXBuildFile; fileRef = D03D46C3A4B477E6EC2FB6EB /* rangeobject.c */; };
-		A9664111A5F8419E02807BA4 /* _codecsmodule.c */ = {isa = PBXBuildFile; fileRef = D19D4A1D8C0AE599633FB175 /* _codecsmodule.c */; };
-		A9AA4BC2BEF045BE6B531105 /* peephole.c */ = {isa = PBXBuildFile; fileRef = 26CC4FD397FCA88A486DF2A2 /* peephole.c */; };
-		AA9F44CF93D4C25BD634240B /* frozen.c */ = {isa = PBXBuildFile; fileRef = C3AB427683A732A425A9B585 /* frozen.c */; };
-		AACA41BEAEBAE914786D15FC /* codeobject.c */ = {isa = PBXBuildFile; fileRef = DA4742D78235DE20A398B42C /* codeobject.c */; };
-		B00C4CF791112610D1BFB728 /* descrobject.c */ = {isa = PBXBuildFile; fileRef = 45734CC0BA20B64BFB603CE0 /* descrobject.c */; };
-		B0214EE98ED7651E0148ED59 /* _weakref.c */ = {isa = PBXBuildFile; fileRef = 62604C5D8285AB0C42A464C4 /* _weakref.c */; };
-		B1964068A689047A379DE169 /* node.c */ = {isa = PBXBuildFile; fileRef = DF9A4C539FA8A52F1A986C28 /* node.c */; };
-		B20744718D690F61FAC96C3A /* strtod.c */ = {isa = PBXBuildFile; fileRef = 4AD24CB499FAACCBB96A2BD0 /* strtod.c */; };
-		B2254776A5A372136433DAA7 /* dtoa.c */ = {isa = PBXBuildFile; fileRef = A4DA40E2A92563F2CA6059B7 /* dtoa.c */; };
-		B351407998DF05192BCA12D2 /* frameobject.c */ = {isa = PBXBuildFile; fileRef = 689E4CE393177B0913A91FDE /* frameobject.c */; };
-		B69A4606A1C2743010FF7295 /* md5module.c */ = {isa = PBXBuildFile; fileRef = 170143FD85F358DFB9628CCA /* md5module.c */; };
-		B7D74DFC94388F7BBAD66312 /* gcmodule.c */ = {isa = PBXBuildFile; fileRef = D18942BD9F99E59B42F6F3DA /* gcmodule.c */; };
-		B8AA45E793CEE8B1191B8BD3 /* weakrefobject.c */ = {isa = PBXBuildFile; fileRef = D95043A8BBD6DEE235966275 /* weakrefobject.c */; };
-		B9C348A6BCDE6CD5F274E893 /* unicodeobject.c */ = {isa = PBXBuildFile; fileRef = 28224D219C001E3F523B5696 /* unicodeobject.c */; };
-		BADB41C6B55B43331A4D5008 /* moduleobject.c */ = {isa = PBXBuildFile; fileRef = 3CC048DDB7C23C556FE1B2D4 /* moduleobject.c */; };
-		BCB74EB2A22B0EB10E27074C /* dup2.c */ = {isa = PBXBuildFile; fileRef = 579A4EAEB76FD1F27132D40F /* dup2.c */; };
-		BDB8415B9EC2858B8D34C163 /* posixmodule.c */ = {isa = PBXBuildFile; fileRef = 2F0F435AA7ED6E6F7358149C /* posixmodule.c */; };
-		BF3A434BB1B8EA57A43EA633 /* tokenizer.c */ = {isa = PBXBuildFile; fileRef = A8E04DDFA9786515350A7678 /* tokenizer.c */; };
-		C0E642C9929A3C0914A55B1F /* formatter_unicode.c */ = {isa = PBXBuildFile; fileRef = 7F114A3BB30E96AAB6F3736B /* formatter_unicode.c */; };
-		C20848EF981AAF16EA8F8252 /* mysnprintf.c */ = {isa = PBXBuildFile; fileRef = 7E114A1786276AFF3E86F6C3 /* mysnprintf.c */; };
-		C3374894815961CC94B3B6DD /* cobject.c */ = {isa = PBXBuildFile; fileRef = 10B24DE1ABA5D41BC5E8B997 /* cobject.c */; };
-		C3B1464DBCE18EFD848CB44C /* structmember.c */ = {isa = PBXBuildFile; fileRef = 8131443C9FB25196AF584B5F /* structmember.c */; };
-		C61A467F81521A80CC8A230B /* binascii.c */ = {isa = PBXBuildFile; fileRef = 391B420484E35C41736D5357 /* binascii.c */; };
-		C65F4C02973DAA4D9905E36B /* listobject.c */ = {isa = PBXBuildFile; fileRef = 13244ADEB42A8133132A1932 /* listobject.c */; };
-		C7054D459AC3B2851DDE4366 /* getopt.c */ = {isa = PBXBuildFile; fileRef = 70A0461BB22084CD2F34B205 /* getopt.c */; };
-		C7B242B7AE1888E66A424EFE /* abstract.c */ = {isa = PBXBuildFile; fileRef = ED3243EFA0812AA6BE8B9ED7 /* abstract.c */; };
-		CB9043A7B2B152806CE5CA18 /* pythonrun.c */ = {isa = PBXBuildFile; fileRef = DDBF41FEAFA9D099EC075CE3 /* pythonrun.c */; };
-		D0AD456F932D23A22569FAD5 /* iterobject.c */ = {isa = PBXBuildFile; fileRef = 9541465694AA2EECAD76BE19 /* iterobject.c */; };
-		D221424F953DE5A20E3F1E0A /* graminit.c */ = {isa = PBXBuildFile; fileRef = 402C4226AA51CE25887A7215 /* graminit.c */; };
-		D35A48C19F8FBAFB853A9F7E /* bufferobject.c */ = {isa = PBXBuildFile; fileRef = 00B5420ABCA53054E637C3B6 /* bufferobject.c */; };
-		D388406292B2FB628F1EE1FE /* getargs.c */ = {isa = PBXBuildFile; fileRef = 51004E91901629CC1FEF918C /* getargs.c */; };
-		D5324C0690ABDB32AA77D012 /* parser.c */ = {isa = PBXBuildFile; fileRef = 484E448791FE9EFA50DAFEEF /* parser.c */; };
-		D7004785B6078CDDE9F4571A /* stringio.c */ = {isa = PBXBuildFile; fileRef = CF4148E38D19AF659C5FE4AB /* stringio.c */; };
-		D79E401E88185A88B5B3A274 /* methodobject.c */ = {isa = PBXBuildFile; fileRef = 0F2442F5AB041228A2FFD41E /* methodobject.c */; };
-		DDB94A309D689903AFE78E9D /* _ssl.c */ = {isa = PBXBuildFile; fileRef = D3BD42F8BEC4987C118FBDD4 /* _ssl.c */; };
-		DFBF4A10A56200B2360CA28E /* shamodule.c */ = {isa = PBXBuildFile; fileRef = 48F7453FB19EB2DD72F19BCD /* shamodule.c */; };
-		E01B42BC953048BA951A6D33 /* cellobject.c */ = {isa = PBXBuildFile; fileRef = 4FEA436AAFAAC7EC0E9E90F8 /* cellobject.c */; };
-		E4BD419E8CE45A3721D4DDF5 /* frozenmain.c */ = {isa = PBXBuildFile; fileRef = 44F545338FFF2DE3DCDA7AD4 /* frozenmain.c */; };
-		E81C47D78D1BAEF6A9481F43 /* complexobject.c */ = {isa = PBXBuildFile; fileRef = A1104A6C8F20A23257D3F885 /* complexobject.c */; };
-		E842403A86894AA7081B4B61 /* getcompiler.c */ = {isa = PBXBuildFile; fileRef = 84AF491791F264310F063FDC /* getcompiler.c */; };
-		E895470F987948ABE763E16D /* intobject.c */ = {isa = PBXBuildFile; fileRef = A27B4FE6A1AFA8457A78E7C6 /* intobject.c */; };
-		EC0244CBAAA688B62412960F /* obmalloc.c */ = {isa = PBXBuildFile; fileRef = 34E147B49F217A984A422357 /* obmalloc.c */; };
-		EDD64B5D83E6DAECAC293DF1 /* typeobject.c */ = {isa = PBXBuildFile; fileRef = 0F2C44D7BFEB4BC946DC550C /* typeobject.c */; };
-		EE0241E2996A700628934467 /* cStringIO.c */ = {isa = PBXBuildFile; fileRef = 9AC44B17904C7D003E1F0E22 /* cStringIO.c */; };
-		F7054954AC1B6A239AFC0FEB /* marshal.c */ = {isa = PBXBuildFile; fileRef = 903B47DAA8C56A03DE334AD2 /* marshal.c */; };
-		F7C14F8591E3CF2D21A34F9E /* threadmodule.c */ = {isa = PBXBuildFile; fileRef = 9E44447EA1269A86327A2DAA /* threadmodule.c */; };
-		F8D747DE8535E174D65A5119 /* enumobject.c */ = {isa = PBXBuildFile; fileRef = 9FD84D39844A743D3AFCB61A /* enumobject.c */; };
-		FA9E4A238621A9986521B97E /* printgrammar.c */ = {isa = PBXBuildFile; fileRef = 12E143DAB8F606F5D3BD6508 /* printgrammar.c */; };
-		FFE34BAA9FF1075E6BC693E2 /* iobase.c */ = {isa = PBXBuildFile; fileRef = B1704C9E80A917A3B35C95AA /* iobase.c */; };
+		000F48BAB24559E629CD0393 /* _collectionsmodule.c */ = {isa = PBXBuildFile; fileRef = 47A74D90838C6AB4C6D596FE /* _collectionsmodule.c */; };
+		02174754BAEEC779112C984B /* shamodule.c */ = {isa = PBXBuildFile; fileRef = E90C41F3B1EF0A6AEF24FFE5 /* shamodule.c */; };
+		062E4CAFBA572378DF79034D /* pymath.c */ = {isa = PBXBuildFile; fileRef = 44CE4CB79C8D54A14F093FE3 /* pymath.c */; };
+		068B4CE0A35DD533A19FA3F1 /* methodobject.c */ = {isa = PBXBuildFile; fileRef = D35C47D082593D10C3EBF9E3 /* methodobject.c */; };
+		07EF402FB63F569605FA09DB /* iobase.c */ = {isa = PBXBuildFile; fileRef = 526241B58782ACFB8C0C13C0 /* iobase.c */; };
+		0F2645779AF4DD1A478BD56F /* object.c */ = {isa = PBXBuildFile; fileRef = 749948C38795BCAD83F6EDC3 /* object.c */; };
+		15714BBC922165AC18BF9FBE /* ast.c */ = {isa = PBXBuildFile; fileRef = 5DD04EC386197FC8BB32B02E /* ast.c */; };
+		18DE4EB38F94C60ACEE3AD10 /* _codecsmodule.c */ = {isa = PBXBuildFile; fileRef = CCD7494D9CE2A84263D6266D /* _codecsmodule.c */; };
+		1E2F4C41B498033367EE6C28 /* codeobject.c */ = {isa = PBXBuildFile; fileRef = E08646A6ABE15A468F760BD9 /* codeobject.c */; };
+		20C548E5A63BB2ED5518C763 /* md5.c */ = {isa = PBXBuildFile; fileRef = 8BE9431D9A50588DAF280B2C /* md5.c */; };
+		21C44609B5A5264CC7060B67 /* listobject.c */ = {isa = PBXBuildFile; fileRef = 0F1A4316B7968807B3D9DA2C /* listobject.c */; };
+		22B44F6A804D51405527C39A /* node.c */ = {isa = PBXBuildFile; fileRef = C8844DC79A2CD38019A4E8E8 /* node.c */; };
+		23954F45B4FD9DF663131B5A /* _warnings.c */ = {isa = PBXBuildFile; fileRef = DD5043DABC6D2EBF68C7AC3B /* _warnings.c */; };
+		24C54E3CA30AC5F053CDBFDE /* grammar.c */ = {isa = PBXBuildFile; fileRef = A2484EC0917BEE2B2940179B /* grammar.c */; };
+		2553416BB39E857800E61CD1 /* socketmodule.c */ = {isa = PBXBuildFile; fileRef = 760742DA8C6626787EB12646 /* socketmodule.c */; };
+		26494505B2EDB4FA0E40A283 /* random.c */ = {isa = PBXBuildFile; fileRef = 3A21443C9DF8F336F18C4EF5 /* random.c */; };
+		274649B9A534732DA0C584B2 /* atof.c */ = {isa = PBXBuildFile; fileRef = A28940EEA5351716F92CA205 /* atof.c */; };
+		27ED48898222E10B84E86568 /* getargs.c */ = {isa = PBXBuildFile; fileRef = 3D8F467BA11B51A4810E108E /* getargs.c */; };
+		2ADC4F088EEA4CDD0FCAD674 /* frozenmain.c */ = {isa = PBXBuildFile; fileRef = 9C5F4C9BA01086E3CB7856B6 /* frozenmain.c */; };
+		2CFF4AC5A2FC7F1A4C7CB039 /* _math.c */ = {isa = PBXBuildFile; fileRef = C3094E959920AFCBE92633BD /* _math.c */; };
+		30BE42BD8315D37EB9E81E1A /* bufferedio.c */ = {isa = PBXBuildFile; fileRef = B0D5406A981C9DD1ADDA976C /* bufferedio.c */; };
+		323E44A38C964940122108EF /* tokenizer.c */ = {isa = PBXBuildFile; fileRef = 15CB4ED6819A4AB2B8BDC729 /* tokenizer.c */; };
+		339542A4A64E9065E117156C /* bltinmodule.c */ = {isa = PBXBuildFile; fileRef = 823443A0B6FAA485B94D23A7 /* bltinmodule.c */; };
+		350842DDB616BFFCA6E37ED3 /* acceler.c */ = {isa = PBXBuildFile; fileRef = 43E44536A07BF5153804DA8A /* acceler.c */; };
+		36AD43F4B0512F4AE5FAD987 /* traceback.c */ = {isa = PBXBuildFile; fileRef = 52D3436CAE9A396AA14958D3 /* traceback.c */; };
+		36EC4DDA8E861B1669E7BBD5 /* getcompiler.c */ = {isa = PBXBuildFile; fileRef = 3EAE4150AC5B5696706076E0 /* getcompiler.c */; };
+		39B64D128BBB93C494AE4638 /* future.c */ = {isa = PBXBuildFile; fileRef = 0BAA4F5ABCBC247CD3B1DB26 /* future.c */; };
+		3E8A454ABC921F69AADA92B4 /* strdup.c */ = {isa = PBXBuildFile; fileRef = 46A046D3BC4999BFA4583D1D /* strdup.c */; };
+		3F0048F5ACC836A080505122 /* itertoolsmodule.c */ = {isa = PBXBuildFile; fileRef = D76B4E5DB35E42B4C17FBE06 /* itertoolsmodule.c */; };
+		409C4AFEA8027E5F0646B3D3 /* intobject.c */ = {isa = PBXBuildFile; fileRef = 434A458E99637099ABD560A8 /* intobject.c */; };
+		459E41878B004EFECA81E365 /* zlibmodule.c */ = {isa = PBXBuildFile; fileRef = CF6A4A72B769F1403601473D /* zlibmodule.c */; };
+		48134D7D877CA6DCB0DD7F77 /* classobject.c */ = {isa = PBXBuildFile; fileRef = D309430882109504A4ED6156 /* classobject.c */; };
+		484D4FE4BCDCE30B7A0C582B /* genobject.c */ = {isa = PBXBuildFile; fileRef = 5EBB49398ED094F67EB2388A /* genobject.c */; };
+		49014B81800832B37235F2A2 /* signalmodule.c */ = {isa = PBXBuildFile; fileRef = 64B94080B080FCAEE8054425 /* signalmodule.c */; };
+		5118405BB0D55580BC96B09E /* getversion.c */ = {isa = PBXBuildFile; fileRef = 4C8B4CAAA7AE0D1B82F33B77 /* getversion.c */; };
+		511E48768D3C088CED34A842 /* stringio.c */ = {isa = PBXBuildFile; fileRef = CB694FFEA31ED1E1AC8907B6 /* stringio.c */; };
+		52F74955B08146002D867C5E /* _randommodule.c */ = {isa = PBXBuildFile; fileRef = 4F4A4877BAAA8C5D50EC0846 /* _randommodule.c */; };
+		5436425C86C7F9F9ED42C85B /* sysmodule.c */ = {isa = PBXBuildFile; fileRef = EBA748C2A675D9E37431B681 /* sysmodule.c */; };
+		56A740FE98CEBC431D349399 /* abstract.c */ = {isa = PBXBuildFile; fileRef = 083C4F65A4E7461135518D4B /* abstract.c */; };
+		57ED4D5D9174E3A7117179D6 /* fcntlmodule.c */ = {isa = PBXBuildFile; fileRef = D31743F78BC116F11FD14941 /* fcntlmodule.c */; };
+		5819442BA87EB8E8F2D9F3B0 /* compile.c */ = {isa = PBXBuildFile; fileRef = AF174FFF97BBB6A2F024C62B /* compile.c */; };
+		5C3D4719BCC2E4CFA4F50CC8 /* boolobject.c */ = {isa = PBXBuildFile; fileRef = 67784FFA9C883B35519FAF48 /* boolobject.c */; };
+		5D7D45D3B4EEFC6E6DBB6171 /* iterobject.c */ = {isa = PBXBuildFile; fileRef = B1C0415D8F2089D7F712FE8D /* iterobject.c */; };
+		6084445BAF3F22B1AD70AD1E /* dup2.c */ = {isa = PBXBuildFile; fileRef = 1AEF4E3EA873F0C2F78A2CB7 /* dup2.c */; };
+		60844D2ABA1F58C92417D9AA /* textio.c */ = {isa = PBXBuildFile; fileRef = 0C304B8EAD08ACEA9DA3E887 /* textio.c */; };
+		62604F63B4FC4FDD54C87AEE /* bitset.c */ = {isa = PBXBuildFile; fileRef = BA3F4EA99CD65BAC81464074 /* bitset.c */; };
+		6366422A9D48A9BD15BE30B4 /* selectmodule.c */ = {isa = PBXBuildFile; fileRef = B79C4D0D83DD008C30ACEE6E /* selectmodule.c */; };
+		660B40D8B7F637940694F642 /* modsupport.c */ = {isa = PBXBuildFile; fileRef = B8AE40B49B5ECC04B6C46D2A /* modsupport.c */; };
+		662C4C46AAEC99F7AF2632C9 /* _ssl.c */ = {isa = PBXBuildFile; fileRef = 8D8F48B4A7B65D1922F43E2B /* _ssl.c */; };
+		698F438CAB80522C3D7A8690 /* symtable.c */ = {isa = PBXBuildFile; fileRef = 01CA49268A0E081E1E5FBFFB /* symtable.c */; };
+		69B84E2BBA09CD734E5D056D /* structmember.c */ = {isa = PBXBuildFile; fileRef = E9AB4A098E4EFB9875FB5CF8 /* structmember.c */; };
+		6A034A8592E03310B326ABEA /* sha512module.c */ = {isa = PBXBuildFile; fileRef = 122947DFB5C16B067B579FD2 /* sha512module.c */; };
+		6AAF421DB4601337A4CAA4B1 /* myreadline.c */ = {isa = PBXBuildFile; fileRef = 3B7D42DFA86B0FCD47D92222 /* myreadline.c */; };
+		6AC14A01B3FDC7A5ED4CF7CF /* sha256module.c */ = {isa = PBXBuildFile; fileRef = 3489470490C0D80CEEFF48E5 /* sha256module.c */; };
+		6AED43929EBFDBC22A4FBAFD /* weakrefobject.c */ = {isa = PBXBuildFile; fileRef = 1D56492AA33E8E60241957AF /* weakrefobject.c */; };
+		6DC8424CA4B4F082FC47C291 /* unicodeobject.c */ = {isa = PBXBuildFile; fileRef = 6AF9487EB460EC8CDDC85303 /* unicodeobject.c */; };
+		6E3D445C9FF8646E2773A1FF /* exceptions.c */ = {isa = PBXBuildFile; fileRef = E59D42A5A489D821B2704F9F /* exceptions.c */; };
+		6E704C7B824B328E61F78D5C /* obmalloc.c */ = {isa = PBXBuildFile; fileRef = 22DA4F2D959ED58E6EB933B1 /* obmalloc.c */; };
+		6EA04A94AB94FFC15CB26F4D /* _weakref.c */ = {isa = PBXBuildFile; fileRef = BCD34BDCA4E9FB2005288A26 /* _weakref.c */; };
+		6F6949AABBDAEED64D57A9C6 /* pyfpe.c */ = {isa = PBXBuildFile; fileRef = A5234B5EAA35660786919B5C /* pyfpe.c */; };
+		70CA400C83A39394F581B9E0 /* pythonrun.c */ = {isa = PBXBuildFile; fileRef = 5F3040A4ABB289BEFF5806C2 /* pythonrun.c */; };
+		71634D6493A8400E5D57BFA2 /* frozen.c */ = {isa = PBXBuildFile; fileRef = FD16411AB5EA524BC04C87BE /* frozen.c */; };
+		7286485AB032C91DE719655C /* bytes_methods.c */ = {isa = PBXBuildFile; fileRef = CE634B3A8D32F873BA0F1B90 /* bytes_methods.c */; };
+		760C4EC69CF67EBC522DEE3B /* getplatform.c */ = {isa = PBXBuildFile; fileRef = D18A4F2FB5F45ECD5BC32320 /* getplatform.c */; };
+		78844B01B8C1124D5C7EFC40 /* descrobject.c */ = {isa = PBXBuildFile; fileRef = 7ECD424EBCB4F67ACA5EB10F /* descrobject.c */; };
+		7A344B44A5515A3B2F36CB68 /* pygetpath.c */ = {isa = PBXBuildFile; fileRef = BB1F48379BCAC342E4F48A10 /* pygetpath.c */; };
+		7B0C4A8286DE51663B65F80B /* metagrammar.c */ = {isa = PBXBuildFile; fileRef = 6E924C07816710757D0A0AA5 /* metagrammar.c */; };
+		7EF54DF7BD1AFC39C613CF39 /* setobject.c */ = {isa = PBXBuildFile; fileRef = 6C484D6DAB67F12739FD35BF /* setobject.c */; };
+		81BD451F8CC90D179152E935 /* arraymodule.c */ = {isa = PBXBuildFile; fileRef = CB8A46E190172E03C18F457C /* arraymodule.c */; };
+		839144D88167DF286D440319 /* codecs.c */ = {isa = PBXBuildFile; fileRef = 652D4C4EAF325E5AFC46BCD4 /* codecs.c */; };
+		87394F0CB1C63F754336D9BC /* posixmodule.c */ = {isa = PBXBuildFile; fileRef = FEB442F38EA284BA2FEDC4FB /* posixmodule.c */; };
+		88674E9CB2C76A965919ADC4 /* getbuildinfo.c */ = {isa = PBXBuildFile; fileRef = C394462FAEAFB380B948033F /* getbuildinfo.c */; };
+		89554FFDBF619BEA780189A8 /* pyarena.c */ = {isa = PBXBuildFile; fileRef = C9824343B84B889DDCAB5A61 /* pyarena.c */; };
+		8A44459FBC241DFFB5E0ECE9 /* asdl.c */ = {isa = PBXBuildFile; fileRef = FC2649BABC5BF73EE8701046 /* asdl.c */; };
+		8D9A4B4EBBDCD0C6182F18AF /* _struct.c */ = {isa = PBXBuildFile; fileRef = A8634419A54F3E3070E1FCFB /* _struct.c */; };
+		8ED34A5AA28AEE6B73D73469 /* timemodule.c */ = {isa = PBXBuildFile; fileRef = D28C4AACB0B3B9E345C6DB07 /* timemodule.c */; };
+		915545F9A6CEEDF42991E706 /* pystrcmp.c */ = {isa = PBXBuildFile; fileRef = A0A34EBDB455AC62027EADAF /* pystrcmp.c */; };
+		92634D1496BFA200A5E0C836 /* dtoa.c */ = {isa = PBXBuildFile; fileRef = 0EE24FC293D8D033A00196D6 /* dtoa.c */; };
+		95FE47BFB923BD0F15B52F8A /* Python-ast.c */ = {isa = PBXBuildFile; fileRef = 7CE245CBABF4A6372B5C80D1 /* Python-ast.c */; };
+		974A41F6947DF2BC69AAE544 /* parser.c */ = {isa = PBXBuildFile; fileRef = AF364F75B6ED09C3A6AF316F /* parser.c */; };
+		99BF4980BDCD3C2F42CF6C0A /* firstsets.c */ = {isa = PBXBuildFile; fileRef = 243C4263A4D6C7F94A43EA02 /* firstsets.c */; };
+		9B244941994B94092AD2CA00 /* grammar1.c */ = {isa = PBXBuildFile; fileRef = 80FB4C978765B07650F75E35 /* grammar1.c */; };
+		9BD1487DA374F030C50BEE74 /* pyimportconfig.c */ = {isa = PBXBuildFile; fileRef = DAC84C2B9745173DAE20D062 /* pyimportconfig.c */; };
+		9E5E40BC9403D11691FC79B1 /* memoryobject.c */ = {isa = PBXBuildFile; fileRef = 9F40443A9BA3EBB330ED1953 /* memoryobject.c */; };
+		A02C49CEA749F86831C82C7E /* main.c */ = {isa = PBXBuildFile; fileRef = 4A6341FB80C0FB9E8F349585 /* main.c */; };
+		A5034636AA19814576244B07 /* _json.c */ = {isa = PBXBuildFile; fileRef = E83A4B48B78C070164331622 /* _json.c */; };
+		A6794C47B5B27498A10FE200 /* importdl.c */ = {isa = PBXBuildFile; fileRef = 21AF4DD3846EF694C1B6AE73 /* importdl.c */; };
+		A6FE4CE3B289F5BE4A77A6AE /* strtod.c */ = {isa = PBXBuildFile; fileRef = 0A834D1BB47817341C08C6E5 /* strtod.c */; };
+		A75546DE8FFAD97A2815FA0A /* md5module.c */ = {isa = PBXBuildFile; fileRef = 9F774B2F8C6C9AE159A7AC22 /* md5module.c */; };
+		ACAC4DF188069D868CA85BC8 /* parsetok.c */ = {isa = PBXBuildFile; fileRef = 3D414DC2B8C7DA34BB917CBB /* parsetok.c */; };
+		ACAE41E0A34E9AF41583E3DA /* graminit.c */ = {isa = PBXBuildFile; fileRef = 91A048C58577D0FC96E82007 /* graminit.c */; };
+		AFC84D25ADE7A38D3A6E0439 /* sliceobject.c */ = {isa = PBXBuildFile; fileRef = B36546EFB7380452C02090AB /* sliceobject.c */; };
+		AFFB41A6A1E9E8F83B49BDAF /* mystrtoul.c */ = {isa = PBXBuildFile; fileRef = 7AF24C789D382A0EB104AEA5 /* mystrtoul.c */; };
+		B2E94BC4B1B755945CAFDEFB /* bytearrayobject.c */ = {isa = PBXBuildFile; fileRef = E9F94F3EBDF246E5A460A01D /* bytearrayobject.c */; };
+		B4EB49E99DD96035D9E6DC3E /* mysnprintf.c */ = {isa = PBXBuildFile; fileRef = B38549E09DEE311F87544C12 /* mysnprintf.c */; };
+		B83F450CB8D2D91FCF07D47F /* listnode.c */ = {isa = PBXBuildFile; fileRef = 4D254D0BBB2058CE41409721 /* listnode.c */; };
+		BA5D4AF4ACA500D64C4931E1 /* _iomodule.c */ = {isa = PBXBuildFile; fileRef = 0A6F45E8AD18A8575820018A /* _iomodule.c */; };
+		C53E42F8BDAF0D9139205DEB /* stringobject.c */ = {isa = PBXBuildFile; fileRef = B75C48BE98E7DCECCD277ADB /* stringobject.c */; };
+		C78E4A14ABE8B39F6CD89519 /* unicodectype.c */ = {isa = PBXBuildFile; fileRef = 56D54FCB9221ADF4E116C53F /* unicodectype.c */; };
+		C94E4C73A1B5740F42CA742D /* bytesio.c */ = {isa = PBXBuildFile; fileRef = 66494E4683D7276E70308D18 /* bytesio.c */; };
+		CA1B4FC1B85F94453C8D4C36 /* capsule.c */ = {isa = PBXBuildFile; fileRef = 7CA442EFABA8B9A7F04F3620 /* capsule.c */; };
+		CD6E4F20AE2FDF27EC654AC8 /* thread.c */ = {isa = PBXBuildFile; fileRef = 04104D868463FBEACE5D60F8 /* thread.c */; };
+		CE644CA89DD1BDC6C1F54ADA /* floatobject.c */ = {isa = PBXBuildFile; fileRef = 52894F40ACC49566A8098182 /* floatobject.c */; };
+		D02B4F139D8C85E12102D64C /* cellobject.c */ = {isa = PBXBuildFile; fileRef = 4A954612AE358F590CCD29D1 /* cellobject.c */; };
+		D14141859EFE0E270E11697A /* getopt.c */ = {isa = PBXBuildFile; fileRef = 0962409790FD4F796BE6A292 /* getopt.c */; };
+		D2704F94A5105E4037837EC0 /* errors.c */ = {isa = PBXBuildFile; fileRef = C3874AAD9CD4022968A66689 /* errors.c */; };
+		D3CB4D81A8B505F3BF3C8EBA /* operator.c */ = {isa = PBXBuildFile; fileRef = F29F49C298B9570247696085 /* operator.c */; };
+		D48C433BA86463F7AA5C22D8 /* bufferobject.c */ = {isa = PBXBuildFile; fileRef = 0C4747B0BEDD49482764CE15 /* bufferobject.c */; };
+		D7134F05BB3D8A3B2D0B6170 /* funcobject.c */ = {isa = PBXBuildFile; fileRef = 42D84432881AE0FBF7CCA7EC /* funcobject.c */; };
+		D77D489B87E480F0A3CB7CB5 /* _sre.c */ = {isa = PBXBuildFile; fileRef = 9888469CA2DFCA82517AA513 /* _sre.c */; };
+		D960469E948EA77E6954C0EF /* import.c */ = {isa = PBXBuildFile; fileRef = 430B42009CDF6D026886E725 /* import.c */; };
+		DC0F41B2B580056CD5B6A49F /* complexobject.c */ = {isa = PBXBuildFile; fileRef = B2B24C63A853A1603DBFBC08 /* complexobject.c */; };
+		DC4A4FBFBFF7A93B316C2E25 /* fileobject.c */ = {isa = PBXBuildFile; fileRef = 25C845508D498DCF4456E158 /* fileobject.c */; };
+		DD104820B408E7F2BD94D2A5 /* moduleobject.c */ = {isa = PBXBuildFile; fileRef = D5BF4C099AE4F78FDDC33E1F /* moduleobject.c */; };
+		DD934E2A80D79FDB8C6626D7 /* dynload_stub.c */ = {isa = PBXBuildFile; fileRef = 505447409701EB3FECC942E8 /* dynload_stub.c */; };
+		DE5742E3AAC0FF2FB61AEB85 /* printgrammar.c */ = {isa = PBXBuildFile; fileRef = 12CB45D3900C397594F9A047 /* printgrammar.c */; };
+		DFE04294BEABCEB400780FCC /* frameobject.c */ = {isa = PBXBuildFile; fileRef = CD5942ECADFA42D0F62C7BB3 /* frameobject.c */; };
+		E04545AE820793A2E2C7752F /* pystrtod.c */ = {isa = PBXBuildFile; fileRef = 087D4304B100B2AC0D1F99BB /* pystrtod.c */; };
+		E12948D68E7964FF7AEFC548 /* threadmodule.c */ = {isa = PBXBuildFile; fileRef = DB654BF58467D26B944788BC /* threadmodule.c */; };
+		E1584DFC83C4A5081D6F33E2 /* tupleobject.c */ = {isa = PBXBuildFile; fileRef = A9F84DEAA5DB58CA181CEBD0 /* tupleobject.c */; };
+		E20144BCADFEBFFF38ABA35E /* getcwd.c */ = {isa = PBXBuildFile; fileRef = D8FC4A1F9EF1AD22D1B77600 /* getcwd.c */; };
+		E30B47A5BD8427CCD01A8B37 /* pyctype.c */ = {isa = PBXBuildFile; fileRef = 50C74D23BE80255D7CA215B1 /* pyctype.c */; };
+		E41B484D8A51254BE6072EBD /* marshal.c */ = {isa = PBXBuildFile; fileRef = BEED4AF69C9C06EF10FC9677 /* marshal.c */; };
+		E52345499B7B5221EEBDC6D2 /* cobject.c */ = {isa = PBXBuildFile; fileRef = C34746729A98B518C8928B7B /* cobject.c */; };
+		E55C492EA8BAFCC1ABB3F932 /* datetimemodule.c */ = {isa = PBXBuildFile; fileRef = 8E4D4D34923555AA10EA5C28 /* datetimemodule.c */; };
+		E6B047F2A2F327D2FE998EC2 /* formatter_unicode.c */ = {isa = PBXBuildFile; fileRef = 474A4011866C53F1B3C374E3 /* formatter_unicode.c */; };
+		ECC942C9843D8ED39285F05B /* ceval.c */ = {isa = PBXBuildFile; fileRef = 8C12410FA67D539DE24F4768 /* ceval.c */; };
+		ECE84E5C97DF09AE99B0597F /* pystate.c */ = {isa = PBXBuildFile; fileRef = EA2445EEA635777D4C550D55 /* pystate.c */; };
+		EE0C4DD5BFCEF6BEDF57474B /* cStringIO.c */ = {isa = PBXBuildFile; fileRef = E5F54CD3804145EA87DE4F8C /* cStringIO.c */; };
+		F0324D7C8299D9E327841545 /* structseq.c */ = {isa = PBXBuildFile; fileRef = 66CF4A00B1A5FF5D0755ED2B /* structseq.c */; };
+		F0D14B87ABF96D0CE597418C /* rangeobject.c */ = {isa = PBXBuildFile; fileRef = 9FFC42639CDC4910BF068062 /* rangeobject.c */; };
+		F19D415B814A457951CD936E /* _functoolsmodule.c */ = {isa = PBXBuildFile; fileRef = A02F4D87918AD0719503D783 /* _functoolsmodule.c */; };
+		F40841C58AE538BEEADD1A1B /* gcmodule.c */ = {isa = PBXBuildFile; fileRef = E3CB4773BCA9D73B586A1C99 /* gcmodule.c */; };
+		F41A43A5ADC13C68AB0E4E61 /* dictobject.c */ = {isa = PBXBuildFile; fileRef = EF4C499DB7385CE050D5699D /* dictobject.c */; };
+		F41A4EBAB376A3CBFC8D6A87 /* enumobject.c */ = {isa = PBXBuildFile; fileRef = 915342788F701F6976F4B643 /* enumobject.c */; };
+		F4F5481D8AB859B8F2C511D5 /* errnomodule.c */ = {isa = PBXBuildFile; fileRef = B648416388D1378F20F951EF /* errnomodule.c */; };
+		F5084705A4C52B7E9E855A27 /* formatter_string.c */ = {isa = PBXBuildFile; fileRef = 8632414295932FEBE1FC8785 /* formatter_string.c */; };
+		F6CF4419944CED69605CFCBE /* getcopyright.c */ = {isa = PBXBuildFile; fileRef = 385A43EABD0E21D40DF2F327 /* getcopyright.c */; };
+		F7F948DBA793503382687B0B /* typeobject.c */ = {isa = PBXBuildFile; fileRef = B6D242F4856B64B12736E20A /* typeobject.c */; };
+		FA8E424AA514EB7463AFCFF6 /* fileio.c */ = {isa = PBXBuildFile; fileRef = 9C444C73890049DB1FFF3595 /* fileio.c */; };
+		FB8F4A2099751F7E6346B046 /* peephole.c */ = {isa = PBXBuildFile; fileRef = 1E5048A08FAE68F7918F97D6 /* peephole.c */; };
+		FD1647A28F596024E5C782F6 /* mathmodule.c */ = {isa = PBXBuildFile; fileRef = FB3D4C4F85D322F1A06E00E5 /* mathmodule.c */; };
+		FD314A899755C900DBE840FE /* longobject.c */ = {isa = PBXBuildFile; fileRef = D9C84696BC01F4E7A5387E8F /* longobject.c */; };
+		FF4547938DE8F4A02E55EB06 /* binascii.c */ = {isa = PBXBuildFile; fileRef = 0F374DC5AE411FF69C971E41 /* binascii.c */; };
+		FFD24FAF9280E30138B59EBB /* _csv.c */ = {isa = PBXBuildFile; fileRef = B1914404AC39593791B8432C /* _csv.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00B5420ABCA53054E637C3B6 /* bufferobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bufferobject.c; path = CPython/Objects/bufferobject.c; sourceTree = SOURCE_ROOT; };
-		01764F22981B3120D81AE956 /* sha512module.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sha512module.c; path = CPython/Modules/sha512module.c; sourceTree = SOURCE_ROOT; };
-		04994898A44976ABD044B807 /* fileobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fileobject.c; path = CPython/Objects/fileobject.c; sourceTree = SOURCE_ROOT; };
-		08344BBB892A6546E9576AD3 /* _struct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _struct.c; path = CPython/Modules/_struct.c; sourceTree = SOURCE_ROOT; };
-		08BD447FAFC8CAD5E5E0E291 /* _iomodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _iomodule.c; path = CPython/Modules/_io/_iomodule.c; sourceTree = SOURCE_ROOT; };
-		096E4728A232ED9938929A7C /* exceptions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = exceptions.c; path = CPython/Objects/exceptions.c; sourceTree = SOURCE_ROOT; };
-		0C1D4D7FA88B4586C0D3E157 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = CPython/Modules/main.c; sourceTree = SOURCE_ROOT; };
-		0F2442F5AB041228A2FFD41E /* methodobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = methodobject.c; path = CPython/Objects/methodobject.c; sourceTree = SOURCE_ROOT; };
-		0F2C44D7BFEB4BC946DC550C /* typeobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = typeobject.c; path = CPython/Objects/typeobject.c; sourceTree = SOURCE_ROOT; };
-		10B24DE1ABA5D41BC5E8B997 /* cobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cobject.c; path = CPython/Objects/cobject.c; sourceTree = SOURCE_ROOT; };
-		116B4939B8DDFBD8C76AA904 /* stringobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = stringobject.c; path = CPython/Objects/stringobject.c; sourceTree = SOURCE_ROOT; };
-		12E143DAB8F606F5D3BD6508 /* printgrammar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = printgrammar.c; path = CPython/Parser/printgrammar.c; sourceTree = SOURCE_ROOT; };
-		13244ADEB42A8133132A1932 /* listobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = listobject.c; path = CPython/Objects/listobject.c; sourceTree = SOURCE_ROOT; };
-		170143FD85F358DFB9628CCA /* md5module.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = md5module.c; path = CPython/Modules/md5module.c; sourceTree = SOURCE_ROOT; };
-		1BAF404FA7CAA5B52D2F1B2A /* thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = thread.c; path = CPython/Python/thread.c; sourceTree = SOURCE_ROOT; };
-		1C8F4186B6D977A8D3BAD86C /* getplatform.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getplatform.c; path = CPython/Python/getplatform.c; sourceTree = SOURCE_ROOT; };
+		01CA49268A0E081E1E5FBFFB /* symtable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = symtable.c; path = CPython/Python/symtable.c; sourceTree = SOURCE_ROOT; };
+		04104D868463FBEACE5D60F8 /* thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = thread.c; path = CPython/Python/thread.c; sourceTree = SOURCE_ROOT; };
+		083C4F65A4E7461135518D4B /* abstract.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = abstract.c; path = CPython/Objects/abstract.c; sourceTree = SOURCE_ROOT; };
+		087D4304B100B2AC0D1F99BB /* pystrtod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pystrtod.c; path = CPython/Python/pystrtod.c; sourceTree = SOURCE_ROOT; };
+		0962409790FD4F796BE6A292 /* getopt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getopt.c; path = CPython/Python/getopt.c; sourceTree = SOURCE_ROOT; };
+		0A6F45E8AD18A8575820018A /* _iomodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _iomodule.c; path = CPython/Modules/_io/_iomodule.c; sourceTree = SOURCE_ROOT; };
+		0A834D1BB47817341C08C6E5 /* strtod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = strtod.c; path = CPython/Python/strtod.c; sourceTree = SOURCE_ROOT; };
+		0BAA4F5ABCBC247CD3B1DB26 /* future.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = future.c; path = CPython/Python/future.c; sourceTree = SOURCE_ROOT; };
+		0C304B8EAD08ACEA9DA3E887 /* textio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = textio.c; path = CPython/Modules/_io/textio.c; sourceTree = SOURCE_ROOT; };
+		0C4747B0BEDD49482764CE15 /* bufferobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bufferobject.c; path = CPython/Objects/bufferobject.c; sourceTree = SOURCE_ROOT; };
+		0EE24FC293D8D033A00196D6 /* dtoa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = dtoa.c; path = CPython/Python/dtoa.c; sourceTree = SOURCE_ROOT; };
+		0F1A4316B7968807B3D9DA2C /* listobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = listobject.c; path = CPython/Objects/listobject.c; sourceTree = SOURCE_ROOT; };
+		0F374DC5AE411FF69C971E41 /* binascii.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = binascii.c; path = CPython/Modules/binascii.c; sourceTree = SOURCE_ROOT; };
+		122947DFB5C16B067B579FD2 /* sha512module.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sha512module.c; path = CPython/Modules/sha512module.c; sourceTree = SOURCE_ROOT; };
+		12CB45D3900C397594F9A047 /* printgrammar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = printgrammar.c; path = CPython/Parser/printgrammar.c; sourceTree = SOURCE_ROOT; };
+		15CB4ED6819A4AB2B8BDC729 /* tokenizer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tokenizer.c; path = CPython/Parser/tokenizer.c; sourceTree = SOURCE_ROOT; };
+		1AEF4E3EA873F0C2F78A2CB7 /* dup2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = dup2.c; path = CPython/Python/dup2.c; sourceTree = SOURCE_ROOT; };
+		1D56492AA33E8E60241957AF /* weakrefobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = weakrefobject.c; path = CPython/Objects/weakrefobject.c; sourceTree = SOURCE_ROOT; };
+		1E5048A08FAE68F7918F97D6 /* peephole.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = peephole.c; path = CPython/Python/peephole.c; sourceTree = SOURCE_ROOT; };
+		21AF4DD3846EF694C1B6AE73 /* importdl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = importdl.c; path = CPython/Python/importdl.c; sourceTree = SOURCE_ROOT; };
+		22DA4F2D959ED58E6EB933B1 /* obmalloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = obmalloc.c; path = CPython/Objects/obmalloc.c; sourceTree = SOURCE_ROOT; };
 		2303494D17AC4B0F00C6033C /* Python.dylib */ = {isa = PBXFileReference; explicitFileType = compiled.mach-o.dylib; includeInIndex = 0; path = Python.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		24164C2085423BA4A76E183D /* longobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = longobject.c; path = CPython/Objects/longobject.c; sourceTree = SOURCE_ROOT; };
-		26854D439A99C0FEBDC11999 /* getbuildinfo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getbuildinfo.c; path = CPython/Modules/getbuildinfo.c; sourceTree = SOURCE_ROOT; };
-		26CC4FD397FCA88A486DF2A2 /* peephole.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = peephole.c; path = CPython/Python/peephole.c; sourceTree = SOURCE_ROOT; };
-		28224D219C001E3F523B5696 /* unicodeobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unicodeobject.c; path = CPython/Objects/unicodeobject.c; sourceTree = SOURCE_ROOT; };
-		2DEE48659ACAC451F62790F3 /* asdl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = asdl.c; path = CPython/Python/asdl.c; sourceTree = SOURCE_ROOT; };
-		2F0F435AA7ED6E6F7358149C /* posixmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = posixmodule.c; path = CPython/Modules/posixmodule.c; sourceTree = SOURCE_ROOT; };
-		34E147B49F217A984A422357 /* obmalloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = obmalloc.c; path = CPython/Objects/obmalloc.c; sourceTree = SOURCE_ROOT; };
-		384B4E3AADDCFD6F24C2ECAB /* pyimportconfig.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pyimportconfig.c; path = pyimportconfig.c; sourceTree = SOURCE_ROOT; };
-		391B420484E35C41736D5357 /* binascii.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = binascii.c; path = CPython/Modules/binascii.c; sourceTree = SOURCE_ROOT; };
-		391C4AD788D6210DEDC310AD /* errors.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errors.c; path = CPython/Python/errors.c; sourceTree = SOURCE_ROOT; };
-		3CC048DDB7C23C556FE1B2D4 /* moduleobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = moduleobject.c; path = CPython/Objects/moduleobject.c; sourceTree = SOURCE_ROOT; };
-		3CE7480F9E48A7EE4DD28A9E /* timemodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = timemodule.c; path = CPython/Modules/timemodule.c; sourceTree = SOURCE_ROOT; };
-		3E734D1D9CFC3B33F17FD361 /* sysmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sysmodule.c; path = CPython/Python/sysmodule.c; sourceTree = SOURCE_ROOT; };
-		3F744A79A85C970ADB930C59 /* structseq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = structseq.c; path = CPython/Objects/structseq.c; sourceTree = SOURCE_ROOT; };
-		402C4226AA51CE25887A7215 /* graminit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = graminit.c; path = CPython/Python/graminit.c; sourceTree = SOURCE_ROOT; };
-		410C4C869E1F466A6459051F /* genobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = genobject.c; path = CPython/Objects/genobject.c; sourceTree = SOURCE_ROOT; };
-		442B46E191A682E1B57417BF /* firstsets.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = firstsets.c; path = CPython/Parser/firstsets.c; sourceTree = SOURCE_ROOT; };
-		44F545338FFF2DE3DCDA7AD4 /* frozenmain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = frozenmain.c; path = CPython/Python/frozenmain.c; sourceTree = SOURCE_ROOT; };
-		45734CC0BA20B64BFB603CE0 /* descrobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = descrobject.c; path = CPython/Objects/descrobject.c; sourceTree = SOURCE_ROOT; };
-		460948F6A79C8CE96824EB3A /* signalmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = signalmodule.c; path = CPython/Modules/signalmodule.c; sourceTree = SOURCE_ROOT; };
-		4699481A859B6BCE59595178 /* Python-ast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Python-ast.c; path = CPython/Python/Python-ast.c; sourceTree = SOURCE_ROOT; };
-		484E448791FE9EFA50DAFEEF /* parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = parser.c; path = CPython/Parser/parser.c; sourceTree = SOURCE_ROOT; };
-		48F7453FB19EB2DD72F19BCD /* shamodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = shamodule.c; path = CPython/Modules/shamodule.c; sourceTree = SOURCE_ROOT; };
-		4AD24CB499FAACCBB96A2BD0 /* strtod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = strtod.c; path = CPython/Python/strtod.c; sourceTree = SOURCE_ROOT; };
-		4E2B4EC0A175F6E661014E0C /* _collectionsmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _collectionsmodule.c; path = CPython/Modules/_collectionsmodule.c; sourceTree = SOURCE_ROOT; };
-		4F084C338948013C5A425A2D /* getcopyright.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getcopyright.c; path = CPython/Python/getcopyright.c; sourceTree = SOURCE_ROOT; };
-		4FEA436AAFAAC7EC0E9E90F8 /* cellobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cellobject.c; path = CPython/Objects/cellobject.c; sourceTree = SOURCE_ROOT; };
-		50434A909F4170A92F868C4C /* formatter_string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = formatter_string.c; path = CPython/Python/formatter_string.c; sourceTree = SOURCE_ROOT; };
-		51004E91901629CC1FEF918C /* getargs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getargs.c; path = CPython/Python/getargs.c; sourceTree = SOURCE_ROOT; };
-		514B4993801F3EF4DAD3179E /* selectmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = selectmodule.c; path = CPython/Modules/selectmodule.c; sourceTree = SOURCE_ROOT; };
-		51D540F8A4DA349697E39342 /* acceler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = acceler.c; path = CPython/Parser/acceler.c; sourceTree = SOURCE_ROOT; };
-		52674FB1A988F7B4B0D8C6FE /* _sre.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _sre.c; path = CPython/Modules/_sre.c; sourceTree = SOURCE_ROOT; };
-		539D45A0BF3776219A25A769 /* memoryobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = memoryobject.c; path = CPython/Objects/memoryobject.c; sourceTree = SOURCE_ROOT; };
-		579A4EAEB76FD1F27132D40F /* dup2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = dup2.c; path = CPython/Python/dup2.c; sourceTree = SOURCE_ROOT; };
-		5DC3489B8F24431DCE71F742 /* floatobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = floatobject.c; path = CPython/Objects/floatobject.c; sourceTree = SOURCE_ROOT; };
-		5E1D499AAA50F512933CC4AB /* arraymodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = arraymodule.c; path = CPython/Modules/arraymodule.c; sourceTree = SOURCE_ROOT; };
-		5EC04E2C8A002993D940A2A3 /* dynload_stub.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = dynload_stub.c; path = CPython/Python/dynload_stub.c; sourceTree = SOURCE_ROOT; };
-		5F2643D8AE0B54CDD907CC1B /* datetimemodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = datetimemodule.c; path = CPython/Modules/datetimemodule.c; sourceTree = SOURCE_ROOT; };
-		601A43CC839DBB1D8871A1CA /* _math.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _math.c; path = CPython/Modules/_math.c; sourceTree = SOURCE_ROOT; };
-		62604C5D8285AB0C42A464C4 /* _weakref.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _weakref.c; path = CPython/Modules/_weakref.c; sourceTree = SOURCE_ROOT; };
-		65954E5D83FB274C64CF95A1 /* getcwd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getcwd.c; path = CPython/Python/getcwd.c; sourceTree = SOURCE_ROOT; };
-		689E4CE393177B0913A91FDE /* frameobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = frameobject.c; path = CPython/Objects/frameobject.c; sourceTree = SOURCE_ROOT; };
-		6A16456AA3DE2D22BE993839 /* pyctype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pyctype.c; path = CPython/Python/pyctype.c; sourceTree = SOURCE_ROOT; };
-		6B544ACABE86DD4D9A667816 /* bltinmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bltinmodule.c; path = CPython/Python/bltinmodule.c; sourceTree = SOURCE_ROOT; };
-		6BD643AFBA43BF4E875AA53F /* operator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = operator.c; path = CPython/Modules/operator.c; sourceTree = SOURCE_ROOT; };
-		70A0461BB22084CD2F34B205 /* getopt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getopt.c; path = CPython/Python/getopt.c; sourceTree = SOURCE_ROOT; };
-		70CB4B6FB3294AFF81ABDC39 /* compile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = compile.c; path = CPython/Python/compile.c; sourceTree = SOURCE_ROOT; };
-		78574FB692BCB75E7AD751FE /* zlibmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zlibmodule.c; path = CPython/Modules/zlibmodule.c; sourceTree = SOURCE_ROOT; };
-		785C4D9A8FD6A73FC0CC5D72 /* pygetpath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pygetpath.c; path = pygetpath.c; sourceTree = SOURCE_ROOT; };
-		7C6A49AA818846E9947FFF8C /* _functoolsmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _functoolsmodule.c; path = CPython/Modules/_functoolsmodule.c; sourceTree = SOURCE_ROOT; };
-		7C6F4A5EAC50FF9ECD52BD38 /* parsetok.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = parsetok.c; path = CPython/Parser/parsetok.c; sourceTree = SOURCE_ROOT; };
-		7E114A1786276AFF3E86F6C3 /* mysnprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mysnprintf.c; path = CPython/Python/mysnprintf.c; sourceTree = SOURCE_ROOT; };
-		7F114A3BB30E96AAB6F3736B /* formatter_unicode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = formatter_unicode.c; path = CPython/Python/formatter_unicode.c; sourceTree = SOURCE_ROOT; };
-		8131443C9FB25196AF584B5F /* structmember.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = structmember.c; path = CPython/Python/structmember.c; sourceTree = SOURCE_ROOT; };
-		81954A35B0A59B2D130DB5FD /* listnode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = listnode.c; path = CPython/Parser/listnode.c; sourceTree = SOURCE_ROOT; };
-		840E42759ECD2792F37930C7 /* dictobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = dictobject.c; path = CPython/Objects/dictobject.c; sourceTree = SOURCE_ROOT; };
-		84AF491791F264310F063FDC /* getcompiler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getcompiler.c; path = CPython/Python/getcompiler.c; sourceTree = SOURCE_ROOT; };
-		86EB4095930A5FDA63EA9183 /* boolobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = boolobject.c; path = CPython/Objects/boolobject.c; sourceTree = SOURCE_ROOT; };
-		87DE4353AC74A0F498DF8D21 /* md5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = md5.c; path = CPython/Modules/md5.c; sourceTree = SOURCE_ROOT; };
-		8A214222BCB1D7A86033C1AE /* classobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = classobject.c; path = CPython/Objects/classobject.c; sourceTree = SOURCE_ROOT; };
-		8FDF453F89DF021489022073 /* setobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = setobject.c; path = CPython/Objects/setobject.c; sourceTree = SOURCE_ROOT; };
-		903B47DAA8C56A03DE334AD2 /* marshal.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = marshal.c; path = CPython/Python/marshal.c; sourceTree = SOURCE_ROOT; };
-		90D34D45A421B282A4E1F903 /* mathmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mathmodule.c; path = CPython/Modules/mathmodule.c; sourceTree = SOURCE_ROOT; };
-		91434699B88AB48917076935 /* importdl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = importdl.c; path = CPython/Python/importdl.c; sourceTree = SOURCE_ROOT; };
-		9541465694AA2EECAD76BE19 /* iterobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = iterobject.c; path = CPython/Objects/iterobject.c; sourceTree = SOURCE_ROOT; };
-		9570478AB51501B4EDE0CBB8 /* pymath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pymath.c; path = CPython/Python/pymath.c; sourceTree = SOURCE_ROOT; };
-		99E24EADB016D1C33FBE59BB /* mystrtoul.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mystrtoul.c; path = CPython/Python/mystrtoul.c; sourceTree = SOURCE_ROOT; };
-		9AC44B17904C7D003E1F0E22 /* cStringIO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cStringIO.c; path = CPython/Modules/cStringIO.c; sourceTree = SOURCE_ROOT; };
-		9BBD456F9A77DD22461218C1 /* strdup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = strdup.c; path = CPython/Python/strdup.c; sourceTree = SOURCE_ROOT; };
-		9D814C9FA2C40262E4291F57 /* textio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = textio.c; path = CPython/Modules/_io/textio.c; sourceTree = SOURCE_ROOT; };
-		9E44447EA1269A86327A2DAA /* threadmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = threadmodule.c; path = CPython/Modules/threadmodule.c; sourceTree = SOURCE_ROOT; };
-		9FD84D39844A743D3AFCB61A /* enumobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = enumobject.c; path = CPython/Objects/enumobject.c; sourceTree = SOURCE_ROOT; };
-		A1104A6C8F20A23257D3F885 /* complexobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = complexobject.c; path = CPython/Objects/complexobject.c; sourceTree = SOURCE_ROOT; };
-		A1AD4DCC8E98A1BCE20E3C3D /* pystrtod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pystrtod.c; path = CPython/Python/pystrtod.c; sourceTree = SOURCE_ROOT; };
-		A27B4FE6A1AFA8457A78E7C6 /* intobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = intobject.c; path = CPython/Objects/intobject.c; sourceTree = SOURCE_ROOT; };
-		A39540E19457DA4E9D2AF953 /* _csv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _csv.c; path = CPython/Modules/_csv.c; sourceTree = SOURCE_ROOT; };
-		A45646D3B01CCEBBBEC494A8 /* pyarena.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pyarena.c; path = CPython/Python/pyarena.c; sourceTree = SOURCE_ROOT; };
-		A4DA40E2A92563F2CA6059B7 /* dtoa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = dtoa.c; path = CPython/Python/dtoa.c; sourceTree = SOURCE_ROOT; };
-		A6C140ADBF054477A3C6E264 /* tupleobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tupleobject.c; path = CPython/Objects/tupleobject.c; sourceTree = SOURCE_ROOT; };
-		A7104457BF03D19B30B5FAF2 /* traceback.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = traceback.c; path = CPython/Python/traceback.c; sourceTree = SOURCE_ROOT; };
-		A8E04DDFA9786515350A7678 /* tokenizer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tokenizer.c; path = CPython/Parser/tokenizer.c; sourceTree = SOURCE_ROOT; };
-		AE2C446DBE9999031F8A0475 /* _json.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _json.c; path = CPython/Modules/_json.c; sourceTree = SOURCE_ROOT; };
-		AE89497586B34D6673A09115 /* bitset.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bitset.c; path = CPython/Parser/bitset.c; sourceTree = SOURCE_ROOT; };
-		B0C247FEA4C4C06C567235C1 /* codecs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = codecs.c; path = CPython/Python/codecs.c; sourceTree = SOURCE_ROOT; };
-		B123401796D743EA6704971D /* pyfpe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pyfpe.c; path = CPython/Python/pyfpe.c; sourceTree = SOURCE_ROOT; };
-		B1704C9E80A917A3B35C95AA /* iobase.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = iobase.c; path = CPython/Modules/_io/iobase.c; sourceTree = SOURCE_ROOT; };
-		B20B40AFBA05E4EC712343CD /* socketmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = socketmodule.c; path = CPython/Modules/socketmodule.c; sourceTree = SOURCE_ROOT; };
-		B348411EAFD633CABBB8B6D5 /* unicodectype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unicodectype.c; path = CPython/Objects/unicodectype.c; sourceTree = SOURCE_ROOT; };
-		BC2C4993B4B80C271DC4554E /* getversion.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getversion.c; path = CPython/Python/getversion.c; sourceTree = SOURCE_ROOT; };
-		BC324A22874D38E6A45A7445 /* ceval.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ceval.c; path = CPython/Python/ceval.c; sourceTree = SOURCE_ROOT; };
-		BF1D4394A2282172745FA24B /* fileio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fileio.c; path = CPython/Modules/_io/fileio.c; sourceTree = SOURCE_ROOT; };
-		BF484DA69BF93447BC2763EA /* pystate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pystate.c; path = CPython/Python/pystate.c; sourceTree = SOURCE_ROOT; };
-		C0074E0DB60433407FEF61C2 /* pystrcmp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pystrcmp.c; path = CPython/Python/pystrcmp.c; sourceTree = SOURCE_ROOT; };
-		C00846129420CA5AFB0301E8 /* bytes_methods.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bytes_methods.c; path = CPython/Objects/bytes_methods.c; sourceTree = SOURCE_ROOT; };
-		C3AB427683A732A425A9B585 /* frozen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = frozen.c; path = CPython/Python/frozen.c; sourceTree = SOURCE_ROOT; };
-		C50A41A49E699CDB7B86201B /* _warnings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _warnings.c; path = CPython/Python/_warnings.c; sourceTree = SOURCE_ROOT; };
-		C62D4B3B87604691A3E6957C /* symtable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = symtable.c; path = CPython/Python/symtable.c; sourceTree = SOURCE_ROOT; };
-		C8F741DD9A6A3F56A983429E /* errnomodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errnomodule.c; path = CPython/Modules/errnomodule.c; sourceTree = SOURCE_ROOT; };
-		CCB641DCB95A75FAABCBD17B /* object.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = object.c; path = CPython/Objects/object.c; sourceTree = SOURCE_ROOT; };
-		CD2B42C1A3A25A2E8FB49F30 /* capsule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = capsule.c; path = CPython/Objects/capsule.c; sourceTree = SOURCE_ROOT; };
-		CDB7475784A75DAE5F34955B /* import.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = import.c; path = CPython/Python/import.c; sourceTree = SOURCE_ROOT; };
-		CE394F2D965AD95C08657950 /* atof.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = atof.c; path = CPython/Python/atof.c; sourceTree = SOURCE_ROOT; };
-		CF4148E38D19AF659C5FE4AB /* stringio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = stringio.c; path = CPython/Modules/_io/stringio.c; sourceTree = SOURCE_ROOT; };
-		D03D46C3A4B477E6EC2FB6EB /* rangeobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = rangeobject.c; path = CPython/Objects/rangeobject.c; sourceTree = SOURCE_ROOT; };
-		D0C54095994E26FB6AD12644 /* metagrammar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = metagrammar.c; path = CPython/Parser/metagrammar.c; sourceTree = SOURCE_ROOT; };
-		D18942BD9F99E59B42F6F3DA /* gcmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = gcmodule.c; path = CPython/Modules/gcmodule.c; sourceTree = SOURCE_ROOT; };
-		D19D4A1D8C0AE599633FB175 /* _codecsmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _codecsmodule.c; path = CPython/Modules/_codecsmodule.c; sourceTree = SOURCE_ROOT; };
-		D3BD42F8BEC4987C118FBDD4 /* _ssl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _ssl.c; path = CPython/Modules/_ssl.c; sourceTree = SOURCE_ROOT; };
-		D4FA48D784658A51BDBE11BE /* itertoolsmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = itertoolsmodule.c; path = CPython/Modules/itertoolsmodule.c; sourceTree = SOURCE_ROOT; };
-		D6604BAEB6AC8B58E29C6D9F /* grammar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = grammar.c; path = CPython/Parser/grammar.c; sourceTree = SOURCE_ROOT; };
-		D8264029B0608C038AB254EE /* random.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = random.c; path = CPython/Python/random.c; sourceTree = SOURCE_ROOT; };
-		D8C34F1BA1918AC225C3F83D /* bytesio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bytesio.c; path = CPython/Modules/_io/bytesio.c; sourceTree = SOURCE_ROOT; };
-		D95043A8BBD6DEE235966275 /* weakrefobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = weakrefobject.c; path = CPython/Objects/weakrefobject.c; sourceTree = SOURCE_ROOT; };
-		DA4742D78235DE20A398B42C /* codeobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = codeobject.c; path = CPython/Objects/codeobject.c; sourceTree = SOURCE_ROOT; };
-		DADF4889AA1C2AA22D6F6EF1 /* bytearrayobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bytearrayobject.c; path = CPython/Objects/bytearrayobject.c; sourceTree = SOURCE_ROOT; };
-		DC1949358E7D6EC9E78B5825 /* _randommodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _randommodule.c; path = CPython/Modules/_randommodule.c; sourceTree = SOURCE_ROOT; };
-		DD824C48BCA0DB51B383B0C1 /* grammar1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = grammar1.c; path = CPython/Parser/grammar1.c; sourceTree = SOURCE_ROOT; };
-		DDBF41FEAFA9D099EC075CE3 /* pythonrun.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pythonrun.c; path = CPython/Python/pythonrun.c; sourceTree = SOURCE_ROOT; };
-		DF9A4C539FA8A52F1A986C28 /* node.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = node.c; path = CPython/Parser/node.c; sourceTree = SOURCE_ROOT; };
-		E24645379C4939CA7FA7F8A2 /* fcntlmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fcntlmodule.c; path = CPython/Modules/fcntlmodule.c; sourceTree = SOURCE_ROOT; };
-		E7BB48E8861D328F174F4509 /* myreadline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = myreadline.c; path = CPython/Parser/myreadline.c; sourceTree = SOURCE_ROOT; };
-		E9924EABB0E1D28F6C3C6723 /* sha256module.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sha256module.c; path = CPython/Modules/sha256module.c; sourceTree = SOURCE_ROOT; };
-		ECC24FAC875F7BC4565F3606 /* bufferedio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bufferedio.c; path = CPython/Modules/_io/bufferedio.c; sourceTree = SOURCE_ROOT; };
-		ED3243EFA0812AA6BE8B9ED7 /* abstract.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = abstract.c; path = CPython/Objects/abstract.c; sourceTree = SOURCE_ROOT; };
-		EF1F4CBCAE093099F381EAD4 /* modsupport.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = modsupport.c; path = CPython/Python/modsupport.c; sourceTree = SOURCE_ROOT; };
-		F92E46D899B7843FC386963D /* future.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = future.c; path = CPython/Python/future.c; sourceTree = SOURCE_ROOT; };
-		FAA8479D9D440061DF0F9087 /* sliceobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sliceobject.c; path = CPython/Objects/sliceobject.c; sourceTree = SOURCE_ROOT; };
-		FE6348C78A4653E348B1B112 /* funcobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = funcobject.c; path = CPython/Objects/funcobject.c; sourceTree = SOURCE_ROOT; };
-		FF9B414FAF54F09EA37C51BA /* ast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ast.c; path = CPython/Python/ast.c; sourceTree = SOURCE_ROOT; };
+		243C4263A4D6C7F94A43EA02 /* firstsets.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = firstsets.c; path = CPython/Parser/firstsets.c; sourceTree = SOURCE_ROOT; };
+		25C845508D498DCF4456E158 /* fileobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fileobject.c; path = CPython/Objects/fileobject.c; sourceTree = SOURCE_ROOT; };
+		3489470490C0D80CEEFF48E5 /* sha256module.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sha256module.c; path = CPython/Modules/sha256module.c; sourceTree = SOURCE_ROOT; };
+		385A43EABD0E21D40DF2F327 /* getcopyright.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getcopyright.c; path = CPython/Python/getcopyright.c; sourceTree = SOURCE_ROOT; };
+		3A21443C9DF8F336F18C4EF5 /* random.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = random.c; path = CPython/Python/random.c; sourceTree = SOURCE_ROOT; };
+		3B7D42DFA86B0FCD47D92222 /* myreadline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = myreadline.c; path = CPython/Parser/myreadline.c; sourceTree = SOURCE_ROOT; };
+		3D414DC2B8C7DA34BB917CBB /* parsetok.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = parsetok.c; path = CPython/Parser/parsetok.c; sourceTree = SOURCE_ROOT; };
+		3D8F467BA11B51A4810E108E /* getargs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getargs.c; path = CPython/Python/getargs.c; sourceTree = SOURCE_ROOT; };
+		3EAE4150AC5B5696706076E0 /* getcompiler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getcompiler.c; path = CPython/Python/getcompiler.c; sourceTree = SOURCE_ROOT; };
+		42D84432881AE0FBF7CCA7EC /* funcobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = funcobject.c; path = CPython/Objects/funcobject.c; sourceTree = SOURCE_ROOT; };
+		430B42009CDF6D026886E725 /* import.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = import.c; path = CPython/Python/import.c; sourceTree = SOURCE_ROOT; };
+		434A458E99637099ABD560A8 /* intobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = intobject.c; path = CPython/Objects/intobject.c; sourceTree = SOURCE_ROOT; };
+		43E44536A07BF5153804DA8A /* acceler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = acceler.c; path = CPython/Parser/acceler.c; sourceTree = SOURCE_ROOT; };
+		44CE4CB79C8D54A14F093FE3 /* pymath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pymath.c; path = CPython/Python/pymath.c; sourceTree = SOURCE_ROOT; };
+		46A046D3BC4999BFA4583D1D /* strdup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = strdup.c; path = CPython/Python/strdup.c; sourceTree = SOURCE_ROOT; };
+		474A4011866C53F1B3C374E3 /* formatter_unicode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = formatter_unicode.c; path = CPython/Python/formatter_unicode.c; sourceTree = SOURCE_ROOT; };
+		47A74D90838C6AB4C6D596FE /* _collectionsmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _collectionsmodule.c; path = CPython/Modules/_collectionsmodule.c; sourceTree = SOURCE_ROOT; };
+		4A6341FB80C0FB9E8F349585 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = CPython/Modules/main.c; sourceTree = SOURCE_ROOT; };
+		4A954612AE358F590CCD29D1 /* cellobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cellobject.c; path = CPython/Objects/cellobject.c; sourceTree = SOURCE_ROOT; };
+		4C8B4CAAA7AE0D1B82F33B77 /* getversion.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getversion.c; path = CPython/Python/getversion.c; sourceTree = SOURCE_ROOT; };
+		4D254D0BBB2058CE41409721 /* listnode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = listnode.c; path = CPython/Parser/listnode.c; sourceTree = SOURCE_ROOT; };
+		4F4A4877BAAA8C5D50EC0846 /* _randommodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _randommodule.c; path = CPython/Modules/_randommodule.c; sourceTree = SOURCE_ROOT; };
+		505447409701EB3FECC942E8 /* dynload_stub.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = dynload_stub.c; path = CPython/Python/dynload_stub.c; sourceTree = SOURCE_ROOT; };
+		50C74D23BE80255D7CA215B1 /* pyctype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pyctype.c; path = CPython/Python/pyctype.c; sourceTree = SOURCE_ROOT; };
+		526241B58782ACFB8C0C13C0 /* iobase.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = iobase.c; path = CPython/Modules/_io/iobase.c; sourceTree = SOURCE_ROOT; };
+		52894F40ACC49566A8098182 /* floatobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = floatobject.c; path = CPython/Objects/floatobject.c; sourceTree = SOURCE_ROOT; };
+		52D3436CAE9A396AA14958D3 /* traceback.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = traceback.c; path = CPython/Python/traceback.c; sourceTree = SOURCE_ROOT; };
+		56D54FCB9221ADF4E116C53F /* unicodectype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unicodectype.c; path = CPython/Objects/unicodectype.c; sourceTree = SOURCE_ROOT; };
+		5DD04EC386197FC8BB32B02E /* ast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ast.c; path = CPython/Python/ast.c; sourceTree = SOURCE_ROOT; };
+		5EBB49398ED094F67EB2388A /* genobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = genobject.c; path = CPython/Objects/genobject.c; sourceTree = SOURCE_ROOT; };
+		5F3040A4ABB289BEFF5806C2 /* pythonrun.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pythonrun.c; path = CPython/Python/pythonrun.c; sourceTree = SOURCE_ROOT; };
+		64B94080B080FCAEE8054425 /* signalmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = signalmodule.c; path = CPython/Modules/signalmodule.c; sourceTree = SOURCE_ROOT; };
+		652D4C4EAF325E5AFC46BCD4 /* codecs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = codecs.c; path = CPython/Python/codecs.c; sourceTree = SOURCE_ROOT; };
+		66494E4683D7276E70308D18 /* bytesio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bytesio.c; path = CPython/Modules/_io/bytesio.c; sourceTree = SOURCE_ROOT; };
+		66CF4A00B1A5FF5D0755ED2B /* structseq.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = structseq.c; path = CPython/Objects/structseq.c; sourceTree = SOURCE_ROOT; };
+		67784FFA9C883B35519FAF48 /* boolobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = boolobject.c; path = CPython/Objects/boolobject.c; sourceTree = SOURCE_ROOT; };
+		6AF9487EB460EC8CDDC85303 /* unicodeobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unicodeobject.c; path = CPython/Objects/unicodeobject.c; sourceTree = SOURCE_ROOT; };
+		6C484D6DAB67F12739FD35BF /* setobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = setobject.c; path = CPython/Objects/setobject.c; sourceTree = SOURCE_ROOT; };
+		6E924C07816710757D0A0AA5 /* metagrammar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = metagrammar.c; path = CPython/Parser/metagrammar.c; sourceTree = SOURCE_ROOT; };
+		749948C38795BCAD83F6EDC3 /* object.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = object.c; path = CPython/Objects/object.c; sourceTree = SOURCE_ROOT; };
+		760742DA8C6626787EB12646 /* socketmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = socketmodule.c; path = CPython/Modules/socketmodule.c; sourceTree = SOURCE_ROOT; };
+		7AF24C789D382A0EB104AEA5 /* mystrtoul.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mystrtoul.c; path = CPython/Python/mystrtoul.c; sourceTree = SOURCE_ROOT; };
+		7CA442EFABA8B9A7F04F3620 /* capsule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = capsule.c; path = CPython/Objects/capsule.c; sourceTree = SOURCE_ROOT; };
+		7CE245CBABF4A6372B5C80D1 /* Python-ast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Python-ast.c; path = CPython/Python/Python-ast.c; sourceTree = SOURCE_ROOT; };
+		7ECD424EBCB4F67ACA5EB10F /* descrobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = descrobject.c; path = CPython/Objects/descrobject.c; sourceTree = SOURCE_ROOT; };
+		80FB4C978765B07650F75E35 /* grammar1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = grammar1.c; path = CPython/Parser/grammar1.c; sourceTree = SOURCE_ROOT; };
+		823443A0B6FAA485B94D23A7 /* bltinmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bltinmodule.c; path = CPython/Python/bltinmodule.c; sourceTree = SOURCE_ROOT; };
+		8632414295932FEBE1FC8785 /* formatter_string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = formatter_string.c; path = CPython/Python/formatter_string.c; sourceTree = SOURCE_ROOT; };
+		8BE9431D9A50588DAF280B2C /* md5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = md5.c; path = CPython/Modules/md5.c; sourceTree = SOURCE_ROOT; };
+		8C12410FA67D539DE24F4768 /* ceval.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ceval.c; path = CPython/Python/ceval.c; sourceTree = SOURCE_ROOT; };
+		8D8F48B4A7B65D1922F43E2B /* _ssl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _ssl.c; path = CPython/Modules/_ssl.c; sourceTree = SOURCE_ROOT; };
+		8E4D4D34923555AA10EA5C28 /* datetimemodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = datetimemodule.c; path = CPython/Modules/datetimemodule.c; sourceTree = SOURCE_ROOT; };
+		915342788F701F6976F4B643 /* enumobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = enumobject.c; path = CPython/Objects/enumobject.c; sourceTree = SOURCE_ROOT; };
+		91A048C58577D0FC96E82007 /* graminit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = graminit.c; path = CPython/Python/graminit.c; sourceTree = SOURCE_ROOT; };
+		9888469CA2DFCA82517AA513 /* _sre.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _sre.c; path = CPython/Modules/_sre.c; sourceTree = SOURCE_ROOT; };
+		9C444C73890049DB1FFF3595 /* fileio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fileio.c; path = CPython/Modules/_io/fileio.c; sourceTree = SOURCE_ROOT; };
+		9C5F4C9BA01086E3CB7856B6 /* frozenmain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = frozenmain.c; path = CPython/Python/frozenmain.c; sourceTree = SOURCE_ROOT; };
+		9F40443A9BA3EBB330ED1953 /* memoryobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = memoryobject.c; path = CPython/Objects/memoryobject.c; sourceTree = SOURCE_ROOT; };
+		9F774B2F8C6C9AE159A7AC22 /* md5module.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = md5module.c; path = CPython/Modules/md5module.c; sourceTree = SOURCE_ROOT; };
+		9FFC42639CDC4910BF068062 /* rangeobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = rangeobject.c; path = CPython/Objects/rangeobject.c; sourceTree = SOURCE_ROOT; };
+		A02F4D87918AD0719503D783 /* _functoolsmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _functoolsmodule.c; path = CPython/Modules/_functoolsmodule.c; sourceTree = SOURCE_ROOT; };
+		A0A34EBDB455AC62027EADAF /* pystrcmp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pystrcmp.c; path = CPython/Python/pystrcmp.c; sourceTree = SOURCE_ROOT; };
+		A2484EC0917BEE2B2940179B /* grammar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = grammar.c; path = CPython/Parser/grammar.c; sourceTree = SOURCE_ROOT; };
+		A28940EEA5351716F92CA205 /* atof.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = atof.c; path = CPython/Python/atof.c; sourceTree = SOURCE_ROOT; };
+		A5234B5EAA35660786919B5C /* pyfpe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pyfpe.c; path = CPython/Python/pyfpe.c; sourceTree = SOURCE_ROOT; };
+		A8634419A54F3E3070E1FCFB /* _struct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _struct.c; path = CPython/Modules/_struct.c; sourceTree = SOURCE_ROOT; };
+		A9F84DEAA5DB58CA181CEBD0 /* tupleobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tupleobject.c; path = CPython/Objects/tupleobject.c; sourceTree = SOURCE_ROOT; };
+		AF174FFF97BBB6A2F024C62B /* compile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = compile.c; path = CPython/Python/compile.c; sourceTree = SOURCE_ROOT; };
+		AF364F75B6ED09C3A6AF316F /* parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = parser.c; path = CPython/Parser/parser.c; sourceTree = SOURCE_ROOT; };
+		B0D5406A981C9DD1ADDA976C /* bufferedio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bufferedio.c; path = CPython/Modules/_io/bufferedio.c; sourceTree = SOURCE_ROOT; };
+		B1914404AC39593791B8432C /* _csv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _csv.c; path = CPython/Modules/_csv.c; sourceTree = SOURCE_ROOT; };
+		B1C0415D8F2089D7F712FE8D /* iterobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = iterobject.c; path = CPython/Objects/iterobject.c; sourceTree = SOURCE_ROOT; };
+		B2B24C63A853A1603DBFBC08 /* complexobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = complexobject.c; path = CPython/Objects/complexobject.c; sourceTree = SOURCE_ROOT; };
+		B36546EFB7380452C02090AB /* sliceobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sliceobject.c; path = CPython/Objects/sliceobject.c; sourceTree = SOURCE_ROOT; };
+		B38549E09DEE311F87544C12 /* mysnprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mysnprintf.c; path = CPython/Python/mysnprintf.c; sourceTree = SOURCE_ROOT; };
+		B648416388D1378F20F951EF /* errnomodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errnomodule.c; path = CPython/Modules/errnomodule.c; sourceTree = SOURCE_ROOT; };
+		B6D242F4856B64B12736E20A /* typeobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = typeobject.c; path = CPython/Objects/typeobject.c; sourceTree = SOURCE_ROOT; };
+		B75C48BE98E7DCECCD277ADB /* stringobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = stringobject.c; path = CPython/Objects/stringobject.c; sourceTree = SOURCE_ROOT; };
+		B79C4D0D83DD008C30ACEE6E /* selectmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = selectmodule.c; path = CPython/Modules/selectmodule.c; sourceTree = SOURCE_ROOT; };
+		B8AE40B49B5ECC04B6C46D2A /* modsupport.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = modsupport.c; path = CPython/Python/modsupport.c; sourceTree = SOURCE_ROOT; };
+		BA3F4EA99CD65BAC81464074 /* bitset.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bitset.c; path = CPython/Parser/bitset.c; sourceTree = SOURCE_ROOT; };
+		BB1F48379BCAC342E4F48A10 /* pygetpath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pygetpath.c; path = pygetpath.c; sourceTree = SOURCE_ROOT; };
+		BCD34BDCA4E9FB2005288A26 /* _weakref.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _weakref.c; path = CPython/Modules/_weakref.c; sourceTree = SOURCE_ROOT; };
+		BEED4AF69C9C06EF10FC9677 /* marshal.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = marshal.c; path = CPython/Python/marshal.c; sourceTree = SOURCE_ROOT; };
+		C3094E959920AFCBE92633BD /* _math.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _math.c; path = CPython/Modules/_math.c; sourceTree = SOURCE_ROOT; };
+		C34746729A98B518C8928B7B /* cobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cobject.c; path = CPython/Objects/cobject.c; sourceTree = SOURCE_ROOT; };
+		C3874AAD9CD4022968A66689 /* errors.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = errors.c; path = CPython/Python/errors.c; sourceTree = SOURCE_ROOT; };
+		C394462FAEAFB380B948033F /* getbuildinfo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getbuildinfo.c; path = CPython/Modules/getbuildinfo.c; sourceTree = SOURCE_ROOT; };
+		C8844DC79A2CD38019A4E8E8 /* node.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = node.c; path = CPython/Parser/node.c; sourceTree = SOURCE_ROOT; };
+		C9824343B84B889DDCAB5A61 /* pyarena.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pyarena.c; path = CPython/Python/pyarena.c; sourceTree = SOURCE_ROOT; };
+		CB694FFEA31ED1E1AC8907B6 /* stringio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = stringio.c; path = CPython/Modules/_io/stringio.c; sourceTree = SOURCE_ROOT; };
+		CB8A46E190172E03C18F457C /* arraymodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = arraymodule.c; path = CPython/Modules/arraymodule.c; sourceTree = SOURCE_ROOT; };
+		CCD7494D9CE2A84263D6266D /* _codecsmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _codecsmodule.c; path = CPython/Modules/_codecsmodule.c; sourceTree = SOURCE_ROOT; };
+		CD5942ECADFA42D0F62C7BB3 /* frameobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = frameobject.c; path = CPython/Objects/frameobject.c; sourceTree = SOURCE_ROOT; };
+		CE634B3A8D32F873BA0F1B90 /* bytes_methods.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bytes_methods.c; path = CPython/Objects/bytes_methods.c; sourceTree = SOURCE_ROOT; };
+		CF6A4A72B769F1403601473D /* zlibmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zlibmodule.c; path = CPython/Modules/zlibmodule.c; sourceTree = SOURCE_ROOT; };
+		D18A4F2FB5F45ECD5BC32320 /* getplatform.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getplatform.c; path = CPython/Python/getplatform.c; sourceTree = SOURCE_ROOT; };
+		D28C4AACB0B3B9E345C6DB07 /* timemodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = timemodule.c; path = CPython/Modules/timemodule.c; sourceTree = SOURCE_ROOT; };
+		D309430882109504A4ED6156 /* classobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = classobject.c; path = CPython/Objects/classobject.c; sourceTree = SOURCE_ROOT; };
+		D31743F78BC116F11FD14941 /* fcntlmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fcntlmodule.c; path = CPython/Modules/fcntlmodule.c; sourceTree = SOURCE_ROOT; };
+		D35C47D082593D10C3EBF9E3 /* methodobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = methodobject.c; path = CPython/Objects/methodobject.c; sourceTree = SOURCE_ROOT; };
+		D5BF4C099AE4F78FDDC33E1F /* moduleobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = moduleobject.c; path = CPython/Objects/moduleobject.c; sourceTree = SOURCE_ROOT; };
+		D76B4E5DB35E42B4C17FBE06 /* itertoolsmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = itertoolsmodule.c; path = CPython/Modules/itertoolsmodule.c; sourceTree = SOURCE_ROOT; };
+		D8FC4A1F9EF1AD22D1B77600 /* getcwd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = getcwd.c; path = CPython/Python/getcwd.c; sourceTree = SOURCE_ROOT; };
+		D9C84696BC01F4E7A5387E8F /* longobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = longobject.c; path = CPython/Objects/longobject.c; sourceTree = SOURCE_ROOT; };
+		DAC84C2B9745173DAE20D062 /* pyimportconfig.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pyimportconfig.c; path = pyimportconfig.c; sourceTree = SOURCE_ROOT; };
+		DB654BF58467D26B944788BC /* threadmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = threadmodule.c; path = CPython/Modules/threadmodule.c; sourceTree = SOURCE_ROOT; };
+		DD5043DABC6D2EBF68C7AC3B /* _warnings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _warnings.c; path = CPython/Python/_warnings.c; sourceTree = SOURCE_ROOT; };
+		E08646A6ABE15A468F760BD9 /* codeobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = codeobject.c; path = CPython/Objects/codeobject.c; sourceTree = SOURCE_ROOT; };
+		E3CB4773BCA9D73B586A1C99 /* gcmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = gcmodule.c; path = CPython/Modules/gcmodule.c; sourceTree = SOURCE_ROOT; };
+		E59D42A5A489D821B2704F9F /* exceptions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = exceptions.c; path = CPython/Objects/exceptions.c; sourceTree = SOURCE_ROOT; };
+		E5F54CD3804145EA87DE4F8C /* cStringIO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cStringIO.c; path = CPython/Modules/cStringIO.c; sourceTree = SOURCE_ROOT; };
+		E83A4B48B78C070164331622 /* _json.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = _json.c; path = CPython/Modules/_json.c; sourceTree = SOURCE_ROOT; };
+		E90C41F3B1EF0A6AEF24FFE5 /* shamodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = shamodule.c; path = CPython/Modules/shamodule.c; sourceTree = SOURCE_ROOT; };
+		E9AB4A098E4EFB9875FB5CF8 /* structmember.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = structmember.c; path = CPython/Python/structmember.c; sourceTree = SOURCE_ROOT; };
+		E9F94F3EBDF246E5A460A01D /* bytearrayobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = bytearrayobject.c; path = CPython/Objects/bytearrayobject.c; sourceTree = SOURCE_ROOT; };
+		EA2445EEA635777D4C550D55 /* pystate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = pystate.c; path = CPython/Python/pystate.c; sourceTree = SOURCE_ROOT; };
+		EBA748C2A675D9E37431B681 /* sysmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sysmodule.c; path = CPython/Python/sysmodule.c; sourceTree = SOURCE_ROOT; };
+		EF4C499DB7385CE050D5699D /* dictobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = dictobject.c; path = CPython/Objects/dictobject.c; sourceTree = SOURCE_ROOT; };
+		F29F49C298B9570247696085 /* operator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = operator.c; path = CPython/Modules/operator.c; sourceTree = SOURCE_ROOT; };
+		FB3D4C4F85D322F1A06E00E5 /* mathmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = mathmodule.c; path = CPython/Modules/mathmodule.c; sourceTree = SOURCE_ROOT; };
+		FC2649BABC5BF73EE8701046 /* asdl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = asdl.c; path = CPython/Python/asdl.c; sourceTree = SOURCE_ROOT; };
+		FD16411AB5EA524BC04C87BE /* frozen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = frozen.c; path = CPython/Python/frozen.c; sourceTree = SOURCE_ROOT; };
+		FEB442F38EA284BA2FEDC4FB /* posixmodule.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = posixmodule.c; path = CPython/Modules/posixmodule.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,7 +319,7 @@
 			children = (
 				2303494F17AC4B1000C6033C /* Python */,
 				2303494E17AC4B1000C6033C /* Products */,
-				993E4EE9B07D76EEB1CB41AC /* src */,
+				A316491C9BA6990E1B46DCD5 /* src */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,154 +338,154 @@
 			path = Python;
 			sourceTree = "<group>";
 		};
-		993E4EE9B07D76EEB1CB41AC /* src */ = {
+		A316491C9BA6990E1B46DCD5 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				4AD24CB499FAACCBB96A2BD0 /* strtod.c */,
-				BC2C4993B4B80C271DC4554E /* getversion.c */,
-				65954E5D83FB274C64CF95A1 /* getcwd.c */,
-				7E114A1786276AFF3E86F6C3 /* mysnprintf.c */,
-				6A16456AA3DE2D22BE993839 /* pyctype.c */,
-				51004E91901629CC1FEF918C /* getargs.c */,
-				CE394F2D965AD95C08657950 /* atof.c */,
-				70A0461BB22084CD2F34B205 /* getopt.c */,
-				70CB4B6FB3294AFF81ABDC39 /* compile.c */,
-				1C8F4186B6D977A8D3BAD86C /* getplatform.c */,
-				C3AB427683A732A425A9B585 /* frozen.c */,
-				785C4D9A8FD6A73FC0CC5D72 /* pygetpath.c */,
-				84AF491791F264310F063FDC /* getcompiler.c */,
-				FF9B414FAF54F09EA37C51BA /* ast.c */,
-				99E24EADB016D1C33FBE59BB /* mystrtoul.c */,
-				CDB7475784A75DAE5F34955B /* import.c */,
-				DDBF41FEAFA9D099EC075CE3 /* pythonrun.c */,
-				4F084C338948013C5A425A2D /* getcopyright.c */,
-				1BAF404FA7CAA5B52D2F1B2A /* thread.c */,
-				7F114A3BB30E96AAB6F3736B /* formatter_unicode.c */,
-				26CC4FD397FCA88A486DF2A2 /* peephole.c */,
-				384B4E3AADDCFD6F24C2ECAB /* pyimportconfig.c */,
-				C62D4B3B87604691A3E6957C /* symtable.c */,
-				903B47DAA8C56A03DE334AD2 /* marshal.c */,
-				BF484DA69BF93447BC2763EA /* pystate.c */,
-				8131443C9FB25196AF584B5F /* structmember.c */,
-				3E734D1D9CFC3B33F17FD361 /* sysmodule.c */,
-				6B544ACABE86DD4D9A667816 /* bltinmodule.c */,
-				B0C247FEA4C4C06C567235C1 /* codecs.c */,
-				4699481A859B6BCE59595178 /* Python-ast.c */,
-				D8264029B0608C038AB254EE /* random.c */,
-				44F545338FFF2DE3DCDA7AD4 /* frozenmain.c */,
-				BC324A22874D38E6A45A7445 /* ceval.c */,
-				391C4AD788D6210DEDC310AD /* errors.c */,
-				402C4226AA51CE25887A7215 /* graminit.c */,
-				A1AD4DCC8E98A1BCE20E3C3D /* pystrtod.c */,
-				F92E46D899B7843FC386963D /* future.c */,
-				2DEE48659ACAC451F62790F3 /* asdl.c */,
-				579A4EAEB76FD1F27132D40F /* dup2.c */,
-				5EC04E2C8A002993D940A2A3 /* dynload_stub.c */,
-				C50A41A49E699CDB7B86201B /* _warnings.c */,
-				A7104457BF03D19B30B5FAF2 /* traceback.c */,
-				C0074E0DB60433407FEF61C2 /* pystrcmp.c */,
-				A45646D3B01CCEBBBEC494A8 /* pyarena.c */,
-				9BBD456F9A77DD22461218C1 /* strdup.c */,
-				B123401796D743EA6704971D /* pyfpe.c */,
-				91434699B88AB48917076935 /* importdl.c */,
-				9570478AB51501B4EDE0CBB8 /* pymath.c */,
-				A4DA40E2A92563F2CA6059B7 /* dtoa.c */,
-				EF1F4CBCAE093099F381EAD4 /* modsupport.c */,
-				50434A909F4170A92F868C4C /* formatter_string.c */,
-				5F2643D8AE0B54CDD907CC1B /* datetimemodule.c */,
-				DC1949358E7D6EC9E78B5825 /* _randommodule.c */,
-				62604C5D8285AB0C42A464C4 /* _weakref.c */,
-				460948F6A79C8CE96824EB3A /* signalmodule.c */,
-				A39540E19457DA4E9D2AF953 /* _csv.c */,
-				48F7453FB19EB2DD72F19BCD /* shamodule.c */,
-				52674FB1A988F7B4B0D8C6FE /* _sre.c */,
-				D19D4A1D8C0AE599633FB175 /* _codecsmodule.c */,
-				E24645379C4939CA7FA7F8A2 /* fcntlmodule.c */,
-				C8F741DD9A6A3F56A983429E /* errnomodule.c */,
-				4E2B4EC0A175F6E661014E0C /* _collectionsmodule.c */,
-				CF4148E38D19AF659C5FE4AB /* stringio.c */,
-				26854D439A99C0FEBDC11999 /* getbuildinfo.c */,
-				78574FB692BCB75E7AD751FE /* zlibmodule.c */,
-				9E44447EA1269A86327A2DAA /* threadmodule.c */,
-				6BD643AFBA43BF4E875AA53F /* operator.c */,
-				08344BBB892A6546E9576AD3 /* _struct.c */,
-				87DE4353AC74A0F498DF8D21 /* md5.c */,
-				ECC24FAC875F7BC4565F3606 /* bufferedio.c */,
-				170143FD85F358DFB9628CCA /* md5module.c */,
-				0C1D4D7FA88B4586C0D3E157 /* main.c */,
-				D4FA48D784658A51BDBE11BE /* itertoolsmodule.c */,
-				B20B40AFBA05E4EC712343CD /* socketmodule.c */,
-				BF1D4394A2282172745FA24B /* fileio.c */,
-				B1704C9E80A917A3B35C95AA /* iobase.c */,
-				514B4993801F3EF4DAD3179E /* selectmodule.c */,
-				E9924EABB0E1D28F6C3C6723 /* sha256module.c */,
-				01764F22981B3120D81AE956 /* sha512module.c */,
-				601A43CC839DBB1D8871A1CA /* _math.c */,
-				391B420484E35C41736D5357 /* binascii.c */,
-				3CE7480F9E48A7EE4DD28A9E /* timemodule.c */,
-				90D34D45A421B282A4E1F903 /* mathmodule.c */,
-				7C6A49AA818846E9947FFF8C /* _functoolsmodule.c */,
-				D3BD42F8BEC4987C118FBDD4 /* _ssl.c */,
-				5E1D499AAA50F512933CC4AB /* arraymodule.c */,
-				2F0F435AA7ED6E6F7358149C /* posixmodule.c */,
-				08BD447FAFC8CAD5E5E0E291 /* _iomodule.c */,
-				AE2C446DBE9999031F8A0475 /* _json.c */,
-				D8C34F1BA1918AC225C3F83D /* bytesio.c */,
-				D18942BD9F99E59B42F6F3DA /* gcmodule.c */,
-				9AC44B17904C7D003E1F0E22 /* cStringIO.c */,
-				9D814C9FA2C40262E4291F57 /* textio.c */,
-				DA4742D78235DE20A398B42C /* codeobject.c */,
-				CD2B42C1A3A25A2E8FB49F30 /* capsule.c */,
-				ED3243EFA0812AA6BE8B9ED7 /* abstract.c */,
-				689E4CE393177B0913A91FDE /* frameobject.c */,
-				FE6348C78A4653E348B1B112 /* funcobject.c */,
-				00B5420ABCA53054E637C3B6 /* bufferobject.c */,
-				0F2C44D7BFEB4BC946DC550C /* typeobject.c */,
-				24164C2085423BA4A76E183D /* longobject.c */,
-				116B4939B8DDFBD8C76AA904 /* stringobject.c */,
-				9FD84D39844A743D3AFCB61A /* enumobject.c */,
-				0F2442F5AB041228A2FFD41E /* methodobject.c */,
-				CCB641DCB95A75FAABCBD17B /* object.c */,
-				8FDF453F89DF021489022073 /* setobject.c */,
-				86EB4095930A5FDA63EA9183 /* boolobject.c */,
-				096E4728A232ED9938929A7C /* exceptions.c */,
-				C00846129420CA5AFB0301E8 /* bytes_methods.c */,
-				A27B4FE6A1AFA8457A78E7C6 /* intobject.c */,
-				A1104A6C8F20A23257D3F885 /* complexobject.c */,
-				34E147B49F217A984A422357 /* obmalloc.c */,
-				13244ADEB42A8133132A1932 /* listobject.c */,
-				04994898A44976ABD044B807 /* fileobject.c */,
-				8A214222BCB1D7A86033C1AE /* classobject.c */,
-				3F744A79A85C970ADB930C59 /* structseq.c */,
-				FAA8479D9D440061DF0F9087 /* sliceobject.c */,
-				B348411EAFD633CABBB8B6D5 /* unicodectype.c */,
-				10B24DE1ABA5D41BC5E8B997 /* cobject.c */,
-				410C4C869E1F466A6459051F /* genobject.c */,
-				840E42759ECD2792F37930C7 /* dictobject.c */,
-				DADF4889AA1C2AA22D6F6EF1 /* bytearrayobject.c */,
-				A6C140ADBF054477A3C6E264 /* tupleobject.c */,
-				28224D219C001E3F523B5696 /* unicodeobject.c */,
-				3CC048DDB7C23C556FE1B2D4 /* moduleobject.c */,
-				D03D46C3A4B477E6EC2FB6EB /* rangeobject.c */,
-				9541465694AA2EECAD76BE19 /* iterobject.c */,
-				D95043A8BBD6DEE235966275 /* weakrefobject.c */,
-				45734CC0BA20B64BFB603CE0 /* descrobject.c */,
-				4FEA436AAFAAC7EC0E9E90F8 /* cellobject.c */,
-				539D45A0BF3776219A25A769 /* memoryobject.c */,
-				5DC3489B8F24431DCE71F742 /* floatobject.c */,
-				12E143DAB8F606F5D3BD6508 /* printgrammar.c */,
-				D6604BAEB6AC8B58E29C6D9F /* grammar.c */,
-				DD824C48BCA0DB51B383B0C1 /* grammar1.c */,
-				AE89497586B34D6673A09115 /* bitset.c */,
-				E7BB48E8861D328F174F4509 /* myreadline.c */,
-				DF9A4C539FA8A52F1A986C28 /* node.c */,
-				484E448791FE9EFA50DAFEEF /* parser.c */,
-				D0C54095994E26FB6AD12644 /* metagrammar.c */,
-				A8E04DDFA9786515350A7678 /* tokenizer.c */,
-				442B46E191A682E1B57417BF /* firstsets.c */,
-				81954A35B0A59B2D130DB5FD /* listnode.c */,
-				7C6F4A5EAC50FF9ECD52BD38 /* parsetok.c */,
-				51D540F8A4DA349697E39342 /* acceler.c */,
+				0A834D1BB47817341C08C6E5 /* strtod.c */,
+				4C8B4CAAA7AE0D1B82F33B77 /* getversion.c */,
+				D8FC4A1F9EF1AD22D1B77600 /* getcwd.c */,
+				B38549E09DEE311F87544C12 /* mysnprintf.c */,
+				50C74D23BE80255D7CA215B1 /* pyctype.c */,
+				3D8F467BA11B51A4810E108E /* getargs.c */,
+				A28940EEA5351716F92CA205 /* atof.c */,
+				0962409790FD4F796BE6A292 /* getopt.c */,
+				AF174FFF97BBB6A2F024C62B /* compile.c */,
+				D18A4F2FB5F45ECD5BC32320 /* getplatform.c */,
+				FD16411AB5EA524BC04C87BE /* frozen.c */,
+				BB1F48379BCAC342E4F48A10 /* pygetpath.c */,
+				3EAE4150AC5B5696706076E0 /* getcompiler.c */,
+				5DD04EC386197FC8BB32B02E /* ast.c */,
+				7AF24C789D382A0EB104AEA5 /* mystrtoul.c */,
+				430B42009CDF6D026886E725 /* import.c */,
+				5F3040A4ABB289BEFF5806C2 /* pythonrun.c */,
+				385A43EABD0E21D40DF2F327 /* getcopyright.c */,
+				04104D868463FBEACE5D60F8 /* thread.c */,
+				474A4011866C53F1B3C374E3 /* formatter_unicode.c */,
+				1E5048A08FAE68F7918F97D6 /* peephole.c */,
+				DAC84C2B9745173DAE20D062 /* pyimportconfig.c */,
+				01CA49268A0E081E1E5FBFFB /* symtable.c */,
+				BEED4AF69C9C06EF10FC9677 /* marshal.c */,
+				EA2445EEA635777D4C550D55 /* pystate.c */,
+				E9AB4A098E4EFB9875FB5CF8 /* structmember.c */,
+				EBA748C2A675D9E37431B681 /* sysmodule.c */,
+				823443A0B6FAA485B94D23A7 /* bltinmodule.c */,
+				652D4C4EAF325E5AFC46BCD4 /* codecs.c */,
+				7CE245CBABF4A6372B5C80D1 /* Python-ast.c */,
+				3A21443C9DF8F336F18C4EF5 /* random.c */,
+				9C5F4C9BA01086E3CB7856B6 /* frozenmain.c */,
+				8C12410FA67D539DE24F4768 /* ceval.c */,
+				C3874AAD9CD4022968A66689 /* errors.c */,
+				91A048C58577D0FC96E82007 /* graminit.c */,
+				087D4304B100B2AC0D1F99BB /* pystrtod.c */,
+				0BAA4F5ABCBC247CD3B1DB26 /* future.c */,
+				FC2649BABC5BF73EE8701046 /* asdl.c */,
+				1AEF4E3EA873F0C2F78A2CB7 /* dup2.c */,
+				505447409701EB3FECC942E8 /* dynload_stub.c */,
+				DD5043DABC6D2EBF68C7AC3B /* _warnings.c */,
+				52D3436CAE9A396AA14958D3 /* traceback.c */,
+				A0A34EBDB455AC62027EADAF /* pystrcmp.c */,
+				C9824343B84B889DDCAB5A61 /* pyarena.c */,
+				46A046D3BC4999BFA4583D1D /* strdup.c */,
+				A5234B5EAA35660786919B5C /* pyfpe.c */,
+				21AF4DD3846EF694C1B6AE73 /* importdl.c */,
+				44CE4CB79C8D54A14F093FE3 /* pymath.c */,
+				0EE24FC293D8D033A00196D6 /* dtoa.c */,
+				B8AE40B49B5ECC04B6C46D2A /* modsupport.c */,
+				8632414295932FEBE1FC8785 /* formatter_string.c */,
+				8E4D4D34923555AA10EA5C28 /* datetimemodule.c */,
+				4F4A4877BAAA8C5D50EC0846 /* _randommodule.c */,
+				BCD34BDCA4E9FB2005288A26 /* _weakref.c */,
+				64B94080B080FCAEE8054425 /* signalmodule.c */,
+				B1914404AC39593791B8432C /* _csv.c */,
+				E90C41F3B1EF0A6AEF24FFE5 /* shamodule.c */,
+				9888469CA2DFCA82517AA513 /* _sre.c */,
+				CCD7494D9CE2A84263D6266D /* _codecsmodule.c */,
+				D31743F78BC116F11FD14941 /* fcntlmodule.c */,
+				B648416388D1378F20F951EF /* errnomodule.c */,
+				47A74D90838C6AB4C6D596FE /* _collectionsmodule.c */,
+				CB694FFEA31ED1E1AC8907B6 /* stringio.c */,
+				C394462FAEAFB380B948033F /* getbuildinfo.c */,
+				CF6A4A72B769F1403601473D /* zlibmodule.c */,
+				DB654BF58467D26B944788BC /* threadmodule.c */,
+				F29F49C298B9570247696085 /* operator.c */,
+				A8634419A54F3E3070E1FCFB /* _struct.c */,
+				8BE9431D9A50588DAF280B2C /* md5.c */,
+				B0D5406A981C9DD1ADDA976C /* bufferedio.c */,
+				9F774B2F8C6C9AE159A7AC22 /* md5module.c */,
+				4A6341FB80C0FB9E8F349585 /* main.c */,
+				D76B4E5DB35E42B4C17FBE06 /* itertoolsmodule.c */,
+				760742DA8C6626787EB12646 /* socketmodule.c */,
+				9C444C73890049DB1FFF3595 /* fileio.c */,
+				526241B58782ACFB8C0C13C0 /* iobase.c */,
+				B79C4D0D83DD008C30ACEE6E /* selectmodule.c */,
+				3489470490C0D80CEEFF48E5 /* sha256module.c */,
+				122947DFB5C16B067B579FD2 /* sha512module.c */,
+				C3094E959920AFCBE92633BD /* _math.c */,
+				0F374DC5AE411FF69C971E41 /* binascii.c */,
+				D28C4AACB0B3B9E345C6DB07 /* timemodule.c */,
+				FB3D4C4F85D322F1A06E00E5 /* mathmodule.c */,
+				A02F4D87918AD0719503D783 /* _functoolsmodule.c */,
+				8D8F48B4A7B65D1922F43E2B /* _ssl.c */,
+				CB8A46E190172E03C18F457C /* arraymodule.c */,
+				FEB442F38EA284BA2FEDC4FB /* posixmodule.c */,
+				0A6F45E8AD18A8575820018A /* _iomodule.c */,
+				E83A4B48B78C070164331622 /* _json.c */,
+				66494E4683D7276E70308D18 /* bytesio.c */,
+				E3CB4773BCA9D73B586A1C99 /* gcmodule.c */,
+				E5F54CD3804145EA87DE4F8C /* cStringIO.c */,
+				0C304B8EAD08ACEA9DA3E887 /* textio.c */,
+				E08646A6ABE15A468F760BD9 /* codeobject.c */,
+				7CA442EFABA8B9A7F04F3620 /* capsule.c */,
+				083C4F65A4E7461135518D4B /* abstract.c */,
+				CD5942ECADFA42D0F62C7BB3 /* frameobject.c */,
+				42D84432881AE0FBF7CCA7EC /* funcobject.c */,
+				0C4747B0BEDD49482764CE15 /* bufferobject.c */,
+				B6D242F4856B64B12736E20A /* typeobject.c */,
+				D9C84696BC01F4E7A5387E8F /* longobject.c */,
+				B75C48BE98E7DCECCD277ADB /* stringobject.c */,
+				915342788F701F6976F4B643 /* enumobject.c */,
+				D35C47D082593D10C3EBF9E3 /* methodobject.c */,
+				749948C38795BCAD83F6EDC3 /* object.c */,
+				6C484D6DAB67F12739FD35BF /* setobject.c */,
+				67784FFA9C883B35519FAF48 /* boolobject.c */,
+				E59D42A5A489D821B2704F9F /* exceptions.c */,
+				CE634B3A8D32F873BA0F1B90 /* bytes_methods.c */,
+				434A458E99637099ABD560A8 /* intobject.c */,
+				B2B24C63A853A1603DBFBC08 /* complexobject.c */,
+				22DA4F2D959ED58E6EB933B1 /* obmalloc.c */,
+				0F1A4316B7968807B3D9DA2C /* listobject.c */,
+				25C845508D498DCF4456E158 /* fileobject.c */,
+				D309430882109504A4ED6156 /* classobject.c */,
+				66CF4A00B1A5FF5D0755ED2B /* structseq.c */,
+				B36546EFB7380452C02090AB /* sliceobject.c */,
+				56D54FCB9221ADF4E116C53F /* unicodectype.c */,
+				C34746729A98B518C8928B7B /* cobject.c */,
+				5EBB49398ED094F67EB2388A /* genobject.c */,
+				EF4C499DB7385CE050D5699D /* dictobject.c */,
+				E9F94F3EBDF246E5A460A01D /* bytearrayobject.c */,
+				A9F84DEAA5DB58CA181CEBD0 /* tupleobject.c */,
+				6AF9487EB460EC8CDDC85303 /* unicodeobject.c */,
+				D5BF4C099AE4F78FDDC33E1F /* moduleobject.c */,
+				9FFC42639CDC4910BF068062 /* rangeobject.c */,
+				B1C0415D8F2089D7F712FE8D /* iterobject.c */,
+				1D56492AA33E8E60241957AF /* weakrefobject.c */,
+				7ECD424EBCB4F67ACA5EB10F /* descrobject.c */,
+				4A954612AE358F590CCD29D1 /* cellobject.c */,
+				9F40443A9BA3EBB330ED1953 /* memoryobject.c */,
+				52894F40ACC49566A8098182 /* floatobject.c */,
+				12CB45D3900C397594F9A047 /* printgrammar.c */,
+				A2484EC0917BEE2B2940179B /* grammar.c */,
+				80FB4C978765B07650F75E35 /* grammar1.c */,
+				BA3F4EA99CD65BAC81464074 /* bitset.c */,
+				3B7D42DFA86B0FCD47D92222 /* myreadline.c */,
+				C8844DC79A2CD38019A4E8E8 /* node.c */,
+				AF364F75B6ED09C3A6AF316F /* parser.c */,
+				6E924C07816710757D0A0AA5 /* metagrammar.c */,
+				15CB4ED6819A4AB2B8BDC729 /* tokenizer.c */,
+				243C4263A4D6C7F94A43EA02 /* firstsets.c */,
+				4D254D0BBB2058CE41409721 /* listnode.c */,
+				3D414DC2B8C7DA34BB917CBB /* parsetok.c */,
+				43E44536A07BF5153804DA8A /* acceler.c */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -540,151 +540,151 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20744718D690F61FAC96C3A /* strtod.c */,
-				17A74AC6AB9DAE1E3B234A82 /* getversion.c */,
-				131F4D87BF5918821FBFD8F2 /* getcwd.c */,
-				C20848EF981AAF16EA8F8252 /* mysnprintf.c */,
-				14464ED1BF078D85B05BF868 /* pyctype.c */,
-				D388406292B2FB628F1EE1FE /* getargs.c */,
-				7F404B98AD0F2AF39B673394 /* atof.c */,
-				C7054D459AC3B2851DDE4366 /* getopt.c */,
-				9CE54FF6BDE1C73DE5C8C417 /* compile.c */,
-				A5504A2EB48F1AF620D5B073 /* getplatform.c */,
-				AA9F44CF93D4C25BD634240B /* frozen.c */,
-				39D244E29236682DFC5BBFA5 /* pygetpath.c */,
-				E842403A86894AA7081B4B61 /* getcompiler.c */,
-				5B024203B599AB2B776D158C /* ast.c */,
-				435245A487D27BEFD4BE2DB2 /* mystrtoul.c */,
-				53F34A81A8EB84EC8FC091A2 /* import.c */,
-				CB9043A7B2B152806CE5CA18 /* pythonrun.c */,
-				321B4672895F20C26E40B9E4 /* getcopyright.c */,
-				199343C7930328CE2F653C44 /* thread.c */,
-				C0E642C9929A3C0914A55B1F /* formatter_unicode.c */,
-				A9AA4BC2BEF045BE6B531105 /* peephole.c */,
-				4124426BA67B99ED3A201259 /* pyimportconfig.c */,
-				8FA94A1EA8A488C060730B04 /* symtable.c */,
-				F7054954AC1B6A239AFC0FEB /* marshal.c */,
-				9B6E4A319F7E973911DF5B60 /* pystate.c */,
-				C3B1464DBCE18EFD848CB44C /* structmember.c */,
-				94C141EB84F9461478A881C7 /* sysmodule.c */,
-				3E764FDA936B4EB219D3A3A8 /* bltinmodule.c */,
-				5B294843B48001A98D5DDC4E /* codecs.c */,
-				345F4E66AE9BEE94C5D3B758 /* Python-ast.c */,
-				0DF84CF68C9EE6A63BE222E0 /* random.c */,
-				E4BD419E8CE45A3721D4DDF5 /* frozenmain.c */,
-				346E4529AB61D62B633C2092 /* ceval.c */,
-				77EC4517B2408A4CA421FD9F /* errors.c */,
-				D221424F953DE5A20E3F1E0A /* graminit.c */,
-				40BF4DF9BC59B2E901C7B666 /* pystrtod.c */,
-				1A5045FDBA20594D7CA48AAC /* future.c */,
-				2F914FF8B07396BAAED01486 /* asdl.c */,
-				BCB74EB2A22B0EB10E27074C /* dup2.c */,
-				0F36442E8475E377824BE9D5 /* dynload_stub.c */,
-				9AAD44AABD3A87E36EE5629B /* _warnings.c */,
-				1C5B460A9F76CF5EA0F68528 /* traceback.c */,
-				549E4CCD96CA4D179097AF86 /* pystrcmp.c */,
-				37984FB8AFAA529A7F4D2224 /* pyarena.c */,
-				7F20491D94BB846333A071AA /* strdup.c */,
-				6299474E877701399F94A57A /* pyfpe.c */,
-				1F2E43E4BAA4D27EA28B157D /* importdl.c */,
-				6240498C841A1F52E8564C0F /* pymath.c */,
-				B2254776A5A372136433DAA7 /* dtoa.c */,
-				A3FE4431ABC38764BD46125C /* modsupport.c */,
-				364647A685F93E32786E889D /* formatter_string.c */,
-				078942DCACA81A6E4BE619D4 /* datetimemodule.c */,
-				81EE4B57B9E6FABBFBDD6A92 /* _randommodule.c */,
-				B0214EE98ED7651E0148ED59 /* _weakref.c */,
-				756D4FD6A6992598DD7864F4 /* signalmodule.c */,
-				397D4CA2A77DC9BC708AE6BA /* _csv.c */,
-				DFBF4A10A56200B2360CA28E /* shamodule.c */,
-				9FBE4FF891A5EAA23997BCB7 /* _sre.c */,
-				A9664111A5F8419E02807BA4 /* _codecsmodule.c */,
-				86014219AB6432BFA28515B3 /* fcntlmodule.c */,
-				0E614E94A03C629A941207F8 /* errnomodule.c */,
-				5EFF45B190B4043069BD1DE3 /* _collectionsmodule.c */,
-				D7004785B6078CDDE9F4571A /* stringio.c */,
-				27144B3095B7B49CFAE23F31 /* getbuildinfo.c */,
-				47BA4176BAA3D84E01AD457B /* zlibmodule.c */,
-				F7C14F8591E3CF2D21A34F9E /* threadmodule.c */,
-				59A7422893B0A1CE72F37125 /* operator.c */,
-				70AD44B8B3E107DD8C9D5A56 /* _struct.c */,
-				6F2D4384833E7E79EC076D54 /* md5.c */,
-				87694541993473771D786636 /* bufferedio.c */,
-				B69A4606A1C2743010FF7295 /* md5module.c */,
-				A62C4E6799097F773ACA9204 /* main.c */,
-				78DB493FA8882AE968FCCD95 /* itertoolsmodule.c */,
-				83B2446AB2C5D9CBFE0AE4DB /* socketmodule.c */,
-				84CD4FEE9ED18BC3DE6B8D4B /* fileio.c */,
-				FFE34BAA9FF1075E6BC693E2 /* iobase.c */,
-				8B5F495A8037BA12F2EF654A /* selectmodule.c */,
-				45D54203ACC4A658E043D2AD /* sha256module.c */,
-				3704474BB29C01A339A4E5FF /* sha512module.c */,
-				41CE4716B6D30F91B96FEE49 /* _math.c */,
-				C61A467F81521A80CC8A230B /* binascii.c */,
-				74514A54AB893F3E10563798 /* timemodule.c */,
-				02C4485EB10C1DF07ABCC1E5 /* mathmodule.c */,
-				9F9548829D94FEF7DC27156A /* _functoolsmodule.c */,
-				DDB94A309D689903AFE78E9D /* _ssl.c */,
-				34C540959AE6432C592A7239 /* arraymodule.c */,
-				BDB8415B9EC2858B8D34C163 /* posixmodule.c */,
-				90904EF5AF845B111A6BD6C7 /* _iomodule.c */,
-				8BF140CCBD07D740A87BB200 /* _json.c */,
-				11CD484FB3D611F7785CC636 /* bytesio.c */,
-				B7D74DFC94388F7BBAD66312 /* gcmodule.c */,
-				EE0241E2996A700628934467 /* cStringIO.c */,
-				5DB7440C8B7584AAF0BE101F /* textio.c */,
-				AACA41BEAEBAE914786D15FC /* codeobject.c */,
-				2D7849539E8210B4C62E0515 /* capsule.c */,
-				C7B242B7AE1888E66A424EFE /* abstract.c */,
-				B351407998DF05192BCA12D2 /* frameobject.c */,
-				4AE746A7880E82012E93B1AE /* funcobject.c */,
-				D35A48C19F8FBAFB853A9F7E /* bufferobject.c */,
-				EDD64B5D83E6DAECAC293DF1 /* typeobject.c */,
-				9AED4B57BEF1ADB658F903C6 /* longobject.c */,
-				77FB4A5E93E378E135CF89F0 /* stringobject.c */,
-				F8D747DE8535E174D65A5119 /* enumobject.c */,
-				D79E401E88185A88B5B3A274 /* methodobject.c */,
-				94964482B01F31DB47D5AF63 /* object.c */,
-				5DEC4284B8AACCC9137B45D2 /* setobject.c */,
-				5A894535A889D82585509741 /* boolobject.c */,
-				09584F248A354948C379F830 /* exceptions.c */,
-				6C434673A7EFB176B3E6CFE3 /* bytes_methods.c */,
-				E895470F987948ABE763E16D /* intobject.c */,
-				E81C47D78D1BAEF6A9481F43 /* complexobject.c */,
-				EC0244CBAAA688B62412960F /* obmalloc.c */,
-				C65F4C02973DAA4D9905E36B /* listobject.c */,
-				28E74AEB8AE426C033633D84 /* fileobject.c */,
-				4A744C09B329F06CD5A787B2 /* classobject.c */,
-				51344622816EAB648652399E /* structseq.c */,
-				53B04E5AB2D5E6E2CA3F0639 /* sliceobject.c */,
-				2D894712992BAF0D7932F4FE /* unicodectype.c */,
-				C3374894815961CC94B3B6DD /* cobject.c */,
-				199141D38325B1D8F2A8048B /* genobject.c */,
-				00524B35821D28A7C59C8763 /* dictobject.c */,
-				9A474ADCAB07CDB75F61A4C1 /* bytearrayobject.c */,
-				70CB4B09B0110681E3188269 /* tupleobject.c */,
-				B9C348A6BCDE6CD5F274E893 /* unicodeobject.c */,
-				BADB41C6B55B43331A4D5008 /* moduleobject.c */,
-				A89449E6BECAA619535A6B65 /* rangeobject.c */,
-				D0AD456F932D23A22569FAD5 /* iterobject.c */,
-				B8AA45E793CEE8B1191B8BD3 /* weakrefobject.c */,
-				B00C4CF791112610D1BFB728 /* descrobject.c */,
-				E01B42BC953048BA951A6D33 /* cellobject.c */,
-				0B8F42A9809D3569A4E28A0B /* memoryobject.c */,
-				1F2443E88AD8219642873871 /* floatobject.c */,
-				FA9E4A238621A9986521B97E /* printgrammar.c */,
-				9E934AD79C736928FCC12381 /* grammar.c */,
-				45C742D887306EE1CA5FFE32 /* grammar1.c */,
-				2E364FAC92FB135A7EEDF792 /* bitset.c */,
-				173F40DEABBBA922FAA42688 /* myreadline.c */,
-				B1964068A689047A379DE169 /* node.c */,
-				D5324C0690ABDB32AA77D012 /* parser.c */,
-				74234558BBD21D086321956F /* metagrammar.c */,
-				BF3A434BB1B8EA57A43EA633 /* tokenizer.c */,
-				2B784D509F61C9A7AA13802E /* firstsets.c */,
-				4F1646C28AB072FD5B8A3441 /* listnode.c */,
-				49E94071B046B7D5FD9376D1 /* parsetok.c */,
-				5598404B8D8B1F5AEA0DDB21 /* acceler.c */,
+				A6FE4CE3B289F5BE4A77A6AE /* strtod.c */,
+				5118405BB0D55580BC96B09E /* getversion.c */,
+				E20144BCADFEBFFF38ABA35E /* getcwd.c */,
+				B4EB49E99DD96035D9E6DC3E /* mysnprintf.c */,
+				E30B47A5BD8427CCD01A8B37 /* pyctype.c */,
+				27ED48898222E10B84E86568 /* getargs.c */,
+				274649B9A534732DA0C584B2 /* atof.c */,
+				D14141859EFE0E270E11697A /* getopt.c */,
+				5819442BA87EB8E8F2D9F3B0 /* compile.c */,
+				760C4EC69CF67EBC522DEE3B /* getplatform.c */,
+				71634D6493A8400E5D57BFA2 /* frozen.c */,
+				7A344B44A5515A3B2F36CB68 /* pygetpath.c */,
+				36EC4DDA8E861B1669E7BBD5 /* getcompiler.c */,
+				15714BBC922165AC18BF9FBE /* ast.c */,
+				AFFB41A6A1E9E8F83B49BDAF /* mystrtoul.c */,
+				D960469E948EA77E6954C0EF /* import.c */,
+				70CA400C83A39394F581B9E0 /* pythonrun.c */,
+				F6CF4419944CED69605CFCBE /* getcopyright.c */,
+				CD6E4F20AE2FDF27EC654AC8 /* thread.c */,
+				E6B047F2A2F327D2FE998EC2 /* formatter_unicode.c */,
+				FB8F4A2099751F7E6346B046 /* peephole.c */,
+				9BD1487DA374F030C50BEE74 /* pyimportconfig.c */,
+				698F438CAB80522C3D7A8690 /* symtable.c */,
+				E41B484D8A51254BE6072EBD /* marshal.c */,
+				ECE84E5C97DF09AE99B0597F /* pystate.c */,
+				69B84E2BBA09CD734E5D056D /* structmember.c */,
+				5436425C86C7F9F9ED42C85B /* sysmodule.c */,
+				339542A4A64E9065E117156C /* bltinmodule.c */,
+				839144D88167DF286D440319 /* codecs.c */,
+				95FE47BFB923BD0F15B52F8A /* Python-ast.c */,
+				26494505B2EDB4FA0E40A283 /* random.c */,
+				2ADC4F088EEA4CDD0FCAD674 /* frozenmain.c */,
+				ECC942C9843D8ED39285F05B /* ceval.c */,
+				D2704F94A5105E4037837EC0 /* errors.c */,
+				ACAE41E0A34E9AF41583E3DA /* graminit.c */,
+				E04545AE820793A2E2C7752F /* pystrtod.c */,
+				39B64D128BBB93C494AE4638 /* future.c */,
+				8A44459FBC241DFFB5E0ECE9 /* asdl.c */,
+				6084445BAF3F22B1AD70AD1E /* dup2.c */,
+				DD934E2A80D79FDB8C6626D7 /* dynload_stub.c */,
+				23954F45B4FD9DF663131B5A /* _warnings.c */,
+				36AD43F4B0512F4AE5FAD987 /* traceback.c */,
+				915545F9A6CEEDF42991E706 /* pystrcmp.c */,
+				89554FFDBF619BEA780189A8 /* pyarena.c */,
+				3E8A454ABC921F69AADA92B4 /* strdup.c */,
+				6F6949AABBDAEED64D57A9C6 /* pyfpe.c */,
+				A6794C47B5B27498A10FE200 /* importdl.c */,
+				062E4CAFBA572378DF79034D /* pymath.c */,
+				92634D1496BFA200A5E0C836 /* dtoa.c */,
+				660B40D8B7F637940694F642 /* modsupport.c */,
+				F5084705A4C52B7E9E855A27 /* formatter_string.c */,
+				E55C492EA8BAFCC1ABB3F932 /* datetimemodule.c */,
+				52F74955B08146002D867C5E /* _randommodule.c */,
+				6EA04A94AB94FFC15CB26F4D /* _weakref.c */,
+				49014B81800832B37235F2A2 /* signalmodule.c */,
+				FFD24FAF9280E30138B59EBB /* _csv.c */,
+				02174754BAEEC779112C984B /* shamodule.c */,
+				D77D489B87E480F0A3CB7CB5 /* _sre.c */,
+				18DE4EB38F94C60ACEE3AD10 /* _codecsmodule.c */,
+				57ED4D5D9174E3A7117179D6 /* fcntlmodule.c */,
+				F4F5481D8AB859B8F2C511D5 /* errnomodule.c */,
+				000F48BAB24559E629CD0393 /* _collectionsmodule.c */,
+				511E48768D3C088CED34A842 /* stringio.c */,
+				88674E9CB2C76A965919ADC4 /* getbuildinfo.c */,
+				459E41878B004EFECA81E365 /* zlibmodule.c */,
+				E12948D68E7964FF7AEFC548 /* threadmodule.c */,
+				D3CB4D81A8B505F3BF3C8EBA /* operator.c */,
+				8D9A4B4EBBDCD0C6182F18AF /* _struct.c */,
+				20C548E5A63BB2ED5518C763 /* md5.c */,
+				30BE42BD8315D37EB9E81E1A /* bufferedio.c */,
+				A75546DE8FFAD97A2815FA0A /* md5module.c */,
+				A02C49CEA749F86831C82C7E /* main.c */,
+				3F0048F5ACC836A080505122 /* itertoolsmodule.c */,
+				2553416BB39E857800E61CD1 /* socketmodule.c */,
+				FA8E424AA514EB7463AFCFF6 /* fileio.c */,
+				07EF402FB63F569605FA09DB /* iobase.c */,
+				6366422A9D48A9BD15BE30B4 /* selectmodule.c */,
+				6AC14A01B3FDC7A5ED4CF7CF /* sha256module.c */,
+				6A034A8592E03310B326ABEA /* sha512module.c */,
+				2CFF4AC5A2FC7F1A4C7CB039 /* _math.c */,
+				FF4547938DE8F4A02E55EB06 /* binascii.c */,
+				8ED34A5AA28AEE6B73D73469 /* timemodule.c */,
+				FD1647A28F596024E5C782F6 /* mathmodule.c */,
+				F19D415B814A457951CD936E /* _functoolsmodule.c */,
+				662C4C46AAEC99F7AF2632C9 /* _ssl.c */,
+				81BD451F8CC90D179152E935 /* arraymodule.c */,
+				87394F0CB1C63F754336D9BC /* posixmodule.c */,
+				BA5D4AF4ACA500D64C4931E1 /* _iomodule.c */,
+				A5034636AA19814576244B07 /* _json.c */,
+				C94E4C73A1B5740F42CA742D /* bytesio.c */,
+				F40841C58AE538BEEADD1A1B /* gcmodule.c */,
+				EE0C4DD5BFCEF6BEDF57474B /* cStringIO.c */,
+				60844D2ABA1F58C92417D9AA /* textio.c */,
+				1E2F4C41B498033367EE6C28 /* codeobject.c */,
+				CA1B4FC1B85F94453C8D4C36 /* capsule.c */,
+				56A740FE98CEBC431D349399 /* abstract.c */,
+				DFE04294BEABCEB400780FCC /* frameobject.c */,
+				D7134F05BB3D8A3B2D0B6170 /* funcobject.c */,
+				D48C433BA86463F7AA5C22D8 /* bufferobject.c */,
+				F7F948DBA793503382687B0B /* typeobject.c */,
+				FD314A899755C900DBE840FE /* longobject.c */,
+				C53E42F8BDAF0D9139205DEB /* stringobject.c */,
+				F41A4EBAB376A3CBFC8D6A87 /* enumobject.c */,
+				068B4CE0A35DD533A19FA3F1 /* methodobject.c */,
+				0F2645779AF4DD1A478BD56F /* object.c */,
+				7EF54DF7BD1AFC39C613CF39 /* setobject.c */,
+				5C3D4719BCC2E4CFA4F50CC8 /* boolobject.c */,
+				6E3D445C9FF8646E2773A1FF /* exceptions.c */,
+				7286485AB032C91DE719655C /* bytes_methods.c */,
+				409C4AFEA8027E5F0646B3D3 /* intobject.c */,
+				DC0F41B2B580056CD5B6A49F /* complexobject.c */,
+				6E704C7B824B328E61F78D5C /* obmalloc.c */,
+				21C44609B5A5264CC7060B67 /* listobject.c */,
+				DC4A4FBFBFF7A93B316C2E25 /* fileobject.c */,
+				48134D7D877CA6DCB0DD7F77 /* classobject.c */,
+				F0324D7C8299D9E327841545 /* structseq.c */,
+				AFC84D25ADE7A38D3A6E0439 /* sliceobject.c */,
+				C78E4A14ABE8B39F6CD89519 /* unicodectype.c */,
+				E52345499B7B5221EEBDC6D2 /* cobject.c */,
+				484D4FE4BCDCE30B7A0C582B /* genobject.c */,
+				F41A43A5ADC13C68AB0E4E61 /* dictobject.c */,
+				B2E94BC4B1B755945CAFDEFB /* bytearrayobject.c */,
+				E1584DFC83C4A5081D6F33E2 /* tupleobject.c */,
+				6DC8424CA4B4F082FC47C291 /* unicodeobject.c */,
+				DD104820B408E7F2BD94D2A5 /* moduleobject.c */,
+				F0D14B87ABF96D0CE597418C /* rangeobject.c */,
+				5D7D45D3B4EEFC6E6DBB6171 /* iterobject.c */,
+				6AED43929EBFDBC22A4FBAFD /* weakrefobject.c */,
+				78844B01B8C1124D5C7EFC40 /* descrobject.c */,
+				D02B4F139D8C85E12102D64C /* cellobject.c */,
+				9E5E40BC9403D11691FC79B1 /* memoryobject.c */,
+				CE644CA89DD1BDC6C1F54ADA /* floatobject.c */,
+				DE5742E3AAC0FF2FB61AEB85 /* printgrammar.c */,
+				24C54E3CA30AC5F053CDBFDE /* grammar.c */,
+				9B244941994B94092AD2CA00 /* grammar1.c */,
+				62604F63B4FC4FDD54C87AEE /* bitset.c */,
+				6AAF421DB4601337A4CAA4B1 /* myreadline.c */,
+				22B44F6A804D51405527C39A /* node.c */,
+				974A41F6947DF2BC69AAE544 /* parser.c */,
+				7B0C4A8286DE51663B65F80B /* metagrammar.c */,
+				323E44A38C964940122108EF /* tokenizer.c */,
+				99BF4980BDCD3C2F42CF6C0A /* firstsets.c */,
+				B83F450CB8D2D91FCF07D47F /* listnode.c */,
+				ACAC4DF188069D868CA85BC8 /* parsetok.c */,
+				350842DDB616BFFCA6E37ED3 /* acceler.c */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +753,7 @@
 					"\"$PROJECT_DIR/pylib\"",
 					"\"$PROJECT_DIR/CPython/Include\"",
 				);
+				LD_DYLIB_INSTALL_NAME = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -790,6 +791,7 @@
 					"\"$PROJECT_DIR/pylib\"",
 					"\"$PROJECT_DIR/CPython/Include\"",
 				);
+				LD_DYLIB_INSTALL_NAME = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					-lssl,
