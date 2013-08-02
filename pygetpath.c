@@ -3,6 +3,7 @@
 #include "osdefs.h"
 #include <sys/types.h>
 #include <string.h>
+#include <stdlib.h>
 
 extern char *Py_GetProgramName(void);
 
@@ -27,9 +28,9 @@ static char* removeLastDir(char* dir) {
 static void calcPathes() {
 	if(pathCalculated) return;
 
-	stpcpy(progPath, Py_GetProgramName());
+	realpath(Py_GetProgramName(), progPath);
 	removeLastDir(progPath);
-	
+		
 #ifdef __APPLE__
 #include "TargetConditionals.h"
 #ifdef TARGET_OS_MAC
