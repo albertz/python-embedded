@@ -6,14 +6,99 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2303495717AC4B1000C6033C /* Python.cp in Sources */ = {isa = PBXBuildFile; fileRef = 2303495617AC4B1000C6033C /* Python.cp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2303494D17AC4B0F00C6033C /* Python.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Python.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		2303495117AC4B1000C6033C /* Python-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Python-Prefix.pch"; sourceTree = "<group>"; };
+		2303495217AC4B1000C6033C /* PythonProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PythonProj.xcconfig; sourceTree = "<group>"; };
+		2303495317AC4B1000C6033C /* PythonTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PythonTarget.xcconfig; sourceTree = "<group>"; };
+		2303495417AC4B1000C6033C /* Python.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Python.h; sourceTree = "<group>"; };
+		2303495517AC4B1000C6033C /* PythonPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonPriv.h; sourceTree = "<group>"; };
+		2303495617AC4B1000C6033C /* Python.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Python.cp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2303494A17AC4B0F00C6033C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		2303494217AC436100C6033C = {
 			isa = PBXGroup;
 			children = (
+				2303494F17AC4B1000C6033C /* Python */,
+				2303494E17AC4B1000C6033C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		2303494E17AC4B1000C6033C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2303494D17AC4B0F00C6033C /* Python.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2303494F17AC4B1000C6033C /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				2303495217AC4B1000C6033C /* PythonProj.xcconfig */,
+				2303495317AC4B1000C6033C /* PythonTarget.xcconfig */,
+				2303495417AC4B1000C6033C /* Python.h */,
+				2303495517AC4B1000C6033C /* PythonPriv.h */,
+				2303495617AC4B1000C6033C /* Python.cp */,
+				2303495017AC4B1000C6033C /* Supporting Files */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		2303495017AC4B1000C6033C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2303495117AC4B1000C6033C /* Python-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2303494B17AC4B0F00C6033C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2303494C17AC4B0F00C6033C /* Python */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2303495A17AC4B1000C6033C /* Build configuration list for PBXNativeTarget "Python" */;
+			buildPhases = (
+				2303494917AC4B0F00C6033C /* Sources */,
+				2303494A17AC4B0F00C6033C /* Frameworks */,
+				2303494B17AC4B0F00C6033C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Python;
+			productName = Python;
+			productReference = 2303494D17AC4B0F00C6033C /* Python.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2303494317AC436100C6033C /* Project object */ = {
@@ -21,7 +106,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = 2303494617AC436100C6033C /* Build configuration list for PBXProject "Python" */;
+			buildConfigurationList = 2303494617AC436100C6033C /* Build configuration list for PBXProject "Xcode-Python-empty" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -29,12 +114,25 @@
 				en,
 			);
 			mainGroup = 2303494217AC436100C6033C;
+			productRefGroup = 2303494E17AC4B1000C6033C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				2303494C17AC4B0F00C6033C /* Python */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2303494917AC4B0F00C6033C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2303495717AC4B1000C6033C /* Python.cp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		2303494717AC436100C6033C /* Debug */ = {
@@ -49,10 +147,69 @@
 			};
 			name = Release;
 		};
+		2303495817AC4B1000C6033C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2303495917AC4B1000C6033C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2303494617AC436100C6033C /* Build configuration list for PBXProject "Python" */ = {
+		2303494617AC436100C6033C /* Build configuration list for PBXProject "Xcode-Python-empty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2303494717AC436100C6033C /* Debug */,
@@ -60,6 +217,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2303495A17AC4B1000C6033C /* Build configuration list for PBXNativeTarget "Python" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2303495817AC4B1000C6033C /* Debug */,
+				2303495917AC4B1000C6033C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
