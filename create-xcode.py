@@ -17,15 +17,18 @@ proj.add_header_search_paths(paths=[
 proj.add_other_ldflags(flags=[
 	"-lssl", "-lz", "-lcrypto", "-lsasl2"])
 
-src = proj.get_or_create_group('src')
-
 import compile
-def add_file(fn):
+def add_file(fn, group):
 	#print fn
-	proj.add_file(fn, parent=src)
+	proj.add_file(fn, parent=group)
 
-for fn in list(compile.baseFiles) + list(compile.modFiles) + list(compile.objFiels) + list(compile.parserFiles):
-	add_file(fn)
+src = proj.get_or_create_group("src")
+
+for l in ["baseFiles", "modFiles", "objFiles", "parserFiles"]:
+	group = proj.get_or_create_group(l, parent=src)
+	
+	for fn in list(getattr(compile, l)):
+		add_file(fn, group=group)
 
 proj.saveFormat3_2(file_name="Xcode-Python.xcodeproj/project.pbxproj")
 
