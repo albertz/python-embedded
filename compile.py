@@ -101,7 +101,7 @@ baseFiles = \
 	set(glob(PythonDir + "/Python/mactoolboxglue.c")) - \
 	set([PythonDir + "/Python/sigcheck.c"])
 
-baseFiles |= \
+extraFiles = \
 	set(glob(PythonDir + "/Python/dynload_stub.c")) | \
 	set(glob("pyimportconfig.c")) | \
 	set(glob("pygetpath.c"))
@@ -222,7 +222,7 @@ def compilePycryptoFile(fn):
 	
 def compile():
 	ofiles = []
-	for f in list(baseFiles) + list(modFiles) + list(objFiles) + list(parserFiles):
+	for f in list(baseFiles) + list(extraFiles) + list(modFiles) + list(objFiles) + list(parserFiles):
 		ofiles += [compilePyFile(f, compileOpts)]
 	for f in list(pycryptoFiles):
 		ofiles += [compilePycryptoFile(f)]
