@@ -11,6 +11,7 @@ CFLAGS = []
 LDFLAGS = []
 
 buildExec = False
+iOS = True
 
 def selectNewestDir(dirpattern):
 	from glob import glob
@@ -19,7 +20,7 @@ def selectNewestDir(dirpattern):
 	# TODO...
 	return dirs[-1]
 
-if True: # iOS
+if iOS:
 	DEVROOT = "/Developer/Platforms/iPhoneOS.platform/Developer"
 	#SDKROOT = DEVROOT + "/SDKs/iPhoneOS5.0.sdk"
 	SDKROOT = selectNewestDir("/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS*.sdk")

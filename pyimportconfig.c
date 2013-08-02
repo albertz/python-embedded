@@ -38,6 +38,7 @@ extern void initzlib(void);
 extern void initselect(void);
 extern void initsignal(void);
 extern void initfcntl(void);
+extern void initzipimport(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -78,6 +79,7 @@ struct _inittab _PyImport_Inittab[] = {
 	{"select", initselect},
 	{"signal", initsignal},
 	{"fcntl", initfcntl},
+    {"zipimport", initzipimport},
 	
 /*
     {"_ast", init_ast},
@@ -97,7 +99,6 @@ struct _inittab _PyImport_Inittab[] = {
     {"_winreg", init_winreg},
 	
     {"xxsubtype", initxxsubtype},
-    {"zipimport", initzipimport},
 	
     {"_multibytecodec", init_multibytecodec},
     {"_codecs_cn", init_codecs_cn},

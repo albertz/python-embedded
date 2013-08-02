@@ -14,6 +14,9 @@ proj.add_header_search_paths(paths=[
 	"$PROJECT_DIR/CPython/Include",
 	], recursive=False)
 
+proj.add_other_cflags(flags=[
+	"-DWITH_THREAD"])
+
 proj.add_other_ldflags(flags=[
 	"-lssl", "-lz", "-lcrypto", "-lsasl2"])
 
@@ -24,7 +27,7 @@ def add_file(fn, group):
 
 src = proj.get_or_create_group("src")
 
-for l in ["baseFiles", "modFiles", "objFiles", "parserFiles"]:
+for l in ["baseFiles", "extraFiles", "modFiles", "objFiles", "parserFiles"]:
 	group = proj.get_or_create_group(l, parent=src)
 	
 	for fn in list(getattr(compile, l)):
