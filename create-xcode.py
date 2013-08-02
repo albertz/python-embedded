@@ -15,7 +15,9 @@ proj.add_header_search_paths(paths=[
 	], recursive=False)
 
 proj.add_other_cflags(flags=[
-	"-DWITH_THREAD"])
+	"-DWITH_THREAD",
+	"-DPLATFORM=\\\"darwin\\\"",
+	])
 
 proj.add_other_ldflags(flags=[
 	"-lssl", "-lz", "-lcrypto", "-lsasl2"])

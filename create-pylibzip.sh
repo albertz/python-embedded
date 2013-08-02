@@ -2,8 +2,9 @@
 
 cd $(dirname $0)
 
-pushd CPython/Lib || exit 1 
 rm pylib/pylib.zip
+
+pushd CPython/Lib || exit 1 
 zip -9 ../../pylib/pylib.zip \
 	-x test\* \
 	-x plat\* \
@@ -18,5 +19,8 @@ zip -9 ../../pylib/pylib.zip \
 	-x bsddb\* \
 	-x idlelib\* \
 	-r *
-
 popd
+
+zip -9 pylib/pylib.zip _sysconfigdata.py
+
+
