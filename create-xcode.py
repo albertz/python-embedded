@@ -9,6 +9,11 @@ from mod_pbxproj import *
 
 proj = XcodeProject.Load("Xcode-Python-empty.xcodeproj/project.pbxproj")
 
+proj.add_header_search_paths(paths=[
+	"$PROJECT_DIR/pylib",
+	"$PROJECT_DIR/CPython/Include",
+	], recursive=False)
+
 src = proj.get_or_create_group('src')
 
 import compile

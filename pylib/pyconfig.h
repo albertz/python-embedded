@@ -1289,3 +1289,6 @@
 /*
 #define SIZEOF_SHORT sizeof(short)
 */
+
+#define HAVE_UINT32_T 1
+#define HAVE_INT32_T 1
