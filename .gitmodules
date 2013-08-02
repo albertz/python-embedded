@@ -1,7 +1,7 @@
 [submodule "CPython"]
 	path = CPython
 	url = git@github.com:albertz/CPython.git
-	branch = tags/v2.7.3
+	branch = tags/v2.7.5
 
 [submodule "pycrypto"]
 	path = pycrypto
