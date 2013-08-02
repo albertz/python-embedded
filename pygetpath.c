@@ -41,7 +41,7 @@ static void calcPathes() {
 	strcpy(pylibPath, progPath);
 	strcat(pylibPath, "/pylib");	
 	strcpy(modulePathes, pylibPath);
-	strcat(modulePathes, "/pylib.zip");
+	strcat(modulePathes, "/pylib.zip:");
 	strcat(modulePathes, pylibPath);
 	strcat(modulePathes, "/otherlibs");
 	strcpy(execPrefixPath, pylibPath);
