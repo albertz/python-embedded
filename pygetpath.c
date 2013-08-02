@@ -45,7 +45,8 @@ char *
 Py_GetPrefix(void)
 {
 	calcPathes();
-	return "pygetpath.c-PYPREFIX-NOT-SET";
+	// TODO: not sure if this is good / correct / makes sense
+	return progPath;
 }
 
 char *
