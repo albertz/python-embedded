@@ -60,7 +60,7 @@ if True: # iOS
 		"-lgcc_s.1",
 		]
 	
-PythonDir = "Python-2.7.3"
+PythonDir = "CPython"
 assert os.path.exists(PythonDir)
 
 from glob import glob as pyglob
