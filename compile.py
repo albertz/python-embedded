@@ -167,7 +167,7 @@ modFiles = \
 if not buildExec:
 	modFiles -= set([PythonDir + "/Modules/python.c"])
 
-objFiels = \
+objFiles = \
 	set(glob(PythonDir + "/Objects/*.c"))
 
 parserFiles = \
@@ -222,7 +222,7 @@ def compilePycryptoFile(fn):
 	
 def compile():
 	ofiles = []
-	for f in list(baseFiles) + list(modFiles) + list(objFiels) + list(parserFiles):
+	for f in list(baseFiles) + list(modFiles) + list(objFiles) + list(parserFiles):
 		ofiles += [compilePyFile(f, compileOpts)]
 	for f in list(pycryptoFiles):
 		ofiles += [compilePycryptoFile(f)]
