@@ -12,8 +12,10 @@ static char pylibPath[MAXPATHLEN+1];
 static char modulePathes[4*MAXPATHLEN+1];
 static char execPrefixPath[2*MAXPATHLEN+1];
 
-static char* removeLastDir(char* dir, char* p) {
-	while(--p > dir) {
+static char* removeLastDir(char* dir) {
+	char* p = dir;
+	while(*p) ++p; // go to end
+	while(--p > dir) { // go backwards
 		if(*p == '/') {
 			*p = 0;
 			break;
@@ -25,15 +27,15 @@ static char* removeLastDir(char* dir, char* p) {
 static void calcPathes() {
 	if(pathCalculated) return;
 
-	char* p = stpcpy(progPath, Py_GetProgramName());
-	p = removeLastDir(progPath, p);
+	stpcpy(progPath, Py_GetProgramName());
+	removeLastDir(progPath);
 	
 #ifdef __APPLE__
 #include "TargetConditionals.h"
 #ifdef TARGET_OS_MAC
 	// the binary is in its own dir (Contents/MacOS),
 	// but we want (Contents/Resources).
-	p = removeLastDir(progPath, p);
+	removeLastDir(progPath);
 	strcat(progPath, "/Resources");
 #endif
 #endif
