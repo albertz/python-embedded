@@ -1,11 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
-import sys
+import sys, os
+os.chdir(os.path.dirname(__file__))
+
 sys.path += ["mod-pbxproj"]
 
-from mod_pbxproj3 import *
+from mod_pbxproj import *
 
-proj = XcodeProject()
-proj.save()
-
+proj = XcodeProject.Load("Xcode-Python-empty.xcodeproj/project.pbxproj")
+proj.saveFormat3_2(file_name="Xcode-Python.xcodeproj/project.pbxproj")
 
