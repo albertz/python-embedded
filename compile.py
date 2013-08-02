@@ -12,10 +12,17 @@ LDFLAGS = []
 
 buildExec = False
 
+def selectNewestDir(dirpattern):
+	from glob import glob
+	dirs = glob(dirpattern)
+	assert dirs
+	# TODO...
+	return dirs[-1]
+
 if True: # iOS
 	DEVROOT = "/Developer/Platforms/iPhoneOS.platform/Developer"
 	#SDKROOT = DEVROOT + "/SDKs/iPhoneOS5.0.sdk"
-	SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk"
+	SDKROOT = selectNewestDir("/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS*.sdk")
 	assert os.path.exists(DEVROOT)
 	assert os.path.exists(SDKROOT)
 
