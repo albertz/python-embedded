@@ -98,7 +98,9 @@ def glob(pattern):
 baseFiles = \
 	set(glob(PythonDir + "/Python/*.c")) - \
 	set(glob(PythonDir + "/Python/dynload_*.c")) - \
-	set(glob(PythonDir + "/Python/mactoolboxglue.c"))
+	set(glob(PythonDir + "/Python/mactoolboxglue.c")) - \
+	set([PythonDir + "/Python/sigcheck.c"])
+
 baseFiles |= \
 	set(glob(PythonDir + "/Python/dynload_stub.c")) | \
 	set(glob("pyimportconfig.c")) | \
@@ -170,7 +172,8 @@ objFiels = \
 
 parserFiles = \
 	set(glob(PythonDir + "/Parser/*.c")) - \
-	set(glob(PythonDir + "/Parser/*pgen*.c"))
+	set(glob(PythonDir + "/Parser/*pgen*.c")) - \
+	set([PythonDir + "/Parser/intrcheck.c"])
 
 pycryptoFiles = \
 	set(glob("pycrypto/src/*.c")) - \

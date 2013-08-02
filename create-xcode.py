@@ -14,6 +14,9 @@ proj.add_header_search_paths(paths=[
 	"$PROJECT_DIR/CPython/Include",
 	], recursive=False)
 
+proj.add_other_ldflags(flags=[
+	"-lssl", "-lz", "-lcrypto", "-lsasl2"])
+
 src = proj.get_or_create_group('src')
 
 import compile
