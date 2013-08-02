@@ -6,18 +6,8 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		2303495717AC4B1000C6033C /* Python.cp in Sources */ = {isa = PBXBuildFile; fileRef = 2303495617AC4B1000C6033C /* Python.cp */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		2303494D17AC4B0F00C6033C /* Python.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Python.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		2303495117AC4B1000C6033C /* Python-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Python-Prefix.pch"; sourceTree = "<group>"; };
-		2303495217AC4B1000C6033C /* PythonProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PythonProj.xcconfig; sourceTree = "<group>"; };
-		2303495317AC4B1000C6033C /* PythonTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PythonTarget.xcconfig; sourceTree = "<group>"; };
-		2303495417AC4B1000C6033C /* Python.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Python.h; sourceTree = "<group>"; };
-		2303495517AC4B1000C6033C /* PythonPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonPriv.h; sourceTree = "<group>"; };
-		2303495617AC4B1000C6033C /* Python.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Python.cp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,22 +40,8 @@
 		2303494F17AC4B1000C6033C /* Python */ = {
 			isa = PBXGroup;
 			children = (
-				2303495217AC4B1000C6033C /* PythonProj.xcconfig */,
-				2303495317AC4B1000C6033C /* PythonTarget.xcconfig */,
-				2303495417AC4B1000C6033C /* Python.h */,
-				2303495517AC4B1000C6033C /* PythonPriv.h */,
-				2303495617AC4B1000C6033C /* Python.cp */,
-				2303495017AC4B1000C6033C /* Supporting Files */,
 			);
 			path = Python;
-			sourceTree = "<group>";
-		};
-		2303495017AC4B1000C6033C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2303495117AC4B1000C6033C /* Python-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +104,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2303495717AC4B1000C6033C /* Python.cp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +200,7 @@
 				2303495917AC4B1000C6033C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
