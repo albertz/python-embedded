@@ -7,5 +7,8 @@
 /python
 /libpython.a
 
+# created via script
+/pylib/pylib.zip
+
 # Xcode
 xcuserdata
