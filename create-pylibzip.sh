@@ -7,7 +7,6 @@ rm pylib/pylib.zip
 pushd CPython/Lib || exit 1 
 zip -9 ../../pylib/pylib.zip \
 	-x test\* \
-	-x plat\* \
 	-x unittest\* \
 	-x lib2to3\* \
 	-x lib-tk\* \
