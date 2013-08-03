@@ -107,7 +107,8 @@ if iOS:
 	baseFiles -= set(glob(PythonDir + "/Python/mactoolboxglue.c"))
 	baseFiles |= set([PythonDir + "/Python/dynload_stub.c"])
 else:
-	baseFiles |= set([PythonDir + "/Python/dynload_next.c"]) 
+	#baseFiles |= set([PythonDir + "/Python/dynload_next.c"]) 
+	baseFiles |= set([PythonDir + "/Python/dynload_shlib.c"]) 
 
 extraFiles = \
 	set(glob("pyimportconfig.c")) | \
