@@ -11,7 +11,9 @@ CFLAGS = []
 LDFLAGS = []
 
 buildExec = False
-iOS = True
+try: iOS
+except Exception:
+	iOS = True
 
 def selectNewestDir(dirpattern):
 	from glob import glob
@@ -102,8 +104,12 @@ baseFiles = \
 	set(glob(PythonDir + "/Python/mactoolboxglue.c")) - \
 	set([PythonDir + "/Python/sigcheck.c"])
 
+if iOS:
+	baseFiles |= set([PythonDir + "/Python/dynload_stub.c"])
+else:
+	baseFiles |= set([PythonDir + "/Python/dynload_next.c"]) 
+
 extraFiles = \
-	set(glob(PythonDir + "/Python/dynload_stub.c")) | \
 	set(glob("pyimportconfig.c")) | \
 	set(glob("pygetpath.c"))
 

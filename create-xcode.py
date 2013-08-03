@@ -3,8 +3,11 @@
 import sys, os
 os.chdir(os.path.dirname(__file__))
 
-sys.path += ["mod-pbxproj"]
+import compile
+compile.iOS = False
+reload(compile)
 
+sys.path += ["mod-pbxproj"]
 from mod_pbxproj import *
 
 proj = XcodeProject.Load("Xcode-Python-empty.xcodeproj/project.pbxproj")
@@ -22,7 +25,6 @@ proj.add_other_cflags(flags=[
 proj.add_other_ldflags(flags=[
 	"-lssl", "-lz", "-lcrypto", "-lsasl2"])
 
-import compile
 def add_file(fn, group):
 	#print fn
 	proj.add_file(fn, parent=group)
