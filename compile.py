@@ -101,10 +101,10 @@ def glob(pattern):
 baseFiles = \
 	set(glob(PythonDir + "/Python/*.c")) - \
 	set(glob(PythonDir + "/Python/dynload_*.c")) - \
-	set(glob(PythonDir + "/Python/mactoolboxglue.c")) - \
 	set([PythonDir + "/Python/sigcheck.c"])
 
 if iOS:
+	baseFiles -= set(glob(PythonDir + "/Python/mactoolboxglue.c"))
 	baseFiles |= set([PythonDir + "/Python/dynload_stub.c"])
 else:
 	baseFiles |= set([PythonDir + "/Python/dynload_next.c"]) 
@@ -124,7 +124,7 @@ modFiles = \
 	set(glob(PythonDir + "/Modules/_ctypes/**/*.c")) - \
 	set(glob(PythonDir + "/Modules/glmodule.c"))
 	# ...
-	
+
 # via whitelist
 # Add the init reference also to pyimportconfig.c.
 # For hacking builtin submodules, see pycryptoutils/cryptomodule.c.
