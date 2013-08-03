@@ -11,7 +11,8 @@ zip -9 ../../pylib/pylib.zip \
 	-x unittest\* \
 	-x lib2to3\* \
 	-x lib-tk\* \
-	-x distutils\* \
+	-x distutils/tests\* \
+	-x distutils/command/\*.exe \
 	-x ctypes/test\* \
 	-x email/test\* \
 	-x json/tests\* \
