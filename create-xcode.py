@@ -24,6 +24,7 @@ proj.add_other_cflags(flags=[
 	"-DWITH_THREAD",
 	"-DPLATFORM=\\\"darwin\\\"",
 	"-DHAVE_DYNAMIC_LOADING",
+	"-DUSE_DYLD_GLOBAL_NAMESPACE", # needed for e.g. pyobjc
 	])
 
 proj.add_other_ldflags(flags=[
