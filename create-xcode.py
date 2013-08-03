@@ -3,6 +3,9 @@
 import sys, os
 os.chdir(os.path.dirname(__file__))
 
+# Sorry a bit about the inconcistence.
+# This Xcode project file is currently designed for desktop MacOSX apps. The compile script is for a static iOS lib.
+
 import compile
 compile.iOS = False
 reload(compile)
@@ -20,6 +23,7 @@ proj.add_header_search_paths(paths=[
 proj.add_other_cflags(flags=[
 	"-DWITH_THREAD",
 	"-DPLATFORM=\\\"darwin\\\"",
+	"-DHAVE_DYNAMIC_LOADING",
 	])
 
 proj.add_other_ldflags(flags=[
