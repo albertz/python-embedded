@@ -741,11 +741,11 @@
 		2303494717AC436100C6033C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_LINK_OBJC_RUNTIME = NO;
 				HEADER_SEARCH_PATHS = (
 					"\"$PROJECT_DIR/pylib\"",
 					"\"$PROJECT_DIR/CPython/Include\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DWITH_THREAD",
 					"-DPLATFORM=\\\"darwin\\\"",
@@ -764,11 +764,11 @@
 		2303494817AC436100C6033C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_LINK_OBJC_RUNTIME = NO;
 				HEADER_SEARCH_PATHS = (
 					"\"$PROJECT_DIR/pylib\"",
 					"\"$PROJECT_DIR/CPython/Include\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DWITH_THREAD",
 					"-DPLATFORM=\\\"darwin\\\"",
@@ -781,6 +781,7 @@
 					"-lcrypto",
 					"-lsasl2",
 				);
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
@@ -829,7 +830,6 @@
 					"-lsasl2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -871,7 +871,6 @@
 					"-lsasl2",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
