@@ -3,7 +3,7 @@
 import sys, os
 os.chdir(os.path.dirname(__file__))
 
-# Sorry a bit about the inconcistence.
+# Sorry a bit about the inconsistency.
 # This Xcode project file is currently designed for desktop MacOSX apps. The compile script is for a static iOS lib.
 
 import compile
