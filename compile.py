@@ -174,7 +174,7 @@ modFiles = \
 
 class Sqlite:
 	files = set(glob(PythonDir + "/Modules/_sqlite/*.c"))
-	options = ["-DMODULE_NAME=\\\"sqlite3\\\""]
+	options = ["-DMODULE_NAME=\\\"sqlite3\\\"", "-DSQLITE_OMIT_LOAD_EXTENSION"]
 
 # remove main.c/python.c if we dont want an executable
 if not buildExec:

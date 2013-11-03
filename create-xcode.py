@@ -47,6 +47,7 @@ def sqlite():
 	C = compile.Sqlite
 	for fn in C.files:
 		add_file(fn, group=group, compiler_flags=C.options)
+	proj.add_other_ldflags("-lsqlite3")
 sqlite()
 
 proj.saveFormat3_2(file_name="Xcode-Python.xcodeproj/project.pbxproj")
