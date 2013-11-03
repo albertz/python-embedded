@@ -10,10 +10,7 @@ import compile
 compile.iOS = False
 reload(compile)
 
-pbxproj = __import__("mod-pbxproj/mod_pbxproj")
-sys.path += ["mod-pbxproj"]
-#from mod_pbxproj import *
-XcodeProject = pbxproj.XcodeProject
+from mod_pbxproj import *
 
 proj = XcodeProject.Load("Xcode-Python-empty.xcodeproj/project.pbxproj")
 
