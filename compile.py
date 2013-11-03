@@ -101,14 +101,14 @@ def glob(pattern):
 baseFiles = \
 	set(glob(PythonDir + "/Python/*.c")) - \
 	set(glob(PythonDir + "/Python/dynload_*.c")) - \
-	set([PythonDir + "/Python/sigcheck.c"])
+	{PythonDir + "/Python/sigcheck.c"}
 
 if iOS:
 	baseFiles -= set(glob(PythonDir + "/Python/mactoolboxglue.c"))
-	baseFiles |= set([PythonDir + "/Python/dynload_stub.c"])
+	baseFiles |= {PythonDir + "/Python/dynload_stub.c"}
 else:
 	#baseFiles |= set([PythonDir + "/Python/dynload_next.c"]) 
-	baseFiles |= set([PythonDir + "/Python/dynload_shlib.c"]) 
+	baseFiles |= {PythonDir + "/Python/dynload_shlib.c"}
 
 extraFiles = \
 	set(glob("pyimportconfig.c")) | \
@@ -170,11 +170,12 @@ modFiles = \
 			"fcntlmodule.c",
 			"zipimport.c",
 			])) | \
-	set(glob(PythonDir + "/Modules/_io/*.c"))
+	set(glob(PythonDir + "/Modules/_io/*.c")) | \
+	set(glob(PythonDir + "/Modules/_sqlite/*.c"))
 
 # remove main.c/python.c if we dont want an executable
 if not buildExec:
-	modFiles -= set([PythonDir + "/Modules/python.c"])
+	modFiles -= {PythonDir + "/Modules/python.c"}
 
 objFiles = \
 	set(glob(PythonDir + "/Objects/*.c"))
@@ -182,7 +183,7 @@ objFiles = \
 parserFiles = \
 	set(glob(PythonDir + "/Parser/*.c")) - \
 	set(glob(PythonDir + "/Parser/*pgen*.c")) - \
-	set([PythonDir + "/Parser/intrcheck.c"])
+	{PythonDir + "/Parser/intrcheck.c"}
 
 pycryptoFiles = \
 	set(glob("pycrypto/src/*.c")) - \
