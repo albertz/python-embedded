@@ -39,6 +39,7 @@ extern void initselect(void);
 extern void initsignal(void);
 extern void initfcntl(void);
 extern void initzipimport(void);
+extern void init_sqlite3(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -80,6 +81,7 @@ struct _inittab _PyImport_Inittab[] = {
 	{"signal", initsignal},
 	{"fcntl", initfcntl},
     {"zipimport", initzipimport},
+	{"_sqlite3", init_sqlite3},
 	
 /*
     {"_ast", init_ast},
