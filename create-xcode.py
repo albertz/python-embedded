@@ -29,9 +29,9 @@ proj.add_other_cflags(flags=[
 proj.add_other_ldflags(flags=[
 	"-lssl", "-lz", "-lcrypto", "-lsasl2"])
 
-def add_file(fn, group):
+def add_file(fn, group, **kwargs):
 	#print fn
-	proj.add_file(fn, parent=group)
+	proj.add_file(fn, parent=group, **kwargs)
 
 src = proj.get_or_create_group("src")
 
@@ -40,6 +40,14 @@ for l in ["baseFiles", "extraFiles", "modFiles", "objFiles", "parserFiles"]:
 	
 	for fn in list(getattr(compile, l)):
 		add_file(fn, group=group)
+
+def sqlite():
+	l = "sqlite"
+	group = proj.get_or_create_group(l, parent=src)
+	C = compile.Sqlite
+	for fn in C.files:
+		add_file(fn, group=group, compiler_flags=C.options)
+sqlite()
 
 proj.saveFormat3_2(file_name="Xcode-Python.xcodeproj/project.pbxproj")
 
