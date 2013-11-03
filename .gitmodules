@@ -7,6 +7,6 @@
 	path = pycrypto
 	url = git@github.com:dlitz/pycrypto.git
 
-[submodule "mod-pbxproj"]
-	path = mod-pbxproj
+[submodule "mod_pbxproj"]
+	path = mod_pbxproj
 	url = git@github.com:albertz/mod-pbxproj.git
