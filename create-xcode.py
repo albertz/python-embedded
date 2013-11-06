@@ -43,8 +43,11 @@ for l in ["baseFiles", "extraFiles", "modFiles", "objFiles", "parserFiles"]:
 
 def sqlite():
 	import subprocess
-	if subprocess.check_output("nm -g /usr/local/opt/sqlite/lib/libsqlite3.dylib | grep __strlcat_chk", shell=True):
+	if subprocess.check_output("nm -g /usr/local/opt/sqlite/lib/libsqlite3.dylib | grep __strlcat_chk || true", shell=True):
 		print "Error: sqlite is compiled for >=MacOSX 10.9 (has ref to __strlcat_chk)"
+		print "Try:"
+		print "  export SDKROOT=/Developer/SDKs/MacOSX10.6.sdk"
+		print "  brew install sqlite --env=std --with-fts"
 		sys.exit(-1)
 
 	l = "sqlite"
