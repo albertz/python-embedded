@@ -42,12 +42,19 @@ for l in ["baseFiles", "extraFiles", "modFiles", "objFiles", "parserFiles"]:
 		add_file(fn, group=group)
 
 def sqlite():
+	import subprocess
+	if subprocess.check_output("nm -g /usr/local/opt/sqlite/lib/libsqlite3.dylib | grep __strlcat_chk", shell=True):
+		print "Error: sqlite is compiled for >=MacOSX 10.9 (has ref to __strlcat_chk)"
+		sys.exit(-1)
+
 	l = "sqlite"
 	group = proj.get_or_create_group(l, parent=src)
 	C = compile.Sqlite
 	for fn in C.files:
 		add_file(fn, group=group, compiler_flags=C.options)
-	proj.add_other_ldflags("-lsqlite3")
+	proj.add_header_search_paths("/usr/local/opt/sqlite/include", recursive=False)
+	proj.add_library_search_paths("/usr/local/opt/sqlite/lib", recursive=False)
+	proj.add_other_ldflags("/usr/local/opt/sqlite/lib/libsqlite3.a")
 sqlite()
 
 proj.saveFormat3_2(file_name="Xcode-Python.xcodeproj/project.pbxproj")
