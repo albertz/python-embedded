@@ -48,7 +48,7 @@ def sqlite():
 	for fn in C.files:
 		add_file(fn, group=group, compiler_flags=C.options)
 	proj.add_header_search_paths("$PROJECT_DIR/sqlite", recursive=False)
-	add_file("sqlite/sqlite3.c", group=group)
+	add_file("sqlite/sqlite3.c", group=group, compiler_flags=["-DSQLITE_ENABLE_FTS4"])
 sqlite()
 
 proj.saveFormat3_2(file_name="Xcode-Python.xcodeproj/project.pbxproj")
