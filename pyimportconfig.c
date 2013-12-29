@@ -46,6 +46,7 @@ extern void inittermios(void);
 extern void init_scproxy(void);
 extern void init_multiprocessing(void);
 extern void initcPickle(void);
+extern void initunicodedata(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -94,6 +95,7 @@ struct _inittab _PyImport_Inittab[] = {
 	{"_scproxy", init_scproxy},
 	{"_multiprocessing", init_multiprocessing},
     {"cPickle", initcPickle},
+	{"unicodedata", initunicodedata},
 	
 /*
     {"_ast", init_ast},
