@@ -1,10 +1,12 @@
 #!/bin/bash
 
+set -e
+
 cd $(dirname $0)
 
 rm pylib/pylib.zip
 
-pushd CPython/Lib || exit 1 
+pushd CPython/Lib
 zip -9 ../../pylib/pylib.zip \
 	-x test\* \
 	-x unittest\* \
@@ -23,4 +25,7 @@ popd
 
 zip -9 pylib/pylib.zip _sysconfigdata.py
 
+pushd setuptools
+zip -9 ../pylib/pylib.zip pkg_resources.py
+popd
 
