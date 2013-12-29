@@ -42,6 +42,9 @@ extern void initzipimport(void);
 extern void initpyexpat(void);
 extern void init_sqlite3(void);
 extern void init_ctypes(void);
+extern void inittermios(void);
+extern void init_scproxy(void);
+extern void init_multiprocessing(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -86,6 +89,9 @@ struct _inittab _PyImport_Inittab[] = {
 	{"pyexpat", initpyexpat},
 	{"_sqlite3", init_sqlite3},
 	{"_ctypes", init_ctypes},
+	{"termios", inittermios},
+	{"_scproxy", init_scproxy},
+	{"_multiprocessing", init_multiprocessing},
 	
 /*
     {"_ast", init_ast},

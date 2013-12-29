@@ -170,8 +170,13 @@ modFiles = \
 			"fcntlmodule.c",
 			"zipimport.c",
 			"pyexpat.c",
+			"termios.c",
+			"_multiprocessing/multiprocessing.c",
+			"_multiprocessing/socket_connection.c",
+			"_multiprocessing/semaphore.c"
 			])) | \
-	set(glob(PythonDir + "/Modules/_io/*.c"))
+	set(glob(PythonDir + "/Modules/_io/*.c")) | \
+	{PythonDir + "/Mac/Modules/_scproxy.c"}
 
 class Sqlite:
 	files = set(glob(PythonDir + "/Modules/_sqlite/*.c"))
