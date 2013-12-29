@@ -45,6 +45,7 @@ extern void init_ctypes(void);
 extern void inittermios(void);
 extern void init_scproxy(void);
 extern void init_multiprocessing(void);
+extern void initcPickle(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -92,13 +93,13 @@ struct _inittab _PyImport_Inittab[] = {
 	{"termios", inittermios},
 	{"_scproxy", init_scproxy},
 	{"_multiprocessing", init_multiprocessing},
+    {"cPickle", initcPickle},
 	
 /*
     {"_ast", init_ast},
     {"cmath", initcmath},
     {"future_builtins", initfuture_builtins},
     {"strop", initstrop},
-    {"cPickle", initcPickle},
     {"_subprocess", init_subprocess},
 	
     {"_hotshot", init_hotshot},

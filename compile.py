@@ -173,7 +173,8 @@ modFiles = \
 			"termios.c",
 			"_multiprocessing/multiprocessing.c",
 			"_multiprocessing/socket_connection.c",
-			"_multiprocessing/semaphore.c"
+			"_multiprocessing/semaphore.c",
+			"cPickle.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c")) | \
 	{PythonDir + "/Mac/Modules/_scproxy.c"}
