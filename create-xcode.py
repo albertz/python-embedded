@@ -27,7 +27,7 @@ proj.add_other_cflags(flags=[
 	])
 
 proj.add_other_ldflags(flags=[
-	"-lssl", "-lz", "-lcrypto", "-lsasl2"])
+	"-lssl", "-lz", "-lcrypto", "-lsasl2", "-lexpat"])
 
 def add_file(fn, group, **kwargs):
 	#print fn

@@ -39,6 +39,7 @@ extern void initselect(void);
 extern void initsignal(void);
 extern void initfcntl(void);
 extern void initzipimport(void);
+extern void initpyexpat(void);
 extern void init_sqlite3(void);
 extern void init_ctypes(void);
 
@@ -82,6 +83,7 @@ struct _inittab _PyImport_Inittab[] = {
 	{"signal", initsignal},
 	{"fcntl", initfcntl},
     {"zipimport", initzipimport},
+	{"pyexpat", initpyexpat},
 	{"_sqlite3", init_sqlite3},
 	{"_ctypes", init_ctypes},
 	

@@ -169,6 +169,7 @@ modFiles = \
 			"signalmodule.c",
 			"fcntlmodule.c",
 			"zipimport.c",
+			"pyexpat.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c"))
 
