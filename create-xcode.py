@@ -41,7 +41,7 @@ for l in ["baseFiles", "extraFiles", "modFiles", "objFiles", "parserFiles"]:
 	for fn in list(getattr(compile, l)):
 		add_file(fn, group=group)
 
-def sqlite():
+def addSqlite():
 	l = "sqlite"
 	group = proj.get_or_create_group(l, parent=src)
 	C = compile.Sqlite
@@ -49,7 +49,15 @@ def sqlite():
 		add_file(fn, group=group, compiler_flags=C.options)
 	proj.add_header_search_paths("$PROJECT_DIR/sqlite", recursive=False)
 	add_file("sqlite/sqlite3.c", group=group, compiler_flags=["-DSQLITE_ENABLE_FTS4"])
-sqlite()
+addSqlite()
+
+def addCtypes():
+	l = "ctypes"
+	group = proj.get_or_create_group(l, parent=src)
+	C = compile.Ctypes
+	for fn in C.files:
+		add_file(fn, group=group, compiler_flags=C.options)
+addCtypes()
 
 proj.saveFormat3_2(file_name="Xcode-Python.xcodeproj/project.pbxproj")
 

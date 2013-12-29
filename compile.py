@@ -179,6 +179,27 @@ class Sqlite:
 		#"-DSQLITE_OMIT_LOAD_EXTENSION"
 	]
 
+class Ctypes:
+	files = {
+		PythonDir + "/Modules/_ctypes/_ctypes.c",
+		PythonDir + "/Modules/_ctypes/callproc.c",
+		PythonDir + "/Modules/_ctypes/callbacks.c",
+		PythonDir + "/Modules/_ctypes/cfield.c",
+		PythonDir + "/Modules/_ctypes/malloc_closure.c",
+		PythonDir + "/Modules/_ctypes/stgdict.c",
+
+		PythonDir + "/Modules/_ctypes/libffi_osx/ffi.c",
+		#PythonDir + "/Modules/_ctypes/libffi_osx/types.c",
+		PythonDir + "/Modules/_ctypes/libffi_osx/x86/x86-ffi64.c",
+		PythonDir + "/Modules/_ctypes/libffi_osx/x86/x86-ffi_darwin.c",
+		PythonDir + "/Modules/_ctypes/libffi_osx/x86/darwin64.S",
+		PythonDir + "/Modules/_ctypes/libffi_osx/x86/x86-darwin.S",
+	}
+	options = [
+		"-DMACOSX",
+		"-I$PROJECT_DIR/CPython/Modules/_ctypes/libffi_osx/include/"
+	]
+
 # remove main.c/python.c if we dont want an executable
 if not buildExec:
 	modFiles -= {PythonDir + "/Modules/python.c"}
