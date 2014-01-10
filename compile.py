@@ -176,6 +176,7 @@ modFiles = \
 			"_multiprocessing/semaphore.c",
 			"cPickle.c",
 			"unicodedata.c",
+			"_lsprof.c", "rotatingtree.c",
 			])) | \
 	set(glob(PythonDir + "/Modules/_io/*.c")) | \
 	{PythonDir + "/Mac/Modules/_scproxy.c"}
