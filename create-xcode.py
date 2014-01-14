@@ -29,6 +29,7 @@ proj.add_other_cflags(flags=[
 proj.add_other_ldflags(flags=[
 	"-lssl", "-lz", "-lcrypto", "-lsasl2", "-lexpat",
 	"-framework CoreFoundation",
+	"-framework Foundation",
 	"-framework SystemConfiguration"
 ])
 
