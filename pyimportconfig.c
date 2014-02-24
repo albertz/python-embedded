@@ -48,6 +48,7 @@ extern void init_multiprocessing(void);
 extern void initcPickle(void);
 extern void initunicodedata(void);
 extern void init_lsprof(void);
+extern void init_ast(void);
 
 #ifdef WITH_PYCRYPTO
 extern void init_PyCrypto(void);
@@ -98,9 +99,9 @@ struct _inittab _PyImport_Inittab[] = {
     {"cPickle", initcPickle},
 	{"unicodedata", initunicodedata},
 	{"_lsprof", init_lsprof},
+    {"_ast", init_ast},
 	
 /*
-    {"_ast", init_ast},
     {"cmath", initcmath},
     {"future_builtins", initfuture_builtins},
     {"strop", initstrop},
